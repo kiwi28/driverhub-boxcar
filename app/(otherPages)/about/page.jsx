@@ -11,25 +11,25 @@ import Faqs from "@/components/otherPages/Faqs";
 import React from "react";
 
 export const metadata = {
-  title: "About || Boxcar - React Nextjs Car Template",
-  description: "Boxcar - React Nextjs Car Template",
+	title: "About || DriverHUB - React Nextjs Car Template",
+	description: "DriverHUB - React Nextjs Car Template",
 };
 export default function AboutPage() {
-  return (
-    <>
-      <Header1 headerClass="boxcar-header header-style-v1 style-two inner-header cus-style-1" />
-      <section className="about-inner-one layout-radius">
-        <About />
-        <Features2 />
-        <Features />
-        <Facts />
+	return (
+		<>
+			<Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" />
+			<section className="about-inner-one layout-radius">
+				<About />
+				<Features2 />
+				<Features />
+				<Facts />
 
-        <Brands />
-        <Team />
-        <Testimonials />
-        <Faqs />
-      </section>
-      <Footer1 parentClass="boxcar-footer footer-style-one v1 cus-st-1" />
-    </>
-  );
+				<Brands />
+				<Team />
+				<Testimonials />
+				<Faqs />
+			</section>
+			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />
+		</>
+	);
 }

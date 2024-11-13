@@ -1,6 +1,6 @@
-/* Boxcar | Boxcar HTML Template
+/* DriverHUB | DriverHUB HTML Template
 
-Template Name: Boxcar
+Template Name: DriverHUB
 Version: 1.0.0
 License: copyright commercial
 /************ TABLE OF CONTENTS ***************
@@ -39,6 +39,7 @@ License: copyright commercial
 @import url("linear.css");
 @import url("fontawesome.css");
 @import url("flaticon.css");
+
 
 :root {
   --theme-color-light: #ffffff;
@@ -497,7 +498,7 @@ figure.image {
   color: var(--theme-color1);
 }
 
-.boxcar-wrapper {
+.DriverHUB-wrapper {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -515,7 +516,7 @@ figure.image {
   width: 100%;
 }
 
-.boxcar-container {
+.DriverHUB-container {
   position: static;
   max-width: var(--container-width);
   padding: 0px 15px;
@@ -1129,48 +1130,48 @@ Scroll To Top style
   right: -150px;
 }
 
-.boxcar-title-three {
+.DriverHUB-title-three {
   margin-bottom: 51px;
 }
 
-.boxcar-title-three .breadcrumb {
+.DriverHUB-title-three .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.boxcar-title-three .breadcrumb li {
+.DriverHUB-title-three .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
   position: relative;
 }
 
-.boxcar-title-three .breadcrumb li::before {
+.DriverHUB-title-three .breadcrumb li::before {
   content: "/";
   position: absolute;
   top: 0;
   right: -14px;
 }
 
-.boxcar-title-three .breadcrumb li:last-child {
+.DriverHUB-title-three .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.boxcar-title-three .breadcrumb li:last-child::before {
+.DriverHUB-title-three .breadcrumb li:last-child::before {
   display: none;
 }
 
-.boxcar-title-three .breadcrumb li a {
+.DriverHUB-title-three .breadcrumb li a {
   color: var(--theme-color1);
 }
 
-.boxcar-title-three h2 {
+.DriverHUB-title-three h2 {
   margin-bottom: 36px;
   font-weight: 700;
 }
 
-.boxcar-title-three .text {
+.DriverHUB-title-three .text {
   font-size: 40px;
   font-weight: 700;
   line-height: 55px;
@@ -1237,7 +1238,7 @@ Scroll To Top style
   background-color: var(--theme-color-dark);
 }
 
-.boxcar-wrapper.v2 {
+.DriverHUB-wrapper.v2 {
   background-color: unset;
 }
 
@@ -1333,28 +1334,28 @@ Scroll To Top style
   transform: scale(1.1);
 }
 
-.boxcar-pricing-section .content-column .inner-column .read-more:hover,
+.DriverHUB-pricing-section .content-column .inner-column .read-more:hover,
 .blog-blockt-two .inner-box .read-more:hover,
-.boxcar-pricing-section-two .content-column .inner-column .read-more:hover,
+.DriverHUB-pricing-section-two .content-column .inner-column .read-more:hover,
 .header-style-v3 .btn .header-btn-two:hover,
-.boxcar-pricing-section-three .content-column .inner-column .read-more:hover,
+.DriverHUB-pricing-section-three .content-column .inner-column .read-more:hover,
 .hheader-style-v4 .btn .header-btn-two:hover,
-.boxcar-brand-section-three
+.DriverHUB-brand-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .brand-btn:hover,
-.boxcar-pricing-section-four .content-column .inner-column .read-more:hover,
-.boxcar-inspiration-section-two
+.DriverHUB-pricing-section-four .content-column .inner-column .read-more:hover,
+.DriverHUB-inspiration-section-two
   .right-box-two
   .uper-box
   .btn-box
   .read-more:hover,
 .header-style-v1 .header-inner .right-box .header-btn-eight:hover,
-.why-choose-us-section .content-column-two .boxcar-title .read-more:hover,
+.why-choose-us-section .content-column-two .DriverHUB-title .read-more:hover,
 .header-style-v7 .btn .header-btn-two:hover,
-.boxcar-pricing-section-five .content-column .inner-column .read-more:hover,
-.boxcar-pricing-section-six .content-column .inner-column .read-more:hover,
+.DriverHUB-pricing-section-five .content-column .inner-column .read-more:hover,
+.DriverHUB-pricing-section-six .content-column .inner-column .read-more:hover,
 .cars-section-fifteen
   .shop-c-box
   .content-column
@@ -1419,7 +1420,7 @@ Scroll To Top style
   color: var(--theme-color1);
 }
 
-.brand-boxcar-banner-section .content-column .inner-column .btn:hover {
+.brand-DriverHUB-banner-section .content-column .inner-column .btn:hover {
   background: #fff;
   color: #000;
   border-color: transparent;
@@ -1429,7 +1430,7 @@ Scroll To Top style
   border-radius: 0;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .btn-box
@@ -1443,7 +1444,7 @@ Scroll To Top style
   fill: var(--theme-color1);
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .btn-box
@@ -1454,7 +1455,7 @@ Scroll To Top style
   fill: #fff;
 }
 
-.brand-boxcar-banner-section .content-column .inner-column .btn:hover svg path {
+.brand-DriverHUB-banner-section .content-column .inner-column .btn:hover svg path {
   fill: #111;
 }
 
@@ -1481,12 +1482,12 @@ Scroll To Top style
   .subscribe-form
   .form-group
   button:hover,
-.boxcar-banner-section-nine .banner-content .form-submit button:hover,
+.DriverHUB-banner-section-nine .banner-content .form-submit button:hover,
 .hheader-style-v4.v10 .btn .header-btn-two:hover {
   color: #fff;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -1759,7 +1760,7 @@ Main Header
   width: 100%;
 }
 
-.boxcar-header {
+.DriverHUB-header {
   position: relative;
   width: 100%;
   z-index: 999999;
@@ -1846,32 +1847,32 @@ Main Header
   margin-right: 7px;
 }
 
-.boxcar-header .header-inner {
+.DriverHUB-header .header-inner {
   position: relative;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
-.boxcar-header .header-inner .logo-inner {
+.DriverHUB-header .header-inner .logo-inner {
   position: relative;
 }
 
-.boxcar-header {
+.DriverHUB-header {
   width: 100%;
   z-index: 999;
 }
 
-.boxcar-header .logo {
+.DriverHUB-header .logo {
   position: relative;
   display: block;
 }
 
-.boxcar-header .logo img {
+.DriverHUB-header .logo img {
   max-width: 100%;
   height: auto;
 }
 
-.boxcar-header .c-box {
+.DriverHUB-header .c-box {
   position: relative;
   left: 0px;
   top: 0px;
@@ -1885,7 +1886,7 @@ Main Header
   transition: all 300ms ease;
 }
 
-.boxcar-header .c-box .nav-out-bar {
+.DriverHUB-header .c-box .nav-out-bar {
   position: relative;
   margin-left: 230px;
   margin-right: auto;
@@ -1942,7 +1943,7 @@ Main Header
   transition: all 300ms ease;
 }
 
-.boxcar-header .right-box {
+.DriverHUB-header .right-box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1956,7 +1957,7 @@ Main Header
   height: 100%;
 }
 
-.boxcar-header .right-box .header-btn {
+.DriverHUB-header .right-box .header-btn {
   display: inline-block;
   color: #ffffff;
   text-transform: capitalize;
@@ -1969,7 +1970,7 @@ Main Header
   border-radius: 50px;
 }
 
-.boxcar-header .right-box .header-btn span {
+.DriverHUB-header .right-box .header-btn span {
   margin-left: 10px;
   position: relative;
   top: -2px;
@@ -1982,7 +1983,7 @@ Main Header
   background-color: var(--theme-color1);
 }
 
-.boxcar-header .right-box .header-btn span i {
+.DriverHUB-header .right-box .header-btn span i {
   color: #000;
   font-size: 22px;
   font-weight: 900;
@@ -1992,12 +1993,12 @@ Main Header
   transition: all 0.3s ease;
 }
 
-.boxcar-header .right-box .header-btn:hover {
+.DriverHUB-header .right-box .header-btn:hover {
   background-color: var(--theme-color1);
   border-color: transparent;
 }
 
-.boxcar-header .ui-btn-outer {
+.DriverHUB-header .ui-btn-outer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2014,7 +2015,7 @@ Main Header
   right: 117px;
 }
 
-.boxcar-header .ui-btn {
+.DriverHUB-header .ui-btn {
   position: relative;
   display: block;
   height: 30px;
@@ -2028,11 +2029,11 @@ Main Header
   transition: all 300ms ease;
 }
 
-.boxcar-header .ui-btn:hover {
+.DriverHUB-header .ui-btn:hover {
   color: var(--theme-color1);
 }
 
-.boxcar-header .info-btn {
+.DriverHUB-header .info-btn {
   position: relative;
   font-size: 16px;
   padding-left: 44px;
@@ -2043,7 +2044,7 @@ Main Header
   line-height: 20px;
 }
 
-.boxcar-header .info-btn small {
+.DriverHUB-header .info-btn small {
   display: block;
   font-size: 10px;
   font-weight: 500;
@@ -2051,7 +2052,7 @@ Main Header
   color: var(--theme-color1);
 }
 
-.boxcar-header .info-btn .icon {
+.DriverHUB-header .info-btn .icon {
   position: absolute;
   left: 0;
   top: 50%;
@@ -2064,7 +2065,7 @@ Main Header
   padding-right: 20px;
 }
 
-.boxcar-header .info-btn:hover {
+.DriverHUB-header .info-btn:hover {
   color: var(--theme-color-light);
 }
 
@@ -2477,7 +2478,7 @@ Main Header
   font-size: 15px;
 }
 
-.boxcar-header.five .header-inner .right-box .box-account {
+.DriverHUB-header.five .header-inner .right-box .box-account {
   color: var(--theme-color-dark);
 }
 
@@ -5495,20 +5496,20 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-title {
+.DriverHUB-title {
   position: relative;
   margin-bottom: 41px;
 }
 
-.boxcar-title.white h2 {
+.DriverHUB-title.white h2 {
   color: #fff;
 }
 
-.boxcar-title.white p {
+.DriverHUB-title.white p {
   color: #fff;
 }
 
-.boxcar-title h2 {
+.DriverHUB-title h2 {
   font-family: var(--title-font);
   font-size: 40px;
   font-weight: 700;
@@ -5518,7 +5519,7 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-title h2 {
+  .DriverHUB-title h2 {
     font-size: 30px;
     line-height: 35px;
   }
@@ -5528,11 +5529,11 @@ Section Title
   }
 }
 
-.boxcar-title .text {
+.DriverHUB-title .text {
   margin-top: 23px;
 }
 
-.boxcar-title .btn-title {
+.DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -5544,19 +5545,19 @@ Section Title
   color: var(--color-primary, var(--theme-color-dark));
 }
 
-.boxcar-title .btn-title svg {
+.DriverHUB-title .btn-title svg {
   margin-left: 9px;
   position: relative;
   top: -4px;
 }
 
-.boxcar-title.light .text,
-.boxcar-title.light h2,
-.boxcar-title.light h1 {
+.DriverHUB-title.light .text,
+.DriverHUB-title.light h2,
+.DriverHUB-title.light h1 {
   color: #fff;
 }
 
-.boxcar-title.light .sub-title {
+.DriverHUB-title.light .sub-title {
   color: var(--theme-color-light);
   letter-spacing: 1.5px;
 }
@@ -5568,7 +5569,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-v1 {
+.DriverHUB-banner-section-v1 {
   background-image: url(../images/banner/banner-page1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -5578,13 +5579,13 @@ Section Title
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 {
+  .DriverHUB-banner-section-v1 {
     height: unset;
     padding: 50px 0;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content {
+.DriverHUB-banner-section-v1 .banner-content {
   width: 924px;
   margin: 0 auto;
   text-align: center;
@@ -5598,13 +5599,13 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-banner-section-v1 .banner-content {
+  .DriverHUB-banner-section-v1 .banner-content {
     width: calc(100% - 30px);
   }
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content {
+  .DriverHUB-banner-section-v1 .banner-content {
     -webkit-transform: unset;
     transform: unset;
     position: static;
@@ -5612,7 +5613,7 @@ Section Title
   }
 }
 
-.boxcar-banner-section-v1 .banner-content > span {
+.DriverHUB-banner-section-v1 .banner-content > span {
   display: block;
   color: #fff;
   font-size: 16px;
@@ -5622,12 +5623,12 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-banner-section-v1 .banner-content > span {
+  .DriverHUB-banner-section-v1 .banner-content > span {
     margin-bottom: 12px;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content h2 {
+.DriverHUB-banner-section-v1 .banner-content h2 {
   color: #fff;
   font-size: 70px;
   text-transform: capitalize;
@@ -5637,17 +5638,17 @@ Section Title
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content h2 {
+  .DriverHUB-banner-section-v1 .banner-content h2 {
     font-size: 46px;
     line-height: 58px;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tabs-list {
+.DriverHUB-banner-section-v1 .banner-content .form-tabs-list {
   margin-bottom: 22px;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tabs-list li {
+.DriverHUB-banner-section-v1 .banner-content .form-tabs-list li {
   display: inline-block;
   color: #fff;
   font-size: 16px;
@@ -5659,7 +5660,7 @@ Section Title
   padding-bottom: 3px;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tabs-list li:before {
+.DriverHUB-banner-section-v1 .banner-content .form-tabs-list li:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -5673,25 +5674,25 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tabs-list li.current:before {
+.DriverHUB-banner-section-v1 .banner-content .form-tabs-list li.current:before {
   opacity: 1;
   visibility: visible;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tabs-list li:last-child {
+.DriverHUB-banner-section-v1 .banner-content .form-tabs-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-pane {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-pane {
   margin-bottom: 60px;
   display: none;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-pane.current {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-pane.current {
   display: block;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-pane form {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-pane form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5708,7 +5709,7 @@ Section Title
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content .form-tab-pane form {
+  .DriverHUB-banner-section-v1 .banner-content .form-tab-pane form {
     display: block;
     height: unset;
     border-radius: 0;
@@ -5716,26 +5717,26 @@ Section Title
   }
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
   width: 25%;
   height: 76px;
   /* Small devices */
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
+  .DriverHUB-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
     width: 100%;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content .form-submit {
+.DriverHUB-banner-section-v1 .banner-content .form-submit {
   margin-left: auto;
   /* Medium devices */
   /* Small devices */
 }
 
 @media (max-width: 991px) {
-  .boxcar-banner-section-v1 .banner-content .form-submit {
+  .DriverHUB-banner-section-v1 .banner-content .form-submit {
     width: 25%;
     position: relative;
     right: 25px;
@@ -5743,13 +5744,13 @@ Section Title
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content .form-submit {
+  .DriverHUB-banner-section-v1 .banner-content .form-submit {
     width: 100%;
     right: 0;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content .form-submit button {
+.DriverHUB-banner-section-v1 .banner-content .form-submit button {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -5761,20 +5762,20 @@ Section Title
   /* Small devices */
 }
 
-.boxcar-banner-section-v1 .banner-content .form-submit button i {
+.DriverHUB-banner-section-v1 .banner-content .form-submit button i {
   position: relative;
   margin-right: 7px;
   top: 2px;
 }
 
 @media (max-width: 767px) {
-  .boxcar-banner-section-v1 .banner-content .form-submit button {
+  .DriverHUB-banner-section-v1 .banner-content .form-submit button {
     width: 100%;
     border-radius: 0;
   }
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-content > span {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-content > span {
   display: block;
   color: #fff;
   font-size: 15px;
@@ -5782,19 +5783,19 @@ Section Title
   margin-bottom: 31px;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-content .model-links li {
   display: inline-block;
   margin-right: 6px;
   /* Medium devices */
 }
 
 @media (max-width: 991px) {
-  .boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li {
+  .DriverHUB-banner-section-v1 .banner-content .form-tab-content .model-links li {
     margin-bottom: 12px;
   }
 }
 
-.boxcar-banner-section-v1
+.DriverHUB-banner-section-v1
   .banner-content
   .form-tab-content
   .model-links
@@ -5802,7 +5803,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li a {
+.DriverHUB-banner-section-v1 .banner-content .form-tab-content .model-links li a {
   background: rgba(255, 255, 255, 0.2);
   display: inline-block;
   color: #fff;
@@ -5820,7 +5821,7 @@ Section Title
   align-items: center;
 }
 
-.boxcar-banner-section-v1
+.DriverHUB-banner-section-v1
   .banner-content
   .form-tab-content
   .model-links
@@ -5829,7 +5830,7 @@ Section Title
   background-color: #ffffff4f;
 }
 
-.boxcar-banner-section-v1
+.DriverHUB-banner-section-v1
   .banner-content
   .form-tab-content
   .model-links
@@ -5842,11 +5843,11 @@ Section Title
   margin-top: 2px;
 }
 
-.boxcar-banner-section-v1.banner-style-three {
+.DriverHUB-banner-section-v1.banner-style-three {
   background-image: url(../images/banner/banner-hp3.jpg);
 }
 
-.boxcar-banner-section-v1.banner-style-three:before {
+.DriverHUB-banner-section-v1.banner-style-three:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5862,7 +5863,7 @@ Section Title
   z-index: 5;
 }
 
-.boxcar-banner-section-v1.banner-style-three .banner-content-three {
+.DriverHUB-banner-section-v1.banner-style-three .banner-content-three {
   position: absolute;
   top: 50%;
   left: 0;
@@ -5872,7 +5873,7 @@ Section Title
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-v1.banner-style-three
+.DriverHUB-banner-section-v1.banner-style-three
   .banner-content-three
   .banner-content {
   position: static;
@@ -5882,11 +5883,11 @@ Section Title
   margin: unset;
 }
 
-.boxcar-banner-section-v1.banner-style-three .form-tab-pane form {
+.DriverHUB-banner-section-v1.banner-style-three .form-tab-pane form {
   border-radius: 15px;
 }
 
-.boxcar-banner-section-v1.banner-style-three .drop-menu .dropdown {
+.DriverHUB-banner-section-v1.banner-style-three .drop-menu .dropdown {
   border-radius: 15px;
 }
 
@@ -5992,20 +5993,20 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-two {
+.DriverHUB-banner-section-two {
   position: relative;
 }
 
-.boxcar-banner-section-two .banner-slider {
+.DriverHUB-banner-section-two .banner-slider {
   position: relative;
 }
 
-.boxcar-banner-section-two .banner-slider .banner-slide {
+.DriverHUB-banner-section-two .banner-slider .banner-slide {
   position: relative;
   z-index: 9;
 }
 
-.boxcar-banner-section-two .banner-slider .banner-slide:before {
+.DriverHUB-banner-section-two .banner-slider .banner-slide:before {
   content: "";
   position: absolute;
   top: 0;
@@ -6016,7 +6017,7 @@ Section Title
   opacity: 0.4;
 }
 
-.boxcar-banner-section-two .banner-slider .banner-slide .right-box {
+.DriverHUB-banner-section-two .banner-slider .banner-slide .right-box {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -6026,7 +6027,7 @@ Section Title
   z-index: 99;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6039,7 +6040,7 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6054,7 +6055,7 @@ Section Title
   margin-left: 12px;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6066,7 +6067,7 @@ Section Title
   line-height: normal;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6078,7 +6079,7 @@ Section Title
   margin-bottom: 27px;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6091,7 +6092,7 @@ Section Title
   margin-right: 30px;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6101,7 +6102,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6114,7 +6115,7 @@ Section Title
   left: 0;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6130,7 +6131,7 @@ Section Title
   border-radius: 12px;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-slider
   .banner-slide
   .right-box
@@ -6145,7 +6146,7 @@ Section Title
   margin-left: 11px;
 }
 
-.boxcar-banner-section-two .banner-thumbs {
+.DriverHUB-banner-section-two .banner-thumbs {
   position: absolute;
   bottom: 40px;
   left: 0;
@@ -6153,7 +6154,7 @@ Section Title
   z-index: 99;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-thumbs
   .banner-slider-thumbs
   .banner-slide-thumb {
@@ -6170,7 +6171,7 @@ Section Title
   cursor: pointer;
 }
 
-.boxcar-banner-section-two
+.DriverHUB-banner-section-two
   .banner-thumbs
   .banner-slider-thumbs
   .slick-current
@@ -6185,40 +6186,40 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-four {
+.DriverHUB-banner-section-four {
   position: relative;
   /* height: 100vh; */
 }
 
 @media (max-width: 1550px) {
-  .boxcar-banner-section-four {
+  .DriverHUB-banner-section-four {
     height: 100vh;
   }
 }
 
-.boxcar-banner-section-four .banner-slider-v4 {
+.DriverHUB-banner-section-four .banner-slider-v4 {
   position: relative;
   height: 100%;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-track,
-.boxcar-banner-section-four .banner-slider-v4 .slick-list {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-track,
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-list {
   height: 100%;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-track .banner-slide,
-.boxcar-banner-section-four .banner-slider-v4 .slick-list .banner-slide {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-track .banner-slide,
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-list .banner-slide {
   height: 100%;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-track .banner-slide > img,
-.boxcar-banner-section-four .banner-slider-v4 .slick-list .banner-slide > img {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-track .banner-slide > img,
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-list .banner-slide > img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-dots {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-dots {
   bottom: 70px;
   left: 14vw;
   -webkit-transform: unset;
@@ -6229,12 +6230,12 @@ Section Title
   margin-left: 65px;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-dots li {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-dots li {
   width: auto;
   height: auto;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-dots li button {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-dots li button {
   width: 20px;
   height: 4px;
   background: #fff;
@@ -6244,7 +6245,7 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .slick-dots
   li.slick-active
@@ -6252,8 +6253,8 @@ Section Title
   width: 35px;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-prev,
-.boxcar-banner-section-four .banner-slider-v4 .slick-next {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-prev,
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-next {
   bottom: 60px;
   top: auto;
   -webkit-transform: unset;
@@ -6264,22 +6265,22 @@ Section Title
   border-color: #fff;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-prev:before,
-.boxcar-banner-section-four .banner-slider-v4 .slick-next:before {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-prev:before,
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-next:before {
   color: #fff;
   font-size: 20px;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .slick-next {
+.DriverHUB-banner-section-four .banner-slider-v4 .slick-next {
   margin-left: 210px;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .banner-slide {
+.DriverHUB-banner-section-four .banner-slider-v4 .banner-slide {
   position: relative;
   z-index: 9;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .banner-slide:before {
+.DriverHUB-banner-section-four .banner-slider-v4 .banner-slide:before {
   content: "";
   position: absolute;
   top: 0;
@@ -6290,7 +6291,7 @@ Section Title
   opacity: 0.4;
 }
 
-.boxcar-banner-section-four .banner-slider-v4 .banner-slide .right-box {
+.DriverHUB-banner-section-four .banner-slider-v4 .banner-slide .right-box {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -6300,7 +6301,7 @@ Section Title
   z-index: 99;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6313,7 +6314,7 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6328,7 +6329,7 @@ Section Title
   margin-left: 12px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6340,7 +6341,7 @@ Section Title
   line-height: normal;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6352,7 +6353,7 @@ Section Title
   margin-bottom: 27px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6365,7 +6366,7 @@ Section Title
   margin-right: 30px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6375,7 +6376,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6388,7 +6389,7 @@ Section Title
   left: 0;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6404,7 +6405,7 @@ Section Title
   border-radius: 12px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6419,7 +6420,7 @@ Section Title
   margin-left: 11px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6435,7 +6436,7 @@ Section Title
   backdrop-filter: blur(7.5px);
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6444,7 +6445,7 @@ Section Title
   margin-bottom: 54px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6453,7 +6454,7 @@ Section Title
   margin-bottom: 0;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6465,7 +6466,7 @@ Section Title
   font-size: 30px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6478,7 +6479,7 @@ Section Title
   margin: 12px 0 -1px;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6491,7 +6492,7 @@ Section Title
   margin-bottom: 0;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6506,7 +6507,7 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-banner-section-four
+.DriverHUB-banner-section-four
   .banner-slider-v4
   .banner-slide
   .right-box
@@ -6526,17 +6527,17 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-five {
+.DriverHUB-banner-section-five {
   position: relative;
   padding-bottom: 0;
   padding-top: 100px;
   height: unset;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
-  margin-bottom: -180px;
+  /* margin-bottom: -180px; */
 }
 
-.boxcar-banner-section-five:before {
+.DriverHUB-banner-section-five:before {
   content: "";
   position: absolute;
   left: 0;
@@ -6547,11 +6548,11 @@ Section Title
   z-index: -1;
 }
 
-.boxcar-banner-section-five .image-column {
+.DriverHUB-banner-section-five .image-column {
   margin-top: -120px;
 }
 
-.boxcar-banner-section-five .banner-content {
+.DriverHUB-banner-section-five .banner-content {
   width: 924px;
   margin: 0 auto;
   text-align: center;
@@ -6559,7 +6560,7 @@ Section Title
   border-radius: 50px;
 }
 
-.boxcar-banner-section-five .banner-content > span {
+.DriverHUB-banner-section-five .banner-content > span {
   display: block;
   color: var(--theme-color-dark);
   font-size: 16px;
@@ -6567,7 +6568,7 @@ Section Title
   margin-bottom: 30px;
 }
 
-.boxcar-banner-section-five .banner-content h2 {
+.DriverHUB-banner-section-five .banner-content h2 {
   color: var(--theme-color-dark);
   font-size: 70px;
   text-transform: capitalize;
@@ -6575,11 +6576,11 @@ Section Title
   margin-bottom: 48px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tabs-list {
+.DriverHUB-banner-section-five .banner-content .form-tabs-list {
   margin-bottom: 22px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tabs-list li {
+.DriverHUB-banner-section-five .banner-content .form-tabs-list li {
   display: inline-block;
   color: #fff;
   font-size: 16px;
@@ -6591,7 +6592,7 @@ Section Title
   padding-bottom: 3px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tabs-list li:before {
+.DriverHUB-banner-section-five .banner-content .form-tabs-list li:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6605,25 +6606,25 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-banner-section-five .banner-content .form-tabs-list li.current:before {
+.DriverHUB-banner-section-five .banner-content .form-tabs-list li.current:before {
   opacity: 1;
   visibility: visible;
 }
 
-.boxcar-banner-section-five .banner-content .form-tabs-list li:last-child {
+.DriverHUB-banner-section-five .banner-content .form-tabs-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-pane {
+.DriverHUB-banner-section-five .banner-content .form-tab-pane {
   margin-bottom: 60px;
   display: none;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-pane.current {
+.DriverHUB-banner-section-five .banner-content .form-tab-pane.current {
   display: block;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-pane form {
+.DriverHUB-banner-section-five .banner-content .form-tab-pane form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6638,13 +6639,13 @@ Section Title
   height: 76px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-pane form .form_boxes {
+.DriverHUB-banner-section-five .banner-content .form-tab-pane form .form_boxes {
   width: 23%;
   height: 76px;
   position: relative;
 }
 
-.boxcar-banner-section-five
+.DriverHUB-banner-section-five
   .banner-content
   .form-tab-pane
   form
@@ -6652,7 +6653,7 @@ Section Title
   display: none;
 }
 
-.boxcar-banner-section-five
+.DriverHUB-banner-section-five
   .banner-content
   .form-tab-pane
   form
@@ -6668,11 +6669,11 @@ Section Title
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-five .banner-content .form-submit {
+.DriverHUB-banner-section-five .banner-content .form-submit {
   margin-left: auto;
 }
 
-.boxcar-banner-section-five .banner-content .form-submit button {
+.DriverHUB-banner-section-five .banner-content .form-submit button {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -6685,7 +6686,7 @@ Section Title
   padding-top: 3px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-content > span {
+.DriverHUB-banner-section-five .banner-content .form-tab-content > span {
   display: block;
   color: #fff;
   font-size: 15px;
@@ -6693,12 +6694,12 @@ Section Title
   margin-bottom: 31px;
 }
 
-.boxcar-banner-section-five .banner-content .form-tab-content .model-links li {
+.DriverHUB-banner-section-five .banner-content .form-tab-content .model-links li {
   display: inline-block;
   margin-right: 6px;
 }
 
-.boxcar-banner-section-five
+.DriverHUB-banner-section-five
   .banner-content
   .form-tab-content
   .model-links
@@ -6706,7 +6707,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-five
+.DriverHUB-banner-section-five
   .banner-content
   .form-tab-content
   .model-links
@@ -6723,7 +6724,7 @@ Section Title
   border-radius: 30px;
 }
 
-.boxcar-banner-section-five
+.DriverHUB-banner-section-five
   .banner-content
   .form-tab-content
   .model-links
@@ -6733,11 +6734,11 @@ Section Title
   margin-right: 5px;
 }
 
-.boxcar-banner-section-five.banner-style-three {
+.DriverHUB-banner-section-five.banner-style-three {
   background-image: url(../images/banner/banner-hp3.jpg);
 }
 
-.boxcar-banner-section-five.banner-style-three:before {
+.DriverHUB-banner-section-five.banner-style-three:before {
   content: "";
   position: absolute;
   top: 0;
@@ -6748,7 +6749,7 @@ Section Title
   opacity: 0.4;
 }
 
-.boxcar-banner-section-five.banner-style-three .banner-content-three {
+.DriverHUB-banner-section-five.banner-style-three .banner-content-three {
   position: absolute;
   top: 50%;
   left: 0;
@@ -6758,7 +6759,7 @@ Section Title
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-five.banner-style-three
+.DriverHUB-banner-section-five.banner-style-three
   .banner-content-three
   .banner-content {
   position: static;
@@ -6768,11 +6769,11 @@ Section Title
   margin: unset;
 }
 
-.boxcar-banner-section-five.banner-style-three .form-tab-pane form {
+.DriverHUB-banner-section-five.banner-style-three .form-tab-pane form {
   border-radius: 15px;
 }
 
-.boxcar-banner-section-five.banner-style-three .drop-menu .dropdown {
+.DriverHUB-banner-section-five.banner-style-three .drop-menu .dropdown {
   border-radius: 15px;
 }
 
@@ -6783,11 +6784,11 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-six {
+.DriverHUB-banner-section-six {
   position: relative;
 }
 
-.boxcar-banner-section-six::before {
+.DriverHUB-banner-section-six::before {
   content: "";
   position: absolute;
   top: 0;
@@ -6797,30 +6798,30 @@ Section Title
   background-image: url(../images/resource/banner-six.png);
 }
 
-.boxcar-banner-section-six .content-column .inner-column {
+.DriverHUB-banner-section-six .content-column .inner-column {
   padding: 252px 0 254px;
 }
 
-.boxcar-banner-section-six .content-column .inner-column span {
+.DriverHUB-banner-section-six .content-column .inner-column span {
   color: var(--theme-color-dark);
   margin-bottom: 23px;
   display: inline-block;
 }
 
-.boxcar-banner-section-six .content-column .inner-column h1 {
+.DriverHUB-banner-section-six .content-column .inner-column h1 {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 41px;
 }
 
-.boxcar-banner-section-six .content-column .inner-column .btn-box {
+.DriverHUB-banner-section-six .content-column .inner-column .btn-box {
   margin-bottom: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.boxcar-banner-section-six .content-column .inner-column .btn-box .read-more {
+.DriverHUB-banner-section-six .content-column .inner-column .btn-box .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -6834,7 +6835,7 @@ Section Title
   margin-right: 30px;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .btn-box
@@ -6842,7 +6843,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .btn-box
@@ -6856,7 +6857,7 @@ Section Title
   margin-left: 10px;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .btn-box
@@ -6865,26 +6866,26 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
-  .boxcar-title {
+  .DriverHUB-title {
   margin-bottom: 23px;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
-  .boxcar-title
+  .DriverHUB-title
   h6 {
   font-size: 16px;
   color: var(--theme-color-dark);
   font-weight: 500;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6894,7 +6895,7 @@ Section Title
   display: flex;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6903,7 +6904,7 @@ Section Title
   margin-right: 10px;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6912,7 +6913,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6927,7 +6928,7 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6944,7 +6945,7 @@ Section Title
   top: 5px;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6956,7 +6957,7 @@ Section Title
   border-color: transparent;
 }
 
-.boxcar-banner-section-six
+.DriverHUB-banner-section-six
   .content-column
   .inner-column
   .right-box
@@ -6974,24 +6975,24 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-seven {
+.DriverHUB-banner-section-seven {
   position: relative;
 }
 
-.boxcar-banner-section-seven.v10 .banner-slider-v7 .slick-prev {
+.DriverHUB-banner-section-seven.v10 .banner-slider-v7 .slick-prev {
   left: 5vw;
 }
 
-.boxcar-banner-section-seven.v10 .banner-slider-v7 .slick-next {
+.DriverHUB-banner-section-seven.v10 .banner-slider-v7 .slick-next {
   right: 5vw;
 }
 
-.boxcar-banner-section-seven.v10 .large-container {
+.DriverHUB-banner-section-seven.v10 .large-container {
   max-width: 1829px;
   padding: 0 15px;
 }
 
-.boxcar-banner-section-seven.v10 .form-tab-content {
+.DriverHUB-banner-section-seven.v10 .form-tab-content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -6999,11 +7000,11 @@ Section Title
   z-index: 99;
 }
 
-.boxcar-banner-section-seven.v10 .form-submit {
+.DriverHUB-banner-section-seven.v10 .form-submit {
   margin-left: auto;
 }
 
-.boxcar-banner-section-seven.v10 .form-submit button {
+.DriverHUB-banner-section-seven.v10 .form-submit button {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -7015,13 +7016,13 @@ Section Title
   background: transparent;
 }
 
-.boxcar-banner-section-seven.v10 .form-submit button i {
+.DriverHUB-banner-section-seven.v10 .form-submit button i {
   position: relative;
   margin-right: 7px;
   top: 2px;
 }
 
-.boxcar-banner-section-seven.v10 form {
+.DriverHUB-banner-section-seven.v10 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7035,13 +7036,13 @@ Section Title
   padding: 10px 20px;
 }
 
-.boxcar-banner-section-seven.v10 form .form_boxes {
+.DriverHUB-banner-section-seven.v10 form .form_boxes {
   width: 20%;
   height: 76px;
   position: relative;
 }
 
-.boxcar-banner-section-seven.v10 form .form_boxes:before {
+.DriverHUB-banner-section-seven.v10 form .form_boxes:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -7054,20 +7055,20 @@ Section Title
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-seven.v10 form .form_boxes:nth-child(4):before {
+.DriverHUB-banner-section-seven.v10 form .form_boxes:nth-child(4):before {
   display: none;
 }
 
-.boxcar-banner-section-seven.v10 form .drop-menu .select {
+.DriverHUB-banner-section-seven.v10 form .drop-menu .select {
   color: #fff;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 {
+.DriverHUB-banner-section-seven .banner-slider-v7 {
   position: relative;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .slick-prev,
-.boxcar-banner-section-seven .banner-slider-v7 .slick-next {
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-prev,
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-next {
   width: 60px;
   height: 40px;
   border-radius: 30px;
@@ -7078,30 +7079,30 @@ Section Title
   border: 0;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .slick-prev:before,
-.boxcar-banner-section-seven .banner-slider-v7 .slick-next:before {
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-prev:before,
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-next:before {
   color: #fff;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .slick-prev {
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-prev {
   left: 8vw;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .slick-next {
+.DriverHUB-banner-section-seven .banner-slider-v7 .slick-next {
   right: 8vw;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 img {
+.DriverHUB-banner-section-seven .banner-slider-v7 img {
   width: 100%;
   border-radius: 16px;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .banner-slide {
+.DriverHUB-banner-section-seven .banner-slider-v7 .banner-slide {
   position: relative;
   z-index: 9;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .banner-slide:before {
+.DriverHUB-banner-section-seven .banner-slider-v7 .banner-slide:before {
   content: "";
   position: absolute;
   top: 0;
@@ -7113,7 +7114,7 @@ Section Title
   border-radius: 16px;
 }
 
-.boxcar-banner-section-seven .banner-slider-v7 .banner-slide .right-box {
+.DriverHUB-banner-section-seven .banner-slider-v7 .banner-slide .right-box {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -7123,7 +7124,7 @@ Section Title
   z-index: 99;
 }
 
-.boxcar-banner-section-seven
+.DriverHUB-banner-section-seven
   .banner-slider-v7
   .banner-slide
   .right-box
@@ -7131,7 +7132,7 @@ Section Title
   text-align: center;
 }
 
-.boxcar-banner-section-seven
+.DriverHUB-banner-section-seven
   .banner-slider-v7
   .banner-slide
   .right-box
@@ -7142,7 +7143,7 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-banner-section-seven
+.DriverHUB-banner-section-seven
   .banner-slider-v7
   .banner-slide
   .right-box
@@ -7161,7 +7162,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-v8 {
+.DriverHUB-banner-section-v8 {
   background-image: url(../images/background/banner-v8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7172,17 +7173,17 @@ Section Title
 }
 
 @media (max-width: 1440px) {
-  .boxcar-banner-section-v8 {
+  .DriverHUB-banner-section-v8 {
     margin: 0;
     border-radius: 0;
   }
 }
 
-.boxcar-banner-section-v8 .boxcar-container {
+.DriverHUB-banner-section-v8 .DriverHUB-container {
   height: 100%;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 {
+.DriverHUB-banner-section-v8 .banner-content-v8 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7198,21 +7199,21 @@ Section Title
   justify-content: center;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 h2 {
+.DriverHUB-banner-section-v8 .banner-content-v8 h2 {
   color: #fff;
   font-size: 52px;
   font-weight: 500;
   margin-bottom: 50px;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form {
+.DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form {
   max-width: 448px;
   background: #fff;
   border-radius: 16px;
   padding: 30px;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form .form-tabs-list {
+.DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form .form-tabs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7225,7 +7226,7 @@ Section Title
   margin-bottom: 20px;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-tabs-list
@@ -7237,7 +7238,7 @@ Section Title
   cursor: pointer;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-tabs-list
@@ -7247,7 +7248,7 @@ Section Title
   color: #fff;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-tabs-list
@@ -7255,18 +7256,18 @@ Section Title
   border-radius: 0 16px 16px 0;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form .form-tab-pane {
+.DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form .form-tab-pane {
   display: none;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-tab-pane.current {
   display: block;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-tab-pane
@@ -7277,13 +7278,13 @@ Section Title
   margin-bottom: 20px;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form .drop-menu {
+.DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form .drop-menu {
   border: 1px solid #e1e1e1;
   border-radius: 16px;
   padding: 7px 15px;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .drop-menu
@@ -7296,7 +7297,7 @@ Section Title
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .drop-menu
@@ -7307,7 +7308,7 @@ Section Title
   font-weight: 400;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .drop-menu
@@ -7317,7 +7318,7 @@ Section Title
   line-height: unset;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .drop-menu
@@ -7326,11 +7327,11 @@ Section Title
   right: 0;
 }
 
-.boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form .form-submit {
+.DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form .form-submit {
   margin-left: auto;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-submit
@@ -7346,7 +7347,7 @@ Section Title
   background-color: #405ff2;
 }
 
-.boxcar-banner-section-v8
+.DriverHUB-banner-section-v8
   .banner-content-v8
   .banner-v8-form
   .form-submit
@@ -7364,7 +7365,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-banner-section-nine {
+.DriverHUB-banner-section-nine {
   background-image: url(../images/banner/banner-page9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7372,7 +7373,7 @@ Section Title
   position: relative;
 }
 
-.boxcar-banner-section-nine:before {
+.DriverHUB-banner-section-nine:before {
   content: "";
   position: absolute;
   top: 0;
@@ -7383,13 +7384,13 @@ Section Title
   opacity: 0.4;
 }
 
-.boxcar-banner-section-nine .drop-menu.active .select > span,
-.boxcar-banner-section-nine .drop-menu.active .select i,
-.boxcar-banner-section-nine .drop-menu .dropdown li:hover {
+.DriverHUB-banner-section-nine .drop-menu.active .select > span,
+.DriverHUB-banner-section-nine .drop-menu.active .select i,
+.DriverHUB-banner-section-nine .drop-menu .dropdown li:hover {
   color: #fff;
 }
 
-.boxcar-banner-section-nine .banner-content {
+.DriverHUB-banner-section-nine .banner-content {
   width: 924px;
   margin: 0 auto;
   text-align: center;
@@ -7400,12 +7401,12 @@ Section Title
   transform: translate(-50%, -50%);
 }
 
-.boxcar-banner-section-nine .banner-content .content-box {
+.DriverHUB-banner-section-nine .banner-content .content-box {
   margin-top: 166px;
   position: relative;
 }
 
-.boxcar-banner-section-nine .banner-content .content-box span {
+.DriverHUB-banner-section-nine .banner-content .content-box span {
   display: block;
   color: #fff;
   font-size: 16px;
@@ -7413,7 +7414,7 @@ Section Title
   margin-bottom: 30px;
 }
 
-.boxcar-banner-section-nine .banner-content .content-box h2 {
+.DriverHUB-banner-section-nine .banner-content .content-box h2 {
   color: #fff;
   font-size: 70px;
   text-transform: capitalize;
@@ -7421,7 +7422,7 @@ Section Title
   margin-bottom: 55px;
 }
 
-.boxcar-banner-section-nine .banner-content .content-box .btn-box {
+.DriverHUB-banner-section-nine .banner-content .content-box .btn-box {
   margin-bottom: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7431,7 +7432,7 @@ Section Title
   justify-content: center;
 }
 
-.boxcar-banner-section-nine .banner-content .content-box .btn-box .read-more {
+.DriverHUB-banner-section-nine .banner-content .content-box .btn-box .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -7445,7 +7446,7 @@ Section Title
   margin-right: 30px;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -7453,7 +7454,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -7467,7 +7468,7 @@ Section Title
   margin-left: 10px;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -7476,7 +7477,7 @@ Section Title
   color: var(--theme-color-dark);
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -7485,7 +7486,7 @@ Section Title
   color: var(--theme-color-dark);
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .content-box
   .btn-box
@@ -7494,11 +7495,11 @@ Section Title
   color: var(--theme-color-dark) !important;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tabs-list {
+.DriverHUB-banner-section-nine .banner-content .form-tabs-list {
   margin-bottom: 22px;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tabs-list li {
+.DriverHUB-banner-section-nine .banner-content .form-tabs-list li {
   display: inline-block;
   color: #fff;
   font-size: 16px;
@@ -7510,7 +7511,7 @@ Section Title
   padding-bottom: 3px;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tabs-list li:before {
+.DriverHUB-banner-section-nine .banner-content .form-tabs-list li:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -7524,24 +7525,24 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tabs-list li.current:before {
+.DriverHUB-banner-section-nine .banner-content .form-tabs-list li.current:before {
   opacity: 1;
   visibility: visible;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tabs-list li:last-child {
+.DriverHUB-banner-section-nine .banner-content .form-tabs-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-pane {
+.DriverHUB-banner-section-nine .banner-content .form-tab-pane {
   display: none;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-pane.current {
+.DriverHUB-banner-section-nine .banner-content .form-tab-pane.current {
   display: block;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-pane form {
+.DriverHUB-banner-section-nine .banner-content .form-tab-pane form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7559,16 +7560,16 @@ Section Title
   backdrop-filter: blur(7.5px);
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-pane form .form_boxes {
+.DriverHUB-banner-section-nine .banner-content .form-tab-pane form .form_boxes {
   width: 19%;
   height: 76px;
 }
 
-.boxcar-banner-section-nine .banner-content .form-submit {
+.DriverHUB-banner-section-nine .banner-content .form-submit {
   margin-left: auto;
 }
 
-.boxcar-banner-section-nine .banner-content .form-submit button {
+.DriverHUB-banner-section-nine .banner-content .form-submit button {
   color: var(--theme-color-dark);
   font-size: 15px;
   font-weight: 500;
@@ -7579,13 +7580,13 @@ Section Title
   background-color: var(--theme-color-light);
 }
 
-.boxcar-banner-section-nine .banner-content .form-submit button i {
+.DriverHUB-banner-section-nine .banner-content .form-submit button i {
   position: relative;
   margin-right: 7px;
   top: 2px;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-content > span {
+.DriverHUB-banner-section-nine .banner-content .form-tab-content > span {
   display: block;
   color: #fff;
   font-size: 15px;
@@ -7593,12 +7594,12 @@ Section Title
   margin-bottom: 31px;
 }
 
-.boxcar-banner-section-nine .banner-content .form-tab-content .model-links li {
+.DriverHUB-banner-section-nine .banner-content .form-tab-content .model-links li {
   display: inline-block;
   margin-right: 6px;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .form-tab-content
   .model-links
@@ -7606,7 +7607,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .form-tab-content
   .model-links
@@ -7623,7 +7624,7 @@ Section Title
   border-radius: 30px;
 }
 
-.boxcar-banner-section-nine
+.DriverHUB-banner-section-nine
   .banner-content
   .form-tab-content
   .model-links
@@ -7633,15 +7634,15 @@ Section Title
   margin-right: 5px;
 }
 
-.boxcar-banner-section-nine .drop-menu .select {
+.DriverHUB-banner-section-nine .drop-menu .select {
   color: var(--theme-color-light);
 }
 
-.boxcar-banner-section-nine.banner-style-three {
+.DriverHUB-banner-section-nine.banner-style-three {
   background-image: url(../images/banner/banner-hp3.jpg);
 }
 
-.boxcar-banner-section-nine.banner-style-three:before {
+.DriverHUB-banner-section-nine.banner-style-three:before {
   content: "";
   position: absolute;
   top: 0;
@@ -7652,7 +7653,7 @@ Section Title
   opacity: 0.4;
 }
 
-.boxcar-banner-section-nine.banner-style-three .banner-content-three {
+.DriverHUB-banner-section-nine.banner-style-three .banner-content-three {
   position: absolute;
   top: 50%;
   left: 0;
@@ -7662,7 +7663,7 @@ Section Title
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-nine.banner-style-three
+.DriverHUB-banner-section-nine.banner-style-three
   .banner-content-three
   .banner-content {
   position: static;
@@ -7672,11 +7673,11 @@ Section Title
   margin: unset;
 }
 
-.boxcar-banner-section-nine.banner-style-three .form-tab-pane form {
+.DriverHUB-banner-section-nine.banner-style-three .form-tab-pane form {
   border-radius: 15px;
 }
 
-.boxcar-banner-section-nine.banner-style-three .drop-menu .dropdown {
+.DriverHUB-banner-section-nine.banner-style-three .drop-menu .dropdown {
   border-radius: 15px;
 }
 
@@ -7707,7 +7708,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-brand-section {
+.DriverHUB-brand-section {
   position: relative;
   padding: 120px 0;
   /* Medium devices */
@@ -7738,7 +7739,7 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-brand-section {
+  .DriverHUB-brand-section {
     padding: 90px 0;
   }
 
@@ -7804,7 +7805,7 @@ Section Title
   line-height: 27px;
 }
 
-.boxcar-brand-section.v7::before {
+.DriverHUB-brand-section.v7::before {
   content: "";
   position: absolute;
   top: 0;
@@ -7825,7 +7826,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-brand-section-two {
+.DriverHUB-brand-section-two {
   position: relative;
   padding: 120px 0;
 }
@@ -7886,7 +7887,7 @@ Section Title
 ====================================================================
 
 ***/
-.brand-boxcar-banner-section {
+.brand-DriverHUB-banner-section {
   position: relative;
   padding: 211px 0 167px;
   background-image: url(../images/background/child.jpg);
@@ -7896,7 +7897,7 @@ Section Title
   z-index: 9;
 }
 
-.brand-boxcar-banner-section:before {
+.brand-DriverHUB-banner-section:before {
   content: "";
   position: absolute;
   top: 0;
@@ -7908,7 +7909,7 @@ Section Title
   z-index: -1;
 }
 
-.brand-boxcar-banner-section .content-column .inner-column .title {
+.brand-DriverHUB-banner-section .content-column .inner-column .title {
   font-size: 70px;
   color: var(--theme-color-light);
   font-weight: 500;
@@ -7917,7 +7918,7 @@ Section Title
   margin-bottom: 28px;
 }
 
-.brand-boxcar-banner-section .content-column .inner-column .btn {
+.brand-DriverHUB-banner-section .content-column .inner-column .btn {
   padding: 20px 87px 18px;
   line-height: 26px;
   color: var(--theme-color-light);
@@ -7925,7 +7926,7 @@ Section Title
   border: 1px solid var(--White, #fff);
 }
 
-.brand-boxcar-banner-section .content-column .inner-column .btn svg {
+.brand-DriverHUB-banner-section .content-column .inner-column .btn svg {
   fill: var(--theme-color-light);
   margin-left: 10px;
   position: relative;
@@ -7939,38 +7940,38 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-brand-section-three {
+.DriverHUB-brand-section-three {
   position: relative;
 }
 
-.boxcar-brand-section-three .right-box {
+.DriverHUB-brand-section-three .right-box {
   padding: 80px 152px 87px;
   border-radius: 16px;
   background: var(--bg-1, #f9fbfc);
 }
 
-.boxcar-brand-section-three .content-column .inner-column {
+.DriverHUB-brand-section-three .content-column .inner-column {
   max-width: 470px;
   margin-top: 140px;
 }
 
-.boxcar-brand-section-three .content-column .inner-column .boxcar-title {
+.DriverHUB-brand-section-three .content-column .inner-column .DriverHUB-title {
   margin-bottom: 0;
 }
 
-.boxcar-brand-section-three .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-brand-section-three .content-column .inner-column .DriverHUB-title h2 {
   margin-bottom: 13px;
 }
 
-.boxcar-brand-section-three .content-column .inner-column .boxcar-title .text {
+.DriverHUB-brand-section-three .content-column .inner-column .DriverHUB-title .text {
   margin-top: 13px;
   margin-bottom: 50px;
 }
 
-.boxcar-brand-section-three
+.DriverHUB-brand-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .brand-btn {
   font-size: 15px;
   font-style: normal;
@@ -7985,10 +7986,10 @@ Section Title
   background: var(--theme-color1);
 }
 
-.boxcar-brand-section-three
+.DriverHUB-brand-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .brand-btn
   svg {
   position: relative;
@@ -7996,29 +7997,29 @@ Section Title
   margin-left: 11px;
 }
 
-.boxcar-brand-section-three .image-column .inner-column .image-box {
+.DriverHUB-brand-section-three .image-column .inner-column .image-box {
   text-align: right;
 }
 
 /*** 
 
 ====================================================================
-    boxcar-brand-section-four
+    DriverHUB-brand-section-four
 ====================================================================
 
 ***/
-.boxcar-brand-section-four {
+.DriverHUB-brand-section-four {
   position: relative;
   padding: 120px 0;
 }
 
 @media (max-width: 768px) {
-  .boxcar-brand-section-four {
+  .DriverHUB-brand-section-four {
     padding-top: 180px;
   }
 }
 
-.boxcar-brand-section-four .right-box {
+.DriverHUB-brand-section-four .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8074,12 +8075,12 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-brand-section-five {
+.DriverHUB-brand-section-five {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-brand-section-five .right-box {
+.DriverHUB-brand-section-five .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8117,28 +8118,28 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-brand-section-six {
+.DriverHUB-brand-section-six {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-brand-section-six .right-box {
+.DriverHUB-brand-section-six .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: auto;
 }
 
-.boxcar-brand-section-six .right-box::-webkit-scrollbar {
+.DriverHUB-brand-section-six .right-box::-webkit-scrollbar {
   width: 1px;
 }
 
-.boxcar-brand-section-six .right-box::-webkit-scrollbar-thumb {
+.DriverHUB-brand-section-six .right-box::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
 @media (max-width: 1400px) {
-  .boxcar-brand-section-six .right-box {
+  .DriverHUB-brand-section-six .right-box {
     margin-right: -15px;
     padding-right: 15px;
   }
@@ -8214,15 +8215,15 @@ Section Title
   padding: 120px 0 64px;
 }
 
-.why-choose-us-section .content-column .boxcar-title h2 {
+.why-choose-us-section .content-column .DriverHUB-title h2 {
   line-height: 45px;
 }
 
-.why-choose-us-section .content-column-two .boxcar-title .text {
+.why-choose-us-section .content-column-two .DriverHUB-title .text {
   margin-bottom: 56px;
 }
 
-.why-choose-us-section .content-column-two .boxcar-title .read-more {
+.why-choose-us-section .content-column-two .DriverHUB-title .read-more {
   padding: 14px 25px 12px;
   border-radius: 12px;
   border: 1px solid var(--color-secondary, var(--theme-color1));
@@ -8232,7 +8233,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.why-choose-us-section .content-column-two .boxcar-title .read-more svg {
+.why-choose-us-section .content-column-two .DriverHUB-title .read-more svg {
   position: relative;
   top: -2px;
   margin-left: 7px;
@@ -8257,7 +8258,7 @@ Section Title
   line-height: 26px;
 }
 
-.why-choose-us-section.v2 .boxcar-container {
+.why-choose-us-section.v2 .DriverHUB-container {
   max-width: 990px;
 }
 
@@ -8275,7 +8276,7 @@ Section Title
   background: var(--bg-1, #f9fbfc);
 }
 
-.why-choose-us-section-two .boxcar-container {
+.why-choose-us-section-two .DriverHUB-container {
   max-width: 1800px;
 }
 
@@ -8296,7 +8297,7 @@ Section Title
   padding: 120px 0;
 }
 
-.why-choose-us-section-three .content-column .boxcar-title h2 {
+.why-choose-us-section-three .content-column .DriverHUB-title h2 {
   line-height: 45px;
 }
 
@@ -8332,7 +8333,7 @@ Section Title
   z-index: -1;
 }
 
-.why-choose-us-section-four .content-column .boxcar-title h2 {
+.why-choose-us-section-four .content-column .DriverHUB-title h2 {
   line-height: 45px;
 }
 
@@ -8375,15 +8376,15 @@ Section Title
   background-color: var(--theme-color1);
 }
 
-.why-choose-us-section-five .content-column .boxcar-title h2 {
+.why-choose-us-section-five .content-column .DriverHUB-title h2 {
   line-height: 45px;
 }
 
-.why-choose-us-section-five .content-column-two .boxcar-title .text {
+.why-choose-us-section-five .content-column-two .DriverHUB-title .text {
   margin-bottom: 56px;
 }
 
-.why-choose-us-section-five .content-column-two .boxcar-title .read-more {
+.why-choose-us-section-five .content-column-two .DriverHUB-title .read-more {
   padding: 14px 25px 12px;
   border-radius: 12px;
   border: 1px solid var(--color-secondary, var(--theme-color1));
@@ -8393,7 +8394,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.why-choose-us-section-five .content-column-two .boxcar-title .read-more svg {
+.why-choose-us-section-five .content-column-two .DriverHUB-title .read-more svg {
   position: relative;
   top: -2px;
   margin-left: 7px;
@@ -8438,57 +8439,57 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-testimonial-section {
+.DriverHUB-testimonial-section {
   position: relative;
   padding: 120px 0;
   background: #f9fbfc;
 }
 
-.boxcar-testimonial-section .image-column .inner-column .image-box .image {
+.DriverHUB-testimonial-section .image-column .inner-column .image-box .image {
   /* Medium devices */
 }
 
 @media (max-width: 991px) {
-  .boxcar-testimonial-section .image-column .inner-column .image-box .image {
+  .DriverHUB-testimonial-section .image-column .inner-column .image-box .image {
     margin-bottom: 30px;
   }
 
-  .boxcar-testimonial-section .image-column .inner-column .image-box .image a {
+  .DriverHUB-testimonial-section .image-column .inner-column .image-box .image a {
     display: block;
   }
 }
 
-.boxcar-testimonial-section .image-column .inner-column .image-box .image img {
+.DriverHUB-testimonial-section .image-column .inner-column .image-box .image img {
   border-radius: 10px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column {
+.DriverHUB-testimonial-section .content-column .inner-column {
   margin-top: 109px;
   margin-left: 120px;
   /* Large devices */
 }
 
 @media (max-width: 1199px) {
-  .boxcar-testimonial-section .content-column .inner-column {
+  .DriverHUB-testimonial-section .content-column .inner-column {
     margin-top: 0;
     margin-left: 0;
   }
 }
 
-.boxcar-testimonial-section .content-column .inner-column .rating {
+.DriverHUB-testimonial-section .content-column .inner-column .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column .rating li {
+.DriverHUB-testimonial-section .content-column .inner-column .rating li {
   color: #e1c03f;
   font-size: 14px;
   margin-right: 9px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column .rating span {
+.DriverHUB-testimonial-section .content-column .inner-column .rating span {
   width: 37px;
   height: 26px;
   line-height: 26px;
@@ -8500,19 +8501,19 @@ Section Title
   border-radius: 50px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column .title {
+.DriverHUB-testimonial-section .content-column .inner-column .title {
   font-size: 18px;
   font-weight: 500;
   line-height: 32px;
   margin-bottom: -3px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column span {
+.DriverHUB-testimonial-section .content-column .inner-column span {
   font-size: 14px;
   line-height: 24px;
 }
 
-.boxcar-testimonial-section .content-column .inner-column .text {
+.DriverHUB-testimonial-section .content-column .inner-column .text {
   font-size: 26px;
   font-weight: 500;
   line-height: 42px;
@@ -8538,7 +8539,7 @@ Section Title
   }
 }
 
-.testimonila-section-two .content-column .inner-column .boxcar-title {
+.testimonila-section-two .content-column .inner-column .DriverHUB-title {
   margin-bottom: 43px;
 }
 
@@ -8700,36 +8701,36 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-testimonial-section-three {
+.DriverHUB-testimonial-section-three {
   position: relative;
 }
 
-.boxcar-testimonial-section-three .right-box {
+.DriverHUB-testimonial-section-three .right-box {
   background-color: var(--theme-color1);
   border-radius: 16px;
   padding: 110px 150px;
 }
 
-.boxcar-testimonial-section-three .content-column .inner-column {
+.DriverHUB-testimonial-section-three .content-column .inner-column {
   margin-top: 47px;
 }
 
-.boxcar-testimonial-section-three .content-column .inner-column .boxcar-title {
+.DriverHUB-testimonial-section-three .content-column .inner-column .DriverHUB-title {
   margin-bottom: 0px;
 }
 
-.boxcar-testimonial-section-three
+.DriverHUB-testimonial-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   h2 {
   margin-bottom: 13px;
 }
 
-.boxcar-testimonial-section-three
+.DriverHUB-testimonial-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .text {
   margin-top: 13px;
   padding-right: 130px;
@@ -8795,12 +8796,12 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-testimonial-section-four {
+.DriverHUB-testimonial-section-four {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-testimonial-section-four .boxcar-title {
+.DriverHUB-testimonial-section-four .DriverHUB-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8812,13 +8813,13 @@ Section Title
   align-items: baseline;
 }
 
-.boxcar-testimonial-section-four .right-box {
+.DriverHUB-testimonial-section-four .right-box {
   border-radius: 16px;
   background: var(--bg-1, #f9fbfc);
   padding: 120px 150px 150px;
 }
 
-.boxcar-testimonial-section-four .stories-slider .slick-prev {
+.DriverHUB-testimonial-section-four .stories-slider .slick-prev {
   left: 15px;
   top: auto;
   bottom: -50px;
@@ -8830,7 +8831,7 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-testimonial-section-four .stories-slider .slick-prev::before {
+.DriverHUB-testimonial-section-four .stories-slider .slick-prev::before {
   content: "\f105";
   color: #050b20;
   font-size: 14px;
@@ -8840,7 +8841,7 @@ Section Title
   transition: all 0.3s ease;
 }
 
-.boxcar-testimonial-section-four .stories-slider .slick-next {
+.DriverHUB-testimonial-section-four .stories-slider .slick-next {
   right: auto;
   left: 95px;
   top: auto;
@@ -8903,34 +8904,34 @@ Section Title
   font-size: 14px;
 }
 
-.boxcar-testimonial-section-four.v7 .right-box {
+.DriverHUB-testimonial-section-four.v7 .right-box {
   border-radius: 0;
   background-color: unset;
   padding: 0;
 }
 
-.boxcar-testimonial-section-four.v7 .testimonial-block-four .inner-box {
+.DriverHUB-testimonial-section-four.v7 .testimonial-block-four .inner-box {
   background: #ebf7fe;
   -webkit-box-shadow: unset;
   box-shadow: unset;
 }
 
-.boxcar-testimonial-section-four.v8 .slick-next,
-.boxcar-testimonial-section-four.v8 .slick-prev {
+.DriverHUB-testimonial-section-four.v8 .slick-next,
+.DriverHUB-testimonial-section-four.v8 .slick-prev {
   display: none !important;
 }
 
-.boxcar-testimonial-section-four.v8 .right-box {
+.DriverHUB-testimonial-section-four.v8 .right-box {
   border-radius: 0;
   background-color: var(--theme-color-dark);
   border-radius: 16px;
 }
 
-.boxcar-testimonial-section-four.v8 .testimonial-block-four {
+.DriverHUB-testimonial-section-four.v8 .testimonial-block-four {
   padding-bottom: 0;
 }
 
-.boxcar-testimonial-section-four.v8 .testimonial-block-four .inner-box {
+.DriverHUB-testimonial-section-four.v8 .testimonial-block-four .inner-box {
   background: var(--theme-color-light);
   -webkit-box-shadow: unset;
   box-shadow: unset;
@@ -8943,34 +8944,34 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section {
+.DriverHUB-pricing-section {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-pricing-section .image-column {
+.DriverHUB-pricing-section .image-column {
   margin-bottom: 20px;
 }
 
-.boxcar-pricing-section .image-column .inner-column {
+.DriverHUB-pricing-section .image-column .inner-column {
   height: 100%;
 }
 
-.boxcar-pricing-section .image-column .inner-column .image-box {
+.DriverHUB-pricing-section .image-column .inner-column .image-box {
   position: relative;
   height: 100%;
 }
 
-.boxcar-pricing-section .image-column .inner-column .image-box .image {
+.DriverHUB-pricing-section .image-column .inner-column .image-box .image {
   height: 100%;
 }
 
-.boxcar-pricing-section .image-column .inner-column .image-box .image a {
+.DriverHUB-pricing-section .image-column .inner-column .image-box .image a {
   height: 100%;
   display: block;
 }
 
-.boxcar-pricing-section .image-column .inner-column .image-box .image img {
+.DriverHUB-pricing-section .image-column .inner-column .image-box .image img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -8980,12 +8981,12 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-pricing-section .image-column .inner-column .image-box .image img {
+  .DriverHUB-pricing-section .image-column .inner-column .image-box .image img {
     border-radius: 0;
   }
 }
 
-.boxcar-pricing-section .image-column .inner-column .image-box .play-now {
+.DriverHUB-pricing-section .image-column .inner-column .image-box .play-now {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9001,7 +9002,7 @@ Section Title
   font-size: 20px;
 }
 
-.boxcar-pricing-section .content-column .inner-column {
+.DriverHUB-pricing-section .content-column .inner-column {
   background: var(--bg-2, #eef1fb);
   padding: 105px 130px 119px;
   height: 100%;
@@ -9010,41 +9011,41 @@ Section Title
 }
 
 @media (max-width: 1399px) {
-  .boxcar-pricing-section .content-column .inner-column {
+  .DriverHUB-pricing-section .content-column .inner-column {
     padding: 70px;
   }
 }
 
 @media (max-width: 767px) {
-  .boxcar-pricing-section .content-column .inner-column {
+  .DriverHUB-pricing-section .content-column .inner-column {
     padding: 40px;
   }
 }
 
-.boxcar-pricing-section .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section .content-column .inner-column .DriverHUB-title {
   margin-bottom: 43px;
 }
 
-.boxcar-pricing-section .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 4px;
 }
 
-.boxcar-pricing-section .content-column .inner-column .boxcar-title .text {
+.DriverHUB-pricing-section .content-column .inner-column .DriverHUB-title .text {
   margin-top: 1px;
 }
 
-.boxcar-pricing-section .content-column .inner-column .list-style-one {
+.DriverHUB-pricing-section .content-column .inner-column .list-style-one {
   margin-bottom: 50px;
 }
 
-.boxcar-pricing-section .content-column .inner-column .list-style-one li {
+.DriverHUB-pricing-section .content-column .inner-column .list-style-one li {
   position: relative;
   padding-left: 34px;
   margin-right: 0;
 }
 
-.boxcar-pricing-section .content-column .inner-column .list-style-one li i {
+.DriverHUB-pricing-section .content-column .inner-column .list-style-one li i {
   position: absolute;
   top: 0;
   left: 0;
@@ -9057,7 +9058,7 @@ Section Title
   font-size: 8px;
 }
 
-.boxcar-pricing-section .content-column .inner-column .read-more {
+.DriverHUB-pricing-section .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9071,7 +9072,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9087,16 +9088,16 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-two {
+.DriverHUB-pricing-section-two {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-pricing-section-two .image-column .inner-column .image-box {
+.DriverHUB-pricing-section-two .image-column .inner-column .image-box {
   position: relative;
 }
 
-.boxcar-pricing-section-two .image-column .inner-column .image-box .image img {
+.DriverHUB-pricing-section-two .image-column .inner-column .image-box .image img {
   border-radius: 10px;
   width: 100%;
   height: 633px;
@@ -9104,25 +9105,25 @@ Section Title
   object-fit: cover;
 }
 
-.boxcar-pricing-section-two .content-column .inner-column {
+.DriverHUB-pricing-section-two .content-column .inner-column {
   padding: 150px 0px 119px;
   height: 100%;
 }
 
-.boxcar-pricing-section-two .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section-two .content-column .inner-column .DriverHUB-title {
   margin-bottom: 40px;
 }
 
-.boxcar-pricing-section-two .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section-two .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 27px;
 }
 
-.boxcar-pricing-section-two .content-column .inner-column .boxcar-title .text {
+.DriverHUB-pricing-section-two .content-column .inner-column .DriverHUB-title .text {
   margin-top: 0px;
 }
 
-.boxcar-pricing-section-two .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-two .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9135,7 +9136,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section-two .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section-two .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9144,7 +9145,7 @@ Section Title
   margin-left: 10px;
 }
 
-.boxcar-pricing-section-two.v2 .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-two.v2 .content-column .inner-column .read-more {
   background-color: var(--theme-color1);
 }
 
@@ -9155,23 +9156,23 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-three {
+.DriverHUB-pricing-section-three {
   position: relative;
   padding: 120px 0;
   background: var(--bg-1, #f9fbfc);
 }
 
-.boxcar-pricing-section-three .row {
+.DriverHUB-pricing-section-three .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.boxcar-pricing-section-three .image-column .inner-column .image-box {
+.DriverHUB-pricing-section-three .image-column .inner-column .image-box {
   position: relative;
 }
 
-.boxcar-pricing-section-three
+.DriverHUB-pricing-section-three
   .image-column
   .inner-column
   .image-box
@@ -9181,7 +9182,7 @@ Section Title
   width: 100%;
 }
 
-.boxcar-pricing-section-three .image-column .inner-column .image-box .play-now {
+.DriverHUB-pricing-section-three .image-column .inner-column .image-box .play-now {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9197,29 +9198,29 @@ Section Title
   font-size: 20px;
 }
 
-.boxcar-pricing-section-three .content-column .inner-column {
+.DriverHUB-pricing-section-three .content-column .inner-column {
   padding: 0 0px 0 117px;
   height: 100%;
 }
 
-.boxcar-pricing-section-three .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section-three .content-column .inner-column .DriverHUB-title {
   margin-bottom: 25px;
 }
 
-.boxcar-pricing-section-three .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section-three .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 5px;
 }
 
-.boxcar-pricing-section-three
+.DriverHUB-pricing-section-three
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .text {
   margin-top: 1px;
 }
 
-.boxcar-pricing-section-three .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-three .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9233,7 +9234,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section-three .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section-three .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9249,12 +9250,12 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-four {
+.DriverHUB-pricing-section-four {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-pricing-section-four.style-bg::before {
+.DriverHUB-pricing-section-four.style-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -9267,26 +9268,26 @@ Section Title
 }
 
 @media (max-width: 991px) {
-  .boxcar-pricing-section-four.style-bg::before {
+  .DriverHUB-pricing-section-four.style-bg::before {
     content: none;
   }
 
-  /* .boxcar-pricing-section-four {
+  /* .DriverHUB-pricing-section-four {
     padding-top: 0px;
     padding-bottom: 0px;
   } */
 }
 
-.boxcar-pricing-section-four .image-column .inner-column .image-box {
+.DriverHUB-pricing-section-four .image-column .inner-column .image-box {
   position: relative;
 }
 
-.boxcar-pricing-section-four .image-column .inner-column .image-box .image img {
+.DriverHUB-pricing-section-four .image-column .inner-column .image-box .image img {
   border-radius: 16px;
   width: 100%;
 }
 
-.boxcar-pricing-section-four .image-column .inner-column .image-box .play-now {
+.DriverHUB-pricing-section-four .image-column .inner-column .image-box .play-now {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9302,35 +9303,35 @@ Section Title
   font-size: 20px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column {
+.DriverHUB-pricing-section-four .content-column .inner-column {
   padding: 68px 0 80px 92px;
   height: 100%;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section-four .content-column .inner-column .DriverHUB-title {
   margin-bottom: 43px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section-four .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 4px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .boxcar-title .text {
+.DriverHUB-pricing-section-four .content-column .inner-column .DriverHUB-title .text {
   margin-top: 1px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .list-style-one {
+.DriverHUB-pricing-section-four .content-column .inner-column .list-style-one {
   margin-bottom: 50px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .list-style-one li {
+.DriverHUB-pricing-section-four .content-column .inner-column .list-style-one li {
   position: relative;
   padding-left: 34px;
   margin-right: 0;
 }
 
-.boxcar-pricing-section-four
+.DriverHUB-pricing-section-four
   .content-column
   .inner-column
   .list-style-one
@@ -9348,7 +9349,7 @@ Section Title
   font-size: 8px;
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-four .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9362,7 +9363,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section-four .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section-four .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9371,12 +9372,12 @@ Section Title
   margin-left: 10px;
 }
 
-.boxcar-pricing-section-four.v7 .content-column .inner-column {
+.DriverHUB-pricing-section-four.v7 .content-column .inner-column {
   padding-left: 124px;
   padding-top: 32px;
 }
 
-.boxcar-pricing-section-four.v7 .image-column .image-box {
+.DriverHUB-pricing-section-four.v7 .image-column .image-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9385,23 +9386,23 @@ Section Title
   align-items: flex-end;
 }
 
-.boxcar-pricing-section-four.v7 .image-column .image-box .image-2 {
+.DriverHUB-pricing-section-four.v7 .image-column .image-box .image-2 {
   margin-bottom: 0;
 }
 
-.boxcar-pricing-section-four.v7 .image-column .image-box .image-2 img {
+.DriverHUB-pricing-section-four.v7 .image-column .image-box .image-2 img {
   border-radius: 16px;
 }
 
-.boxcar-pricing-section-four.v7 .image-column .image-box .image {
+.DriverHUB-pricing-section-four.v7 .image-column .image-box .image {
   margin-right: 35px;
 }
 
-.boxcar-pricing-section-four.v7 .image-column .image-box .image img {
+.DriverHUB-pricing-section-four.v7 .image-column .image-box .image img {
   border-radius: 16px;
 }
 
-.boxcar-pricing-section-four.v9 .image-column .inner-column {
+.DriverHUB-pricing-section-four.v9 .image-column .inner-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9410,7 +9411,7 @@ Section Title
   align-items: flex-end;
 }
 
-.boxcar-pricing-section-four.v9
+.DriverHUB-pricing-section-four.v9
   .image-column
   .inner-column
   .image-box
@@ -9420,7 +9421,7 @@ Section Title
   margin-bottom: 0;
 }
 
-.boxcar-pricing-section-four.v9
+.DriverHUB-pricing-section-four.v9
   .image-column
   .inner-column
   .image-box
@@ -9429,7 +9430,7 @@ Section Title
   border-radius: 16px;
 }
 
-.boxcar-pricing-section-four.v9
+.DriverHUB-pricing-section-four.v9
   .image-column
   .inner-column
   .image-box
@@ -9438,7 +9439,7 @@ Section Title
   margin-bottom: 0;
 }
 
-.boxcar-pricing-section-four.v9
+.DriverHUB-pricing-section-four.v9
   .image-column
   .inner-column
   .image-box
@@ -9447,7 +9448,7 @@ Section Title
   border-radius: 16px;
 }
 
-.boxcar-pricing-section-four.v9 .content-column .inner-column {
+.DriverHUB-pricing-section-four.v9 .content-column .inner-column {
   padding: 56px 0 94px 123px;
 }
 
@@ -9458,46 +9459,46 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-five {
+.DriverHUB-pricing-section-five {
   position: relative;
   background: var(--bg-1, #f9fbfc);
 }
 
-.boxcar-pricing-section-five .image-column .inner-column .image-box {
+.DriverHUB-pricing-section-five .image-column .inner-column .image-box {
   position: relative;
 }
 
-.boxcar-pricing-section-five .image-column .inner-column .image-box .image {
+.DriverHUB-pricing-section-five .image-column .inner-column .image-box .image {
   border-radius: 0;
 }
 
-.boxcar-pricing-section-five .image-column .inner-column .image-box .image img {
+.DriverHUB-pricing-section-five .image-column .inner-column .image-box .image img {
   width: 100%;
   height: 600px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.boxcar-pricing-section-five .content-column .inner-column {
+.DriverHUB-pricing-section-five .content-column .inner-column {
   padding: 151px 190px 0 154px;
   height: 100%;
   background-color: var(--theme-color-dark);
 }
 
-.boxcar-pricing-section-five .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section-five .content-column .inner-column .DriverHUB-title {
   margin-bottom: 25px;
 }
 
-.boxcar-pricing-section-five .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section-five .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 27px;
 }
 
-.boxcar-pricing-section-five .content-column .inner-column .boxcar-title .text {
+.DriverHUB-pricing-section-five .content-column .inner-column .DriverHUB-title .text {
   margin-bottom: 40px;
 }
 
-.boxcar-pricing-section-five .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-five .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9511,7 +9512,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section-five .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section-five .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9527,16 +9528,16 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-six {
+.DriverHUB-pricing-section-six {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-pricing-section-six .image-column .inner-column .image-box {
+.DriverHUB-pricing-section-six .image-column .inner-column .image-box {
   position: relative;
 }
 
-.boxcar-pricing-section-six .image-column .inner-column .image-box .image img {
+.DriverHUB-pricing-section-six .image-column .inner-column .image-box .image img {
   border-radius: 10px;
   width: 100%;
   -o-object-fit: cover;
@@ -9544,32 +9545,32 @@ Section Title
   height: 500px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column {
+.DriverHUB-pricing-section-six .content-column .inner-column {
   padding: 69px 0px 80px 124px;
   height: 100%;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .boxcar-title {
+.DriverHUB-pricing-section-six .content-column .inner-column .DriverHUB-title {
   margin-bottom: 20px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .boxcar-title h2 {
+.DriverHUB-pricing-section-six .content-column .inner-column .DriverHUB-title h2 {
   line-height: 55px;
   margin-bottom: 8px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .boxcar-title .text {
+.DriverHUB-pricing-section-six .content-column .inner-column .DriverHUB-title .text {
   margin-top: 0px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .btn-box {
+.DriverHUB-pricing-section-six .content-column .inner-column .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .btn-box .btn-two {
+.DriverHUB-pricing-section-six .content-column .inner-column .btn-box .btn-two {
   font-size: 15px;
   font-style: normal;
   display: inline-block;
@@ -9582,7 +9583,7 @@ Section Title
   margin-right: 20px;
 }
 
-.boxcar-pricing-section-six
+.DriverHUB-pricing-section-six
   .content-column
   .inner-column
   .btn-box
@@ -9590,7 +9591,7 @@ Section Title
   margin-right: 0;
 }
 
-.boxcar-pricing-section-six
+.DriverHUB-pricing-section-six
   .content-column
   .inner-column
   .btn-box
@@ -9602,7 +9603,7 @@ Section Title
   margin-right: 8px;
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .read-more {
+.DriverHUB-pricing-section-six .content-column .inner-column .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -9615,7 +9616,7 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-pricing-section-six .content-column .inner-column .read-more svg {
+.DriverHUB-pricing-section-six .content-column .inner-column .read-more svg {
   position: relative;
   top: -4px;
   color: var(--theme-color-light);
@@ -9631,7 +9632,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-pricing-section-seven {
+.DriverHUB-pricing-section-seven {
   position: relative;
   padding: 120px 0;
   background-color: var(--theme-color-light);
@@ -9757,7 +9758,7 @@ Section Title
   padding: 120px 0;
 }
 
-.cars-section .boxcar-title .btn-title {
+.cars-section .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -9874,7 +9875,7 @@ Section Title
   background: var(--color-primary, var(--theme-color-dark));
 }
 
-.cars-section-two .boxcar-title .btn-title {
+.cars-section-two .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -10071,11 +10072,11 @@ Section Title
   padding: 120px 0 160px;
 }
 
-.cars-section-three .boxcar-title {
+.cars-section-three .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-three .boxcar-title .btn-title {
+.cars-section-three .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -10314,35 +10315,35 @@ Section Title
   padding: 0 15px;
 }
 
-.cars-section-four .boxcar-title {
+.cars-section-four .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-four .boxcar-title .breadcrumb {
+.cars-section-four .DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.cars-section-four .boxcar-title .breadcrumb li {
+.cars-section-four .DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
 }
 
-.cars-section-four .boxcar-title .breadcrumb li:last-child {
+.cars-section-four .DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.cars-section-four .boxcar-title .breadcrumb li a {
+.cars-section-four .DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
-.cars-section-four .boxcar-title h2 {
+.cars-section-four .DriverHUB-title h2 {
   margin-bottom: 41px;
 }
 
-.cars-section-four .boxcar-title .btn-title {
+.cars-section-four .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -10626,11 +10627,11 @@ Section Title
   background-color: var(--theme-color-dark);
 }
 
-.cars-section-five .boxcar-title {
+.cars-section-five .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-five .boxcar-title .btn-title {
+.cars-section-five .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -10833,7 +10834,7 @@ Section Title
   /* overflow: unset; */
 }
 
-.cars-section-six .boxcar-title .btn-title {
+.cars-section-six .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -11153,7 +11154,7 @@ Section Title
   margin-left: 40px;
 }
 
-.cars-section-seven .boxcar-title .btn-title {
+.cars-section-seven .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -11354,7 +11355,7 @@ Section Title
   margin-left: 40px;
 }
 
-.cars-section-eight .boxcar-title .btn-title {
+.cars-section-eight .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -11413,11 +11414,11 @@ Section Title
   padding: 120px 0 160px;
 }
 
-.cars-section-nine .boxcar-title {
+.cars-section-nine .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-nine .boxcar-title .btn-title {
+.cars-section-nine .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -11623,11 +11624,11 @@ Section Title
   background: #f9fbfc;
 }
 
-.cars-section-ten .boxcar-title {
+.cars-section-ten .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-ten .boxcar-title .btn-title {
+.cars-section-ten .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -11813,11 +11814,11 @@ Section Title
   padding: 120px 0 90px;
 }
 
-.cars-section-eleven .boxcar-title {
+.cars-section-eleven .DriverHUB-title {
   margin-bottom: 32px;
 }
 
-.cars-section-eleven .boxcar-title .btn-title {
+.cars-section-eleven .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -12012,7 +12013,7 @@ Section Title
   padding: 120px 0 160px;
 }
 
-.cars-section-twelve .boxcar-title .btn-title {
+.cars-section-twelve .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -12202,45 +12203,45 @@ Section Title
   border-radius: 80px;
 }
 
-.cars-section-thirteen .boxcar-title-three {
+.cars-section-thirteen .DriverHUB-title-three {
   margin-bottom: 51px;
 }
 
-.cars-section-thirteen .boxcar-title-three .breadcrumb {
+.cars-section-thirteen .DriverHUB-title-three .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.cars-section-thirteen .boxcar-title-three .breadcrumb li {
+.cars-section-thirteen .DriverHUB-title-three .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
 }
 
-.cars-section-thirteen .boxcar-title-three .breadcrumb li:last-child {
+.cars-section-thirteen .DriverHUB-title-three .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.cars-section-thirteen .boxcar-title-three .breadcrumb li a {
+.cars-section-thirteen .DriverHUB-title-three .breadcrumb li a {
   color: var(--theme-color1);
 }
 
-.cars-section-thirteen .boxcar-title-three .service-list {
+.cars-section-thirteen .DriverHUB-title-three .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cars-section-thirteen .boxcar-title-three .service-list li {
+.cars-section-thirteen .DriverHUB-title-three .service-list li {
   margin-right: 10px;
 }
 
-.cars-section-thirteen .boxcar-title-three .service-list li:last-child {
+.cars-section-thirteen .DriverHUB-title-three .service-list li:last-child {
   margin-right: 0;
 }
 
-.cars-section-thirteen .boxcar-title-three .service-list li a {
+.cars-section-thirteen .DriverHUB-title-three .service-list li a {
   font-size: 15px;
   border: 1px solid #e1e1e1;
   border-radius: 50px;
@@ -12248,12 +12249,12 @@ Section Title
   display: inline-block;
 }
 
-.cars-section-thirteen .boxcar-title-three .service-list li a:hover {
+.cars-section-thirteen .DriverHUB-title-three .service-list li a:hover {
   background-color: #e9f2ff;
   border-color: #e9f2ff;
 }
 
-.cars-section-thirteen .boxcar-title-three h2 {
+.cars-section-thirteen .DriverHUB-title-three h2 {
   margin-bottom: 21px;
 }
 
@@ -13606,16 +13607,16 @@ Section Title
 /*** 
 
 ====================================================================
-    boxcar-customers-section
+    DriverHUB-customers-section
 ====================================================================
 
 ***/
-.boxcar-customers-section .car-slider-three {
+.DriverHUB-customers-section .car-slider-three {
   padding-bottom: 0;
 }
 
-.boxcar-customers-section .car-slider-three .slick-prev,
-.boxcar-customers-section .car-slider-three .slick-next {
+.DriverHUB-customers-section .car-slider-three .slick-prev,
+.DriverHUB-customers-section .car-slider-three .slick-next {
   bottom: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -13624,11 +13625,11 @@ Section Title
   height: 30px;
 }
 
-.boxcar-customers-section .car-slider-three .slick-prev {
+.DriverHUB-customers-section .car-slider-three .slick-prev {
   left: -50px;
 }
 
-.boxcar-customers-section .car-slider-three .slick-next {
+.DriverHUB-customers-section .car-slider-three .slick-next {
   right: -50px;
   left: auto;
 }
@@ -13642,17 +13643,17 @@ Section Title
   margin-bottom: 11px;
 }
 
-.cars-section-four.v1 .boxcar-title-three {
+.cars-section-four.v1 .DriverHUB-title-three {
   margin-bottom: 0;
   position: relative;
   z-index: 12;
 }
 
-.cars-section-four.v1 .boxcar-title-three h2 {
+.cars-section-four.v1 .DriverHUB-title-three h2 {
   margin-bottom: 21px;
 }
 
-.cars-section-four.v1.v2 .boxcar-title-three {
+.cars-section-four.v1.v2 .DriverHUB-title-three {
   margin-bottom: 51px;
 }
 
@@ -14826,7 +14827,7 @@ Section Title
   padding: 120px 0;
 }
 
-.car-galler-section .boxcar-title .btn-title {
+.car-galler-section .DriverHUB-title .btn-title {
   position: absolute;
   top: 21px;
   right: 0;
@@ -14892,17 +14893,17 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-customers-section {
+.DriverHUB-customers-section {
   position: relative;
   padding: 120px 0 100px;
   background-color: #f9fbfc;
 }
 
-.boxcar-customers-section .boxcar-title {
+.DriverHUB-customers-section .DriverHUB-title {
   margin-top: 11px;
 }
 
-.boxcar-customers-section .boxcar-title .text {
+.DriverHUB-customers-section .DriverHUB-title .text {
   font-size: 15px;
   position: absolute;
   top: -8px;
@@ -14982,16 +14983,16 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-customers-section-two {
+.DriverHUB-customers-section-two {
   position: relative;
   padding: 120px 0 50px;
 }
 
-.boxcar-customers-section-two .boxcar-title {
+.DriverHUB-customers-section-two .DriverHUB-title {
   margin-top: 11px;
 }
 
-.boxcar-customers-section-two .boxcar-title .text {
+.DriverHUB-customers-section-two .DriverHUB-title .text {
   font-size: 15px;
   position: absolute;
   top: -8px;
@@ -15069,11 +15070,11 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-fun-fact-section {
+.DriverHUB-fun-fact-section {
   position: relative;
 }
 
-.boxcar-fun-fact-section .fact-counter {
+.DriverHUB-fun-fact-section .fact-counter {
   border-bottom: 1px solid #e1e1e1;
   padding: 55px 156px 29px;
 }
@@ -15164,11 +15165,11 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-fun-fact-section-two {
+.DriverHUB-fun-fact-section-two {
   position: relative;
 }
 
-.boxcar-fun-fact-section-two .fact-counter {
+.DriverHUB-fun-fact-section-two .fact-counter {
   border-radius: 16px;
   background: #eef1fb;
   padding: 104px 158px 79px;
@@ -15237,7 +15238,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-fun-fact-section-three {
+.DriverHUB-fun-fact-section-three {
   position: relative;
   border-bottom: 1px solid #e1e1e1;
   padding: 55px 156px 29px;
@@ -15265,15 +15266,15 @@ Section Title
   padding: 81px 0 81px 255px;
 }
 
-.news-letter-section .form-column .inner-column .boxcar-title {
+.news-letter-section .form-column .inner-column .DriverHUB-title {
   margin-bottom: 31px;
 }
 
-.news-letter-section .form-column .inner-column .boxcar-title h2 {
+.news-letter-section .form-column .inner-column .DriverHUB-title h2 {
   margin-bottom: 2px;
 }
 
-.news-letter-section .form-column .inner-column .boxcar-title .text {
+.news-letter-section .form-column .inner-column .DriverHUB-title .text {
   margin-top: 9px;
 }
 
@@ -15365,31 +15366,31 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-service-section {
+.DriverHUB-service-section {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-service-section .right-box {
+.DriverHUB-service-section .right-box {
   position: relative;
   border-radius: 16px;
   background: #f5f7fe;
   padding: 98px 151px 110px;
 }
 
-.boxcar-service-section .content-column .inner-column .title {
+.DriverHUB-service-section .content-column .inner-column .title {
   font-weight: 700;
   line-height: 55px;
   text-transform: capitalize;
   margin-bottom: 27px;
 }
 
-.boxcar-service-section .content-column .inner-column .text {
+.DriverHUB-service-section .content-column .inner-column .text {
   margin-bottom: 40px;
   font-size: 15px;
 }
 
-.boxcar-service-section .content-column .inner-column .store {
+.DriverHUB-service-section .content-column .inner-column .store {
   position: relative;
   background-color: #161d30;
   display: inline-block;
@@ -15397,19 +15398,19 @@ Section Title
   border-radius: 16px;
 }
 
-.boxcar-service-section .content-column .inner-column .store img {
+.DriverHUB-service-section .content-column .inner-column .store img {
   position: absolute;
   top: 15px;
   left: 20px;
 }
 
-.boxcar-service-section .content-column .inner-column .store span {
+.DriverHUB-service-section .content-column .inner-column .store span {
   color: var(--theme-color-light);
   font-size: 13px;
   display: block;
 }
 
-.boxcar-service-section .content-column .inner-column .store .title {
+.DriverHUB-service-section .content-column .inner-column .store .title {
   position: relative;
   font-size: 15px;
   color: var(--theme-color-light);
@@ -15419,7 +15420,7 @@ Section Title
   line-height: 20px;
 }
 
-.boxcar-service-section .content-column .inner-column .store .title::before {
+.DriverHUB-service-section .content-column .inner-column .store .title::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -15429,32 +15430,32 @@ Section Title
   background-color: #505463;
 }
 
-.boxcar-service-section .content-column .inner-column .store.two {
+.DriverHUB-service-section .content-column .inner-column .store.two {
   padding-right: 60px;
   margin-left: 25px;
 }
 
-.boxcar-service-section .image-column .inner-column .image-box {
+.DriverHUB-service-section .image-column .inner-column .image-box {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.boxcar-service-section.v7 .right-box {
+.DriverHUB-service-section.v7 .right-box {
   background-color: unset;
   padding: 0;
 }
 
-.boxcar-service-section.v7 .right-box .content-column .inner-column {
+.DriverHUB-service-section.v7 .right-box .content-column .inner-column {
   margin-top: 147px;
   margin-right: 115px;
 }
 
-.boxcar-service-section.v7 .right-box .image-column .image-box {
+.DriverHUB-service-section.v7 .right-box .image-column .image-box {
   position: static;
 }
 
-.boxcar-service-section.v7 .right-box .image-column .image-box img {
+.DriverHUB-service-section.v7 .right-box .image-column .image-box img {
   border-radius: 16px;
 }
 
@@ -15465,19 +15466,19 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-service-section-two {
+.DriverHUB-service-section-two {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-service-section-two .right-box {
+.DriverHUB-service-section-two .right-box {
   position: relative;
   border-radius: 16px;
   background-color: var(--theme-color1);
   padding: 98px 151px 110px;
 }
 
-.boxcar-service-section-two .content-column .inner-column .title {
+.DriverHUB-service-section-two .content-column .inner-column .title {
   font-weight: 700;
   line-height: 55px;
   text-transform: capitalize;
@@ -15485,13 +15486,13 @@ Section Title
   color: var(--theme-color-light);
 }
 
-.boxcar-service-section-two .content-column .inner-column .text {
+.DriverHUB-service-section-two .content-column .inner-column .text {
   margin-bottom: 40px;
   font-size: 15px;
   color: var(--theme-color-light);
 }
 
-.boxcar-service-section-two .content-column .inner-column .store {
+.DriverHUB-service-section-two .content-column .inner-column .store {
   position: relative;
   background-color: var(--theme-color-light);
   display: inline-block;
@@ -15499,19 +15500,19 @@ Section Title
   border-radius: 16px;
 }
 
-.boxcar-service-section-two .content-column .inner-column .store img {
+.DriverHUB-service-section-two .content-column .inner-column .store img {
   position: absolute;
   top: 15px;
   left: 20px;
 }
 
-.boxcar-service-section-two .content-column .inner-column .store span {
+.DriverHUB-service-section-two .content-column .inner-column .store span {
   color: var(--theme-color1);
   font-size: 13px;
   display: block;
 }
 
-.boxcar-service-section-two .content-column .inner-column .store .title {
+.DriverHUB-service-section-two .content-column .inner-column .store .title {
   position: relative;
   font-size: 15px;
   color: var(--theme-color1);
@@ -15521,7 +15522,7 @@ Section Title
   line-height: 20px;
 }
 
-.boxcar-service-section-two
+.DriverHUB-service-section-two
   .content-column
   .inner-column
   .store
@@ -15535,12 +15536,12 @@ Section Title
   background-color: var(--theme-color1);
 }
 
-.boxcar-service-section-two .content-column .inner-column .store.two {
+.DriverHUB-service-section-two .content-column .inner-column .store.two {
   padding-right: 60px;
   margin-left: 25px;
 }
 
-.boxcar-service-section-two .image-column .inner-column .image-box {
+.DriverHUB-service-section-two .image-column .inner-column .image-box {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -15633,7 +15634,7 @@ Section Title
 }
 
 .services-inner-section
-  .boxcar-pricing-section-two.v2
+  .DriverHUB-pricing-section-two.v2
   .content-column
   .inner-column {
   max-width: 600px;
@@ -15663,7 +15664,7 @@ Section Title
   .calculater-sec
   .content-column
   .inner-column
-  .boxcar-title {
+  .DriverHUB-title {
   padding-left: 13px;
 }
 
@@ -15671,7 +15672,7 @@ Section Title
   .calculater-sec
   .content-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   p {
   font-size: 15px;
   max-width: 685px;
@@ -15976,7 +15977,7 @@ Section Title
   padding: 120px 0;
 }
 
-.vehicles-section-two .boxcar-title {
+.vehicles-section-two .DriverHUB-title {
   margin-bottom: 29px;
 }
 
@@ -16048,56 +16049,56 @@ Section Title
   padding: 52px 0 0;
 }
 
-.vehicles-section-three .cars-section-four.team .boxcar-title {
+.vehicles-section-three .cars-section-four.team .DriverHUB-title {
   margin-bottom: 12px;
 }
 
-.vehicles-section-three .cars-section-four.team .boxcar-title h2 {
+.vehicles-section-three .cars-section-four.team .DriverHUB-title h2 {
   margin-bottom: 23px;
 }
 
-.vehicles-section-three .boxcar-title {
+.vehicles-section-three .DriverHUB-title {
   margin-bottom: 51px;
   max-width: 445px;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb {
+.vehicles-section-three .DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb li {
+.vehicles-section-three .DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
   position: relative;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb li::before {
+.vehicles-section-three .DriverHUB-title .breadcrumb li::before {
   content: "/";
   position: absolute;
   top: 0;
   right: -14px;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb li:last-child {
+.vehicles-section-three .DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb li:last-child::before {
+.vehicles-section-three .DriverHUB-title .breadcrumb li:last-child::before {
   display: none;
 }
 
-.vehicles-section-three .boxcar-title .breadcrumb li a {
+.vehicles-section-three .DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
-.vehicles-section-three .boxcar-title h2 {
+.vehicles-section-three .DriverHUB-title h2 {
   margin-bottom: 36px;
 }
 
-.vehicles-section-three .boxcar-title .text {
+.vehicles-section-three .DriverHUB-title .text {
   font-size: 40px;
   font-weight: 700;
   line-height: 55px;
@@ -16292,30 +16293,30 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-team-section {
+.DriverHUB-team-section {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-team-section .pagination-sec {
+.DriverHUB-team-section .pagination-sec {
   text-align: center;
 }
 
-.boxcar-team-section .pagination-sec .pagination {
+.DriverHUB-team-section .pagination-sec .pagination {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.boxcar-team-section .pagination-sec .pagination li:first-child a,
-.boxcar-team-section .pagination-sec .pagination li:last-child a {
+.DriverHUB-team-section .pagination-sec .pagination li:first-child a,
+.DriverHUB-team-section .pagination-sec .pagination li:last-child a {
   border: 1px solid #e1e1e1;
   width: 60px;
   font-size: 30px;
   line-height: 35px;
 }
 
-.boxcar-team-section .pagination-sec .pagination li a {
+.DriverHUB-team-section .pagination-sec .pagination li a {
   font-size: 15px;
   margin: 0 5px;
   width: 40px;
@@ -16329,66 +16330,66 @@ Section Title
   color: var(--theme-color-dark);
 }
 
-.boxcar-team-section .pagination-sec .pagination li a:hover {
+.DriverHUB-team-section .pagination-sec .pagination li a:hover {
   background-color: #f9fbfc;
 }
 
-.boxcar-team-section .pagination-sec .text {
+.DriverHUB-team-section .pagination-sec .text {
   font-size: 14px;
   margin-top: 19px;
 }
 
-.boxcar-team-section .boxcar-title {
+.DriverHUB-team-section .DriverHUB-title {
   margin-bottom: 51px;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb li {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
   position: relative;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb li::before {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb li::before {
   content: "/";
   position: absolute;
   top: 0;
   right: -14px;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb li:last-child {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb li:last-child::before {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb li:last-child::before {
   display: none;
 }
 
-.boxcar-team-section .boxcar-title .breadcrumb li a {
+.DriverHUB-team-section .DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
-.boxcar-team-section .boxcar-title .service-list {
+.DriverHUB-team-section .DriverHUB-title .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.boxcar-team-section .boxcar-title .service-list li {
+.DriverHUB-team-section .DriverHUB-title .service-list li {
   margin-right: 10px;
 }
 
-.boxcar-team-section .boxcar-title .service-list li:last-child {
+.DriverHUB-team-section .DriverHUB-title .service-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-team-section .boxcar-title .service-list li a {
+.DriverHUB-team-section .DriverHUB-title .service-list li a {
   font-size: 15px;
   border: 1px solid #e1e1e1;
   border-radius: 50px;
@@ -16396,16 +16397,16 @@ Section Title
   display: inline-block;
 }
 
-.boxcar-team-section .boxcar-title .service-list li a:hover {
+.DriverHUB-team-section .DriverHUB-title .service-list li a:hover {
   background-color: #e9f2ff;
   border-color: #e9f2ff;
 }
 
-.boxcar-team-section .boxcar-title h2 {
+.DriverHUB-team-section .DriverHUB-title h2 {
   margin-bottom: 21px;
 }
 
-.boxcar-team-section.v1 {
+.DriverHUB-team-section.v1 {
   position: relative;
   background-color: var(--theme-color-light);
   padding: 52px 0 120px;
@@ -16493,7 +16494,7 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-team-section-two {
+.DriverHUB-team-section-two {
   position: relative;
   padding: 120px 0;
 }
@@ -16584,11 +16585,11 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-team-section-three {
+.DriverHUB-team-section-three {
   padding: 120px 0 90px;
 }
 
-.boxcar-team-section-three .right-box {
+.DriverHUB-team-section-three .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16634,12 +16635,12 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-team-section-four {
+.DriverHUB-team-section-four {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-team-section-four .right-box {
+.DriverHUB-team-section-four .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16723,12 +16724,12 @@ Section Title
   font-size: 14px;
 }
 
-.boxcar-title .btn-title {
+.DriverHUB-title .btn-title {
   /* Small devices */
 }
 
 @media (max-width: 767px) {
-  .boxcar-title .btn-title {
+  .DriverHUB-title .btn-title {
     display: none;
   }
 }
@@ -17073,27 +17074,27 @@ Section Title
 ====================================================================
 
 ***/
-.boxcar-title {
+.DriverHUB-title {
   margin-bottom: 50px;
 }
 
-.boxcar-title .breadcrumb {
+.DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.boxcar-title .breadcrumb li {
+.DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
 }
 
-.boxcar-title .breadcrumb li:last-child {
+.DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.boxcar-title .breadcrumb li a {
+.DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
@@ -17102,27 +17103,27 @@ Section Title
   padding: 120px 0 90px;
 }
 
-.blog-section .boxcar-title {
+.blog-section .DriverHUB-title {
   margin-bottom: 50px;
 }
 
-.blog-section .boxcar-title .breadcrumb {
+.blog-section .DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.blog-section .boxcar-title .breadcrumb li {
+.blog-section .DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
 }
 
-.blog-section .boxcar-title .breadcrumb li:last-child {
+.blog-section .DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.blog-section .boxcar-title .breadcrumb li a {
+.blog-section .DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
@@ -17429,27 +17430,27 @@ Section Title
   background-color: var(--theme-color-light);
 }
 
-.blog-section-four .boxcar-title {
+.blog-section-four .DriverHUB-title {
   margin-bottom: 50px;
 }
 
-.blog-section-four .boxcar-title .breadcrumb {
+.blog-section-four .DriverHUB-title .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
-.blog-section-four .boxcar-title .breadcrumb li {
+.blog-section-four .DriverHUB-title .breadcrumb li {
   font-size: 15px;
   margin-right: 21px;
 }
 
-.blog-section-four .boxcar-title .breadcrumb li:last-child {
+.blog-section-four .DriverHUB-title .breadcrumb li:last-child {
   margin-right: 0;
 }
 
-.blog-section-four .boxcar-title .breadcrumb li a {
+.blog-section-four .DriverHUB-title .breadcrumb li a {
   color: var(--theme-color1);
 }
 
@@ -17773,11 +17774,11 @@ Section Title
   background-color: var(--theme-color-light);
 }
 
-.blog-section-five .boxcar-title {
+.blog-section-five .DriverHUB-title {
   margin-bottom: 30px;
 }
 
-.blog-section-five .boxcar-title h2 {
+.blog-section-five .DriverHUB-title h2 {
   margin-bottom: 52px;
 }
 
@@ -18712,16 +18713,16 @@ Section Title
   margin-bottom: 110px;
 }
 
-.about-inner-one .upper-box .boxcar-title {
+.about-inner-one .upper-box .DriverHUB-title {
   margin-bottom: 51px;
   max-width: 445px;
 }
 
-.about-inner-one .upper-box .boxcar-title h2 {
+.about-inner-one .upper-box .DriverHUB-title h2 {
   margin-bottom: 36px;
 }
 
-.about-inner-one .upper-box .boxcar-title .text {
+.about-inner-one .upper-box .DriverHUB-title .text {
   font-size: 40px;
   font-weight: 700;
   line-height: 55px;
@@ -22469,7 +22470,7 @@ Chat Widget
   padding-top: 60px;
 }
 
-.contact-us-section .calculater-sec .boxcar-container {
+.contact-us-section .calculater-sec .DriverHUB-container {
   max-width: 100%;
 }
 
@@ -22489,7 +22490,7 @@ Chat Widget
   .calculater-sec
   .content-column
   .inner-column
-  .boxcar-title {
+  .DriverHUB-title {
   margin-bottom: 21px;
   padding-left: 13px;
 }
@@ -22591,7 +22592,7 @@ Chat Widget
   .calculater-sec
   .contact-column
   .inner-column
-  .boxcar-title {
+  .DriverHUB-title {
   margin-bottom: 38px;
 }
 
@@ -22599,7 +22600,7 @@ Chat Widget
   .calculater-sec
   .contact-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .title {
   font-weight: 500;
 }
@@ -22608,7 +22609,7 @@ Chat Widget
   .calculater-sec
   .contact-column
   .inner-column
-  .boxcar-title
+  .DriverHUB-title
   .text {
   line-height: 26px;
   margin-top: 0;
@@ -22828,16 +22829,16 @@ Chat Widget
   margin-top: 42px;
 }
 
-.inventory-section .boxcar-title-three {
+.inventory-section .DriverHUB-title-three {
   position: relative;
   margin-bottom: 30px;
 }
 
-.inventory-section .boxcar-title-three h2 {
+.inventory-section .DriverHUB-title-three h2 {
   margin-bottom: 0;
 }
 
-.inventory-section .boxcar-title-three .text {
+.inventory-section .DriverHUB-title-three .text {
   font-size: 15px;
   color: var(--theme-color-dark);
   line-height: 27px;
@@ -22845,7 +22846,7 @@ Chat Widget
   font-weight: 400;
 }
 
-.inventory-section .boxcar-title-three .spectes-list {
+.inventory-section .DriverHUB-title-three .spectes-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22856,15 +22857,15 @@ Chat Widget
   gap: 10px;
 }
 
-/* .inventory-section .boxcar-title-three .spectes-list li {
+/* .inventory-section .DriverHUB-title-three .spectes-list li {
   margin-right: 10px;
 } */
 
-.inventory-section .boxcar-title-three .spectes-list li:last-child {
+.inventory-section .DriverHUB-title-three .spectes-list li:last-child {
   margin-right: 0;
 }
 
-.inventory-section .boxcar-title-three .spectes-list li span {
+.inventory-section .DriverHUB-title-three .spectes-list li span {
   font-size: 15px;
   color: var(--theme-color1);
   display: inline-block;
@@ -22873,26 +22874,26 @@ Chat Widget
   padding: 7px 20px 5px;
 }
 
-.inventory-section .boxcar-title-three .spectes-list li span img {
+.inventory-section .DriverHUB-title-three .spectes-list li span img {
   margin-right: 10px;
   position: relative;
   top: -2px;
 }
 
-.inventory-section .boxcar-title-three .spectes-list.v2 li span {
+.inventory-section .DriverHUB-title-three .spectes-list.v2 li span {
   background-color: unset;
   color: var(--theme-color-dark);
   border: 1px solid var(--Border, #e1e1e1);
 }
 
-.inventory-section .boxcar-title-three .content-box {
+.inventory-section .DriverHUB-title-three .content-box {
   position: absolute;
   bottom: 0;
   right: 0;
   text-align: right;
 }
 
-.inventory-section .boxcar-title-three .content-box .btn-box {
+.inventory-section .DriverHUB-title-three .content-box .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22902,7 +22903,7 @@ Chat Widget
   margin-bottom: 12px;
 }
 
-.inventory-section .boxcar-title-three .content-box .btn-box .share-btn {
+.inventory-section .DriverHUB-title-three .content-box .btn-box .share-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22913,21 +22914,21 @@ Chat Widget
 }
 
 .inventory-section
-  .boxcar-title-three
+  .DriverHUB-title-three
   .content-box
   .btn-box
   .share-btn:last-child {
   margin-right: 0;
 }
 
-.inventory-section .boxcar-title-three .content-box .btn-box .share-btn span {
+.inventory-section .DriverHUB-title-three .content-box .btn-box .share-btn span {
   font-size: 15px;
   color: var(--theme-color-dark);
   display: inline-block;
   margin-right: 10px;
 }
 
-.inventory-section .boxcar-title-three .content-box .btn-box .share-btn .share {
+.inventory-section .DriverHUB-title-three .content-box .btn-box .share-btn .share {
   fill: var(--White, #fff);
   border: 1px solid #e1e1e1;
   border-radius: 50%;
@@ -22939,22 +22940,22 @@ Chat Widget
   filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.05));
 }
 
-.inventory-section .boxcar-title-three .content-box .btn-box.v2 {
+.inventory-section .DriverHUB-title-three .content-box .btn-box.v2 {
   margin-bottom: 0;
 }
 
-.inventory-section .boxcar-title-three .content-box .title {
+.inventory-section .DriverHUB-title-three .content-box .title {
   font-weight: 700;
   margin-bottom: 4px;
 }
 
-.inventory-section .boxcar-title-three .content-box span {
+.inventory-section .DriverHUB-title-three .content-box span {
   font-size: 15px;
   font-weight: 500;
   color: var(--theme-color-dark);
 }
 
-.inventory-section .boxcar-title-three .content-box span i {
+.inventory-section .DriverHUB-title-three .content-box span i {
   margin-right: 10px;
 }
 
@@ -23448,17 +23449,17 @@ Chat Widget
   /* margin-right: 30px; */
 }
 
-.boxcar-testimonial-section.home1 .boxcar-title {
+.DriverHUB-testimonial-section.home1 .DriverHUB-title {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.boxcar-testimonial-section.home1 .boxcar-title h2 {
+.DriverHUB-testimonial-section.home1 .DriverHUB-title h2 {
   margin-bottom: 0;
 }
 
-.boxcar-testimonial-section.home1 .boxcar-title .text {
+.DriverHUB-testimonial-section.home1 .DriverHUB-title .text {
   margin-top: 0;
 }
 
@@ -25839,11 +25840,11 @@ Chat Widget
   border-radius: 80px;
 }
 
-.dealer-ship-section .boxcar-title h2 {
+.dealer-ship-section .DriverHUB-title h2 {
   margin-bottom: 48px;
 }
 
-.dealer-ship-section .boxcar-title .text {
+.dealer-ship-section .DriverHUB-title .text {
   font-size: 15px;
   color: var(--theme-color-dark);
 }
@@ -26850,26 +26851,26 @@ Chat Widget
 ====================================================================
 
 ***/
-.boxcar-inspiration-section {
+.DriverHUB-inspiration-section {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-inspiration-section .right-box .service-list {
+.DriverHUB-inspiration-section .right-box .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.boxcar-inspiration-section .right-box .service-list li {
+.DriverHUB-inspiration-section .right-box .service-list li {
   margin-right: 28px;
 }
 
-.boxcar-inspiration-section .right-box .service-list li:last-child {
+.DriverHUB-inspiration-section .right-box .service-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-inspiration-section .right-box .service-list li a {
+.DriverHUB-inspiration-section .right-box .service-list li a {
   font-weight: 500;
   color: var(--theme-color-dark);
   padding: 16px 25px 15px;
@@ -26879,7 +26880,7 @@ Chat Widget
   color: #050b20;
 }
 
-.boxcar-inspiration-section .right-box .service-list li a:hover {
+.DriverHUB-inspiration-section .right-box .service-list li a:hover {
   background: #050b20;
   color: #fff;
   border-color: transparent;
@@ -26892,18 +26893,18 @@ Chat Widget
 ====================================================================
 
 ***/
-.boxcar-inspiration-section-two {
+.DriverHUB-inspiration-section-two {
   position: relative;
   padding: 120px 0;
 }
 
-.boxcar-inspiration-section-two .right-box-two {
+.DriverHUB-inspiration-section-two .right-box-two {
   border-radius: 16px;
   background-color: var(--theme-color-dark);
   padding: 120px 150px;
 }
 
-.boxcar-inspiration-section-two .right-box-two .uper-box {
+.DriverHUB-inspiration-section-two .right-box-two .uper-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26916,39 +26917,39 @@ Chat Widget
   margin-bottom: 105px;
 }
 
-.boxcar-inspiration-section-two .right-box-two .uper-box .content-box {
+.DriverHUB-inspiration-section-two .right-box-two .uper-box .content-box {
   position: relative;
   padding-left: 122px;
 }
 
-.boxcar-inspiration-section-two .right-box-two .uper-box .content-box .icon {
+.DriverHUB-inspiration-section-two .right-box-two .uper-box .content-box .icon {
   position: absolute;
   top: 7px;
   left: 0;
 }
 
-.boxcar-inspiration-section-two
+.DriverHUB-inspiration-section-two
   .right-box-two
   .uper-box
   .content-box
-  .boxcar-title {
+  .DriverHUB-title {
   margin-bottom: 0;
 }
 
-.boxcar-inspiration-section-two
+.DriverHUB-inspiration-section-two
   .right-box-two
   .uper-box
   .content-box
-  .boxcar-title
+  .DriverHUB-title
   .text {
   margin-top: 14px;
 }
 
-.boxcar-inspiration-section-two .right-box-two .uper-box .btn-box {
+.DriverHUB-inspiration-section-two .right-box-two .uper-box .btn-box {
   margin-bottom: 10px;
 }
 
-.boxcar-inspiration-section-two .right-box-two .uper-box .btn-box .read-more {
+.DriverHUB-inspiration-section-two .right-box-two .uper-box .btn-box .read-more {
   font-weight: 500;
   font-size: 15px;
   font-family: var(--title-font);
@@ -26962,7 +26963,7 @@ Chat Widget
   margin-right: 26px;
 }
 
-.boxcar-inspiration-section-two
+.DriverHUB-inspiration-section-two
   .right-box-two
   .uper-box
   .btn-box
@@ -26970,7 +26971,7 @@ Chat Widget
   margin-right: 0;
 }
 
-.boxcar-inspiration-section-two
+.DriverHUB-inspiration-section-two
   .right-box-two
   .uper-box
   .btn-box
@@ -26984,30 +26985,30 @@ Chat Widget
   margin-left: 10px;
 }
 
-.boxcar-inspiration-section-two .right-box .boxcar-title {
+.DriverHUB-inspiration-section-two .right-box .DriverHUB-title {
   margin-bottom: 24px;
 }
 
-.boxcar-inspiration-section-two .right-box .boxcar-title h6 {
+.DriverHUB-inspiration-section-two .right-box .DriverHUB-title h6 {
   font-size: 16px;
   color: var(--theme-color-light);
 }
 
-.boxcar-inspiration-section-two .right-box .service-list {
+.DriverHUB-inspiration-section-two .right-box .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.boxcar-inspiration-section-two .right-box .service-list li {
+.DriverHUB-inspiration-section-two .right-box .service-list li {
   margin-right: 28px;
 }
 
-.boxcar-inspiration-section-two .right-box .service-list li:last-child {
+.DriverHUB-inspiration-section-two .right-box .service-list li:last-child {
   margin-right: 0;
 }
 
-.boxcar-inspiration-section-two .right-box .service-list li a {
+.DriverHUB-inspiration-section-two .right-box .service-list li a {
   font-weight: 500;
   color: var(--theme-color-light);
   padding: 16px 25px 15px;
@@ -27016,7 +27017,7 @@ Chat Widget
   display: inline-block;
 }
 
-.boxcar-inspiration-section-two .right-box .service-list li a:hover {
+.DriverHUB-inspiration-section-two .right-box .service-list li a:hover {
   background: var(--theme-color1);
   color: #fff;
   border-color: transparent;
@@ -27029,85 +27030,85 @@ Chat Widget
 ==================================================================
 
 ***/
-.boxcar-footer {
+.DriverHUB-footer {
   position: relative;
   background-color: var(--bg-theme-color2);
   /* Widget Section */
 }
 
-.boxcar-footer .bg {
+.DriverHUB-footer .bg {
   background-size: auto;
 }
 
-.boxcar-footer .footer-bg-1 {
+.DriverHUB-footer .footer-bg-1 {
   /* background-image: url(../images/icons/footer-bg-1.png); */
   background-color: #101a29;
   background-position: left bottom;
 }
 
-.boxcar-footer .footer-bg-2 {
+.DriverHUB-footer .footer-bg-2 {
   /* background-image: url(../images/icons/footer-bg-2.png); */
   background-position: right top;
 }
 
-.boxcar-footer .footer-bg-3 {
+.DriverHUB-footer .footer-bg-3 {
   /* background-image: url(../images/icons/footer-bg-3.png); */
   background-position: right bottom;
 }
 
-.boxcar-footer .footer-bg-4 {
+.DriverHUB-footer .footer-bg-4 {
   /* background-image: url(../images/icons/footer-bg-4.png); */
   background-position: right bottom;
 }
 
-.boxcar-footer .footer-bg-5 {
+.DriverHUB-footer .footer-bg-5 {
   /* background-image: url(../images/icons/footer-bg-5.png); */
   background-position: center;
   background-size: cover;
 }
 
-.boxcar-footer .footer-bg-6 {
+.DriverHUB-footer .footer-bg-6 {
   /* background-image: url(../images/icons/footer-bg-6.png); */
   background-position: right top;
 }
 
-.boxcar-footer .footer-bg-7 {
+.DriverHUB-footer .footer-bg-7 {
   /* background-image: url(../images/icons/footer-bg-7.png); */
 }
 
-.boxcar-footer .footer-bg-8 {
+.DriverHUB-footer .footer-bg-8 {
   /* background-image: url(../images/icons/footer-bg-8.png); */
 }
 
-.boxcar-footer .footer-bg-9 {
+.DriverHUB-footer .footer-bg-9 {
   /* background-image: url(../images/icons/footer-bg-9.png); */
   background-position: right bottom;
 }
 
-.boxcar-footer .footer-bg-10 {
+.DriverHUB-footer .footer-bg-10 {
   /* background-image: url(../images/icons/footer-bg-10.png); */
   background-position: right bottom;
 }
 
-.boxcar-footer .footer-bg-11 {
+.DriverHUB-footer .footer-bg-11 {
   /* background-image: url(../images/icons/footer-bg-11.png); */
 }
 
-.boxcar-footer .widgets-section {
+.DriverHUB-footer .widgets-section {
   position: relative;
   z-index: 999;
 }
 
-.boxcar-footer .footer-column {
+.DriverHUB-footer .footer-column {
   position: relative;
   margin-bottom: 30px;
 }
 
-.boxcar-footer .footer-widget {
+.DriverHUB-footer .footer-widget {
   position: relative;
 }
 
-.boxcar-footer .widget-title {
+.DriverHUB-footer .widget-title {
   position: relative;
   color: var(--theme-color-light);
   margin-bottom: 15px;
@@ -27115,11 +27116,11 @@ Chat Widget
   font-size: 20px;
 }
 
-.boxcar-footer .widget-content {
+.DriverHUB-footer .widget-content {
   position: relative;
 }
 
-.boxcar-footer .widget-content .text {
+.DriverHUB-footer .widget-content .text {
   color: var(--theme-color-light);
 }
 
@@ -28650,7 +28651,7 @@ Chat Widget
   background: #050b20;
 }
 
-.calculater-section .boxcar-container {
+.calculater-section .DriverHUB-container {
   max-width: 100%;
   padding: 0 50px;
 }
@@ -29133,7 +29134,7 @@ Chat Widget
   margin-left: 10px;
 }
 
-.boxcar-team-section .team-block {
+.DriverHUB-team-section .team-block {
   margin-bottom: 0;
 }
 
@@ -29151,7 +29152,7 @@ Chat Widget
   height: 100%;
 }
 
-.boxcar-pricing-section .image-column {
+.DriverHUB-pricing-section .image-column {
   margin-bottom: 0;
 }
 
@@ -29180,7 +29181,7 @@ Chat Widget
   text-align: right;
 }
 
-.boxcar-team-section.v1 .team-block {
+.DriverHUB-team-section.v1 .team-block {
   margin-bottom: 50px;
 }
 
@@ -29263,7 +29264,7 @@ Chat Widget
 }
 
 @media (max-width: 1550px) {
-  .boxcar-banner-section-four
+  .DriverHUB-banner-section-four
     .banner-slider-v4
     .banner-slide
     .right-box
@@ -29274,27 +29275,27 @@ Chat Widget
 }
 /* Medium Large devices */
 @media (max-width: 1399px) {
-  .boxcar-banner-section-two {
+  .DriverHUB-banner-section-two {
     height: 100vh;
   }
 
-  .boxcar-banner-section-two .banner-slider {
+  .DriverHUB-banner-section-two .banner-slider {
     height: 100%;
   }
 
-  .boxcar-banner-section-two .banner-slider .slick-list,
-  .boxcar-banner-section-two .banner-slider .slick-track,
-  .boxcar-banner-section-two .banner-slider .banner-slide {
+  .DriverHUB-banner-section-two .banner-slider .slick-list,
+  .DriverHUB-banner-section-two .banner-slider .slick-track,
+  .DriverHUB-banner-section-two .banner-slider .banner-slide {
     height: 100%;
   }
 
-  .boxcar-banner-section-two .banner-slider .banner-slide > img {
+  .DriverHUB-banner-section-two .banner-slider .banner-slide > img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
   }
 
-  .boxcar-service-section .right-box {
+  .DriverHUB-service-section .right-box {
     padding: 70px;
   }
 
@@ -29320,11 +29321,11 @@ Chat Widget
     object-fit: cover;
   }
 
-  .boxcar-service-section-two .right-box {
+  .DriverHUB-service-section-two .right-box {
     padding: 70px;
   }
 
-  .boxcar-banner-section-four
+  .DriverHUB-banner-section-four
     .banner-slider-v4
     .banner-slide
     .right-box
@@ -29342,35 +29343,35 @@ Chat Widget
     padding: 100px 50px 70px;
   }
 
-  .boxcar-testimonial-section-three .right-box {
+  .DriverHUB-testimonial-section-three .right-box {
     padding: 100px 30px;
   }
 
-  .boxcar-brand-section-three .right-box {
+  .DriverHUB-brand-section-three .right-box {
     padding: 70px;
   }
 
-  .boxcar-testimonial-section-three
+  .DriverHUB-testimonial-section-three
     .content-column
     .inner-column
-    .boxcar-title
+    .DriverHUB-title
     .text {
     padding-right: 50px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two {
+  .DriverHUB-inspiration-section-two .right-box-two {
     padding: 120px 50px;
   }
 
-  .why-choose-us-section.v2 .boxcar-container {
+  .why-choose-us-section.v2 .DriverHUB-container {
     max-width: 100%;
   }
 
-  .boxcar-testimonial-section-four .right-box {
+  .DriverHUB-testimonial-section-four .right-box {
     padding: 120px 15px 150px;
   }
 
-  .boxcar-pricing-section-four.v7 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v7 .content-column .inner-column {
     padding-left: 50px;
     padding-bottom: 50px;
   }
@@ -29379,16 +29380,16 @@ Chat Widget
     padding-top: 50px;
   }
 
-  .calculater-section .boxcar-container {
+  .calculater-section .DriverHUB-container {
     padding: 0 15px;
   }
 
-  .boxcar-service-section.v7 .right-box .content-column .inner-column {
+  .DriverHUB-service-section.v7 .right-box .content-column .inner-column {
     margin-right: 0;
     margin-top: 0;
   }
 
-  .boxcar-brand-section.v7::before {
+  .DriverHUB-brand-section.v7::before {
     width: 100%;
   }
 
@@ -29400,11 +29401,11 @@ Chat Widget
     padding-left: 100px;
   }
 
-  .boxcar-brand-section-six .cars-block-six {
+  .DriverHUB-brand-section-six .cars-block-six {
     margin-bottom: 20px;
   }
 
-  .boxcar-brand-section-five .right-box {
+  .DriverHUB-brand-section-five .right-box {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -29416,7 +29417,7 @@ Chat Widget
     margin-right: 0;
   }
 
-  .boxcar-fun-fact-section-two .fact-counter {
+  .DriverHUB-fun-fact-section-two .fact-counter {
     padding: 104px 70px 79px;
   }
 
@@ -29436,27 +29437,27 @@ Chat Widget
     width: auto;
   }
 
-  .boxcar-banner-section-nine .banner-content .content-box {
+  .DriverHUB-banner-section-nine .banner-content .content-box {
     margin-top: 100px;
   }
 
-  .boxcar-pricing-section-five .content-column .inner-column {
+  .DriverHUB-pricing-section-five .content-column .inner-column {
     padding: 0 50px;
     background: transparent;
   }
 
-  .boxcar-pricing-section-five .row {
+  .DriverHUB-pricing-section-five .row {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     background: var(--theme-color-dark);
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column {
+  .DriverHUB-pricing-section-six .content-column .inner-column {
     padding: 0 50px;
   }
 
-  .boxcar-pricing-section-six .row {
+  .DriverHUB-pricing-section-six .row {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -29520,12 +29521,12 @@ Chat Widget
     margin-bottom: 20px;
   }
 
-  .cars-section-thirteen .boxcar-title-three .service-list {
+  .cars-section-thirteen .DriverHUB-title-three .service-list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .cars-section-thirteen .boxcar-title-three .service-list li {
+  .cars-section-thirteen .DriverHUB-title-three .service-list li {
     margin-bottom: 15px;
   }
 
@@ -29587,15 +29588,15 @@ Chat Widget
 
 /* Large devices */
 @media (max-width: 1199px) {
-  .boxcar-service-section .right-box .image-column {
+  .DriverHUB-service-section .right-box .image-column {
     display: none;
   }
 
-  .brand-boxcar-banner-section {
+  .brand-DriverHUB-banner-section {
     padding: 100px 0;
   }
 
-  .brand-boxcar-banner-section .content-column .inner-column .title {
+  .brand-DriverHUB-banner-section .content-column .inner-column .title {
     font-size: 50px;
     line-height: 60px;
     max-width: 500px;
@@ -29621,11 +29622,11 @@ Chat Widget
     margin: 0 -15px;
   }
 
-  .boxcar-service-section-two .image-column .inner-column .image-box {
+  .DriverHUB-service-section-two .image-column .inner-column .image-box {
     display: none;
   }
 
-  .boxcar-service-section-two .col-lg-6 {
+  .DriverHUB-service-section-two .col-lg-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -29640,23 +29641,23 @@ Chat Widget
     padding-right: 0;
   }
 
-  .boxcar-testimonial-section-three
+  .DriverHUB-testimonial-section-three
     .content-column
     .inner-column
-    .boxcar-title
+    .DriverHUB-title
     .text {
     padding-right: 0;
   }
 
-  .boxcar-brand-section-three .image-column {
+  .DriverHUB-brand-section-three .image-column {
     display: none;
   }
 
-  .boxcar-brand-section-three .content-column .inner-column {
+  .DriverHUB-brand-section-three .content-column .inner-column {
     margin-top: 0;
   }
 
-  .boxcar-banner-section-six::before {
+  .DriverHUB-banner-section-six::before {
     display: none;
   }
 
@@ -29672,23 +29673,23 @@ Chat Widget
     display: none;
   }
 
-  .boxcar-banner-section-six .content-column .inner-column {
+  .DriverHUB-banner-section-six .content-column .inner-column {
     padding: 100px 0 100px;
   }
 
-  .boxcar-pricing-section-four .content-column .inner-column {
+  .DriverHUB-pricing-section-four .content-column .inner-column {
     padding: 0 0 0 30px;
   }
 
-  .boxcar-fun-fact-section .fact-counter {
+  .DriverHUB-fun-fact-section .fact-counter {
     padding: 55px 15px 29px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two {
+  .DriverHUB-inspiration-section-two .right-box-two {
     padding: 80px 15px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box .btn-box .read-more {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box .btn-box .read-more {
     margin: 10px 0;
   }
 
@@ -29709,11 +29710,11 @@ Chat Widget
     padding-top: 50px;
   }
 
-  .boxcar-pricing-section-four.v7 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v7 .content-column .inner-column {
     padding-top: 0;
   }
 
-  .boxcar-banner-section-v8 .banner-content-v8 {
+  .DriverHUB-banner-section-v8 .banner-content-v8 {
     padding-top: 70px;
   }
 
@@ -29721,7 +29722,7 @@ Chat Widget
     padding-left: 30px;
   }
 
-  .boxcar-pricing-section-four.v9 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v9 .content-column .inner-column {
     padding: 0 0 0 30px;
   }
 
@@ -29729,26 +29730,26 @@ Chat Widget
     color: #000;
   }
 
-  .boxcar-banner-section-seven .banner-slider-v7 .banner-slide {
+  .DriverHUB-banner-section-seven .banner-slider-v7 .banner-slide {
     height: 650px;
   }
 
-  .boxcar-banner-section-seven .banner-slider-v7 .banner-slide img {
+  .DriverHUB-banner-section-seven .banner-slider-v7 .banner-slide img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
   }
 
-  .boxcar-banner-section-seven.v10 form .form_boxes {
+  .DriverHUB-banner-section-seven.v10 form .form_boxes {
     width: 19%;
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section-six .content-column .inner-column .DriverHUB-title h2 {
     font-size: 36px;
     line-height: 48px;
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column {
+  .DriverHUB-pricing-section-six .content-column .inner-column {
     padding: 0;
   }
 
@@ -29976,24 +29977,24 @@ Chat Widget
     margin-bottom: 25px;
   }
 
-  .boxcar-customers-section .boxcar-title .text {
+  .DriverHUB-customers-section .DriverHUB-title .text {
     display: none;
   }
 
-  .boxcar-team-section .team-block {
+  .DriverHUB-team-section .team-block {
     margin-bottom: 30px;
   }
 
-  .boxcar-team-section {
+  .DriverHUB-team-section {
     padding-bottom: 90px;
   }
 
-  .boxcar-inspiration-section .right-box .service-list {
+  .DriverHUB-inspiration-section .right-box .service-list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .boxcar-inspiration-section .right-box .service-list li {
+  .DriverHUB-inspiration-section .right-box .service-list li {
     margin-bottom: 20px;
     margin-right: 20px;
   }
@@ -30022,15 +30023,15 @@ Chat Widget
     display: none;
   }
 
-  .boxcar-pricing-section-three .content-column .inner-column {
+  .DriverHUB-pricing-section-three .content-column .inner-column {
     padding: 0 0 0 50px;
   }
 
-  .boxcar-pricing-section-three {
+  .DriverHUB-pricing-section-three {
     padding: 90px 0;
   }
 
-  .boxcar-banner-section-four
+  .DriverHUB-banner-section-four
     .banner-slider-v4
     .banner-slide
     .right-box
@@ -30046,12 +30047,12 @@ Chat Widget
     display: none;
   }
 
-  .boxcar-banner-section-four .banner-slider-v4 .slick-prev,
-  .boxcar-banner-section-four .banner-slider-v4 .slick-next {
+  .DriverHUB-banner-section-four .banner-slider-v4 .slick-prev,
+  .DriverHUB-banner-section-four .banner-slider-v4 .slick-next {
     display: none !important;
   }
 
-  .boxcar-banner-section-four .banner-slider-v4 .slick-dots {
+  .DriverHUB-banner-section-four .banner-slider-v4 .slick-dots {
     margin-left: 0;
     left: 15px;
   }
@@ -30060,21 +30061,21 @@ Chat Widget
     padding-bottom: 90px;
   }
 
-  .boxcar-customers-section-two .boxcar-title .text {
+  .DriverHUB-customers-section-two .DriverHUB-title .text {
     display: none;
   }
 
-  .boxcar-banner-section-five .banner-content {
+  .DriverHUB-banner-section-five .banner-content {
     width: 100%;
   }
 
-  .boxcar-brand-section-four .right-box {
+  .DriverHUB-brand-section-four .right-box {
     /* -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; */
   }
 
-  .boxcar-testimonial-section-three .content-column .inner-column {
+  .DriverHUB-testimonial-section-three .content-column .inner-column {
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -30083,48 +30084,48 @@ Chat Widget
     margin-bottom: 30px;
   }
 
-  .boxcar-brand-section-three .col-md-6 {
+  .DriverHUB-brand-section-three .col-md-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .boxcar-pricing-section-four .content-column .inner-column {
+  .DriverHUB-pricing-section-four .content-column .inner-column {
     padding: 0;
     margin-top: 40px;
   }
 
-  .boxcar-inspiration-section-two
+  .DriverHUB-inspiration-section-two
     .right-box-two
     .uper-box
     .content-box
-    .boxcar-title
+    .DriverHUB-title
     .text
     br {
     display: none;
   }
 
-  .boxcar-inspiration-section-two .right-box .service-list {
+  .DriverHUB-inspiration-section-two .right-box .service-list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .boxcar-inspiration-section-two .right-box .service-list li {
+  .DriverHUB-inspiration-section-two .right-box .service-list li {
     margin-bottom: 28px;
   }
 
-  .boxcar-banner-section-seven .inner-box .banner-slide {
+  .DriverHUB-banner-section-seven .inner-box .banner-slide {
     height: 450px;
   }
 
-  .boxcar-banner-section-seven .inner-box .banner-slide img {
+  .DriverHUB-banner-section-seven .inner-box .banner-slide img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
   }
 
-  .boxcar-banner-section-seven
+  .DriverHUB-banner-section-seven
     .banner-slider-v7
     .banner-slide
     .right-box
@@ -30133,7 +30134,7 @@ Chat Widget
     margin: 0 auto;
   }
 
-  .boxcar-banner-section-seven
+  .DriverHUB-banner-section-seven
     .banner-slider-v7
     .banner-slide
     .right-box
@@ -30142,12 +30143,12 @@ Chat Widget
     font-size: 50px;
   }
 
-  .boxcar-pricing-section-four.v7 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v7 .content-column .inner-column {
     padding-left: 15px;
     margin-top: 0;
   }
 
-  .boxcar-brand-section.v7 {
+  .DriverHUB-brand-section.v7 {
     padding-bottom: 0;
     margin-bottom: -30px;
   }
@@ -30165,7 +30166,7 @@ Chat Widget
     margin-bottom: 30px;
   }
 
-  .boxcar-brand-section-five {
+  .DriverHUB-brand-section-five {
     padding-bottom: 80px;
   }
 
@@ -30173,7 +30174,7 @@ Chat Widget
     display: none;
   }
 
-  .boxcar-banner-section-nine .banner-content {
+  .DriverHUB-banner-section-nine .banner-content {
     width: 100%;
     padding: 30px 15px 0 15px;
     position: static;
@@ -30181,37 +30182,37 @@ Chat Widget
     transform: unset;
   }
 
-  .boxcar-banner-section-nine .banner-content .form-tab-pane form {
+  .DriverHUB-banner-section-nine .banner-content .form-tab-pane form {
     display: block;
     height: auto;
     padding-bottom: 30px;
   }
 
-  .boxcar-banner-section-nine .banner-content .form-tab-pane form .form_boxes {
+  .DriverHUB-banner-section-nine .banner-content .form-tab-pane form .form_boxes {
     width: 100%;
   }
 
-  .boxcar-banner-section-nine .banner-content .form-submit button {
+  .DriverHUB-banner-section-nine .banner-content .form-submit button {
     width: 100%;
   }
 
-  .boxcar-banner-section-nine {
+  .DriverHUB-banner-section-nine {
     height: unset;
   }
 
-  .boxcar-banner-section-nine .banner-content .content-box h2 {
+  .DriverHUB-banner-section-nine .banner-content .content-box h2 {
     font-size: 50px;
   }
 
-  .boxcar-banner-section-nine .container {
+  .DriverHUB-banner-section-nine .container {
     padding-bottom: 50px;
   }
 
-  .boxcar-pricing-section-four.v9 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v9 .content-column .inner-column {
     margin: 0;
   }
 
-  .boxcar-pricing-section-four.v9
+  .DriverHUB-pricing-section-four.v9
     .image-column
     .inner-column
     .image-box
@@ -30219,7 +30220,7 @@ Chat Widget
     margin-left: 30px;
   }
 
-  .boxcar-fun-fact-section-three {
+  .DriverHUB-fun-fact-section-three {
     padding: 70px 15px 50px;
   }
 
@@ -30247,7 +30248,7 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-team-section-four .right-box {
+  .DriverHUB-team-section-four .right-box {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -30259,42 +30260,42 @@ Chat Widget
     margin-bottom: 40px;
   }
 
-  .boxcar-team-section-four {
+  .DriverHUB-team-section-four {
     padding-bottom: 80px;
   }
 
-  .boxcar-team-section-four .right-box {
+  .DriverHUB-team-section-four .right-box {
     margin: 0 -15px;
   }
 
-  .boxcar-banner-section-seven.v10 .form-tab-content {
+  .DriverHUB-banner-section-seven.v10 .form-tab-content {
     position: static;
   }
 
-  .boxcar-banner-section-seven.v10 form {
+  .DriverHUB-banner-section-seven.v10 form {
     display: block;
     padding-bottom: 30px;
     border-radius: 16px;
     margin-top: 30px;
   }
 
-  .boxcar-banner-section-seven.v10 form .form_boxes {
+  .DriverHUB-banner-section-seven.v10 form .form_boxes {
     width: 100%;
   }
 
-  .boxcar-banner-section-seven.v10 form .form_boxes::before {
+  .DriverHUB-banner-section-seven.v10 form .form_boxes::before {
     display: none;
   }
 
-  .boxcar-banner-section-seven.v10 form .drop-menu .select {
+  .DriverHUB-banner-section-seven.v10 form .drop-menu .select {
     padding: 0;
   }
 
-  .boxcar-banner-section-seven.v10 .form-submit button {
+  .DriverHUB-banner-section-seven.v10 .form-submit button {
     width: 100%;
   }
 
-  .boxcar-pricing-section-six .image-column {
+  .DriverHUB-pricing-section-six .image-column {
     display: none;
   }
 
@@ -30306,7 +30307,7 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-pricing-section-five .content-column .inner-column {
+  .DriverHUB-pricing-section-five .content-column .inner-column {
     padding: 70px 50px;
   }
 
@@ -30438,16 +30439,16 @@ Chat Widget
     margin-top: 50px;
   }
 
-  .inventory-section .boxcar-title-three .content-box {
+  .inventory-section .DriverHUB-title-three .content-box {
     position: static;
     margin-top: 25px;
   }
 
-  .inventory-section .boxcar-title-three .content-box .title {
+  .inventory-section .DriverHUB-title-three .content-box .title {
     text-align: left;
   }
 
-  .inventory-section .boxcar-title-three .content-box {
+  .inventory-section .DriverHUB-title-three .content-box {
     text-align: left;
   }
 
@@ -30543,7 +30544,7 @@ Chat Widget
     margin-bottom: 30px;
   }
 
-  .boxcar-pricing-section-seven {
+  .DriverHUB-pricing-section-seven {
     padding-bottom: 90px;
   }
 
@@ -30620,7 +30621,7 @@ Chat Widget
     object-fit: cover;
   }
 
-  .boxcar-pricing-section-two .content-column .inner-column {
+  .DriverHUB-pricing-section-two .content-column .inner-column {
     padding-top: 0;
     padding-bottom: 70px;
   }
@@ -30634,16 +30635,16 @@ Chat Widget
     width: 33%;
   }
 
-  .boxcar-service-section .right-box {
+  .DriverHUB-service-section .right-box {
     padding: 40px;
   }
 
-  .boxcar-service-section .content-column .inner-column .store.two {
+  .DriverHUB-service-section .content-column .inner-column .store.two {
     margin-left: 0;
     margin: 10px 0;
   }
 
-  .boxcar-pricing-section-two
+  .DriverHUB-pricing-section-two
     .image-column
     .inner-column
     .image-box
@@ -30652,13 +30653,13 @@ Chat Widget
     height: auto;
   }
 
-  .boxcar-banner-section-v1.banner-style-three .banner-content-three {
+  .DriverHUB-banner-section-v1.banner-style-three .banner-content-three {
     position: static;
     -webkit-transform: unset;
     transform: unset;
   }
 
-  .boxcar-banner-section-v1.banner-style-three {
+  .DriverHUB-banner-section-v1.banner-style-three {
     padding: 150px 0 50px;
   }
 
@@ -30686,45 +30687,45 @@ Chat Widget
     margin-bottom: 70px;
   }
 
-  .boxcar-pricing-section-three .content-column .inner-column {
+  .DriverHUB-pricing-section-three .content-column .inner-column {
     margin-top: 50px;
     padding: 0;
   }
 
-  .boxcar-fun-fact-section .fact-counter {
+  .DriverHUB-fun-fact-section .fact-counter {
     padding: 70px 0 40px;
   }
 
-  .calculater-section .boxcar-container {
+  .calculater-section .DriverHUB-container {
     padding: 0 15px;
   }
 
-  .boxcar-service-section-two .content-column .inner-column .store.two {
+  .DriverHUB-service-section-two .content-column .inner-column .store.two {
     margin: 10px 0;
   }
 
-  .boxcar-service-section-two .right-box {
+  .DriverHUB-service-section-two .right-box {
     padding: 60px 40px;
   }
 
-  .boxcar-banner-section-five .banner-content h2 {
+  .DriverHUB-banner-section-five .banner-content h2 {
     font-size: 50px;
     line-height: 60px;
   }
 
-  .boxcar-banner-section-five .banner-content .form-tab-pane form {
+  .DriverHUB-banner-section-five .banner-content .form-tab-pane form {
     height: auto;
     display: block;
   }
 
-  .boxcar-banner-section-five .banner-content .form-tab-pane form .form_boxes {
+  .DriverHUB-banner-section-five .banner-content .form-tab-pane form .form_boxes {
     width: 100%;
     border: 1px solid #eaeaea;
     border-radius: 16px;
     margin-bottom: 20px;
   }
 
-  .boxcar-banner-section-five
+  .DriverHUB-banner-section-five
     .banner-content
     .form-tab-pane
     form
@@ -30732,24 +30733,24 @@ Chat Widget
     display: none;
   }
 
-  .boxcar-banner-section-five .banner-content .form-tab-pane {
+  .DriverHUB-banner-section-five .banner-content .form-tab-pane {
     margin-bottom: 0;
   }
 
-  .boxcar-banner-section-five .image-column {
+  .DriverHUB-banner-section-five .image-column {
     margin-top: 0;
   }
 
-  .boxcar-banner-section-five:before {
+  .DriverHUB-banner-section-five:before {
     height: calc(100% - 100px);
   }
 
-  .boxcar-banner-section-five .banner-content .form-tab-pane form {
+  .DriverHUB-banner-section-five .banner-content .form-tab-pane form {
     padding: 30px;
     border-radius: 15px;
   }
 
-  .boxcar-banner-section-five .banner-content .form-submit {
+  .DriverHUB-banner-section-five .banner-content .form-submit {
     /* padding-left: 30px; */
   }
 
@@ -30769,7 +30770,7 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-banner-section-six
+  .DriverHUB-banner-section-six
     .content-column
     .inner-column
     .right-box
@@ -30778,7 +30779,7 @@ Chat Widget
     flex-wrap: wrap;
   }
 
-  .boxcar-banner-section-six
+  .DriverHUB-banner-section-six
     .content-column
     .inner-column
     .right-box
@@ -30795,24 +30796,24 @@ Chat Widget
     padding-bottom: 90px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box .content-box {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box .content-box {
     margin-bottom: 40px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box {
     margin-bottom: 40px;
   }
 
-  .boxcar-title .text {
+  .DriverHUB-title .text {
     display: none;
   }
 
-  .boxcar-team-section-three .right-box {
+  .DriverHUB-team-section-three .right-box {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -30834,7 +30835,7 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-pricing-section-four.v7 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v7 .content-column .inner-column {
     padding: 0;
     margin-top: 50px;
   }
@@ -30843,15 +30844,15 @@ Chat Widget
     padding-right: 15px;
   }
 
-  .boxcar-banner-section-v8 .banner-content-v8 h2 {
+  .DriverHUB-banner-section-v8 .banner-content-v8 h2 {
     font-size: 40px;
   }
 
-  .boxcar-banner-section-v8 .banner-content-v8 .banner-v8-form {
+  .DriverHUB-banner-section-v8 .banner-content-v8 .banner-v8-form {
     max-width: 100%;
   }
 
-  .boxcar-brand-section-five .right-box {
+  .DriverHUB-brand-section-five .right-box {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -30882,7 +30883,7 @@ Chat Widget
     padding: 70px 30px;
   }
 
-  .boxcar-pricing-section-four.v9 .content-column .inner-column {
+  .DriverHUB-pricing-section-four.v9 .content-column .inner-column {
     padding-left: 0;
     margin-top: 50px;
   }
@@ -30895,7 +30896,7 @@ Chat Widget
     border-radius: 0;
   }
 
-  .boxcar-pricing-section-five
+  .DriverHUB-pricing-section-five
     .image-column
     .inner-column
     .image-box
@@ -30904,12 +30905,12 @@ Chat Widget
     height: auto;
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column .btn-box {
+  .DriverHUB-pricing-section-six .content-column .inner-column .btn-box {
     display: block;
     margin-bottom: 20px;
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column .btn-box .btn-two {
+  .DriverHUB-pricing-section-six .content-column .inner-column .btn-box .btn-two {
     width: 100%;
     margin-bottom: 15px;
   }
@@ -31024,7 +31025,7 @@ Chat Widget
     margin: 0 -15px;
   }
 
-  .inventory-section .boxcar-title-three .content-box {
+  .inventory-section .DriverHUB-title-three .content-box {
     position: static;
     margin-top: 20px;
   }
@@ -31156,7 +31157,7 @@ Chat Widget
     .calculater-sec
     .content-column
     .inner-column
-    .boxcar-title {
+    .DriverHUB-title {
     padding-left: 0;
   }
 
@@ -31227,16 +31228,16 @@ Chat Widget
     margin-bottom: 50px;
   }
 
-  .boxcar-banner-section-v1 .banner-content .form-tab-pane form {
+  .DriverHUB-banner-section-v1 .banner-content .form-tab-pane form {
     border-radius: 16px;
     padding: 30px 30px 30px;
   }
 
-  .boxcar-banner-section-v1 .banner-content .form-submit button {
+  .DriverHUB-banner-section-v1 .banner-content .form-submit button {
     border-radius: 16px;
   }
 
-  .boxcar-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
+  .DriverHUB-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
     border: 1px solid #eaeaea;
     border-radius: 16px;
     margin-bottom: 20px;
@@ -31252,13 +31253,13 @@ Chat Widget
     padding-right: 30px;
   }
 
-  .boxcar-brand-section .row {
+  .DriverHUB-brand-section .row {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     overflow-x: scroll;
   }
 
-  .boxcar-brand-section .col-sm-6 {
+  .DriverHUB-brand-section .col-sm-6 {
     width: auto;
   }
 }
@@ -31289,7 +31290,7 @@ Chat Widget
     padding: 90px 0;
   }
 
-  .boxcar-testimonial-section .content-column .inner-column .text {
+  .DriverHUB-testimonial-section .content-column .inner-column .text {
     margin-right: 0;
   }
 
@@ -31306,12 +31307,12 @@ Chat Widget
     width: 33%;
   }
 
-  .boxcar-service-section .content-column .inner-column .title {
+  .DriverHUB-service-section .content-column .inner-column .title {
     font-size: 40px;
     line-height: 50px;
   }
 
-  .boxcar-banner-section-two
+  .DriverHUB-banner-section-two
     .banner-slider
     .banner-slide
     .right-box
@@ -31355,7 +31356,7 @@ Chat Widget
     padding: 25px 0;
   }
 
-  .boxcar-banner-section-six .content-column .inner-column h1 {
+  .DriverHUB-banner-section-six .content-column .inner-column h1 {
     font-size: 50px;
     line-height: 60px;
   }
@@ -31364,12 +31365,12 @@ Chat Widget
     width: 50%;
   }
 
-  .boxcar-inspiration-section-two .right-box .service-list li {
+  .DriverHUB-inspiration-section-two .right-box .service-list li {
     margin-right: 15px;
     margin-bottom: 15px;
   }
 
-  .boxcar-testimonial-section-four .right-box {
+  .DriverHUB-testimonial-section-four .right-box {
     padding: 80px 15px;
   }
 
@@ -31383,15 +31384,15 @@ Chat Widget
     margin-bottom: 30px;
   }
 
-  .boxcar-team-section-three .right-box {
+  .DriverHUB-team-section-three .right-box {
     margin: 0 -15px;
   }
 
-  .boxcar-service-section .content-column .inner-column .title br {
+  .DriverHUB-service-section .content-column .inner-column .title br {
     display: none;
   }
 
-  .boxcar-brand-section-six .cars-block-six {
+  .DriverHUB-brand-section-six .cars-block-six {
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -31400,7 +31401,7 @@ Chat Widget
     padding-top: 70px;
   }
 
-  .news-letter-section .form-column .inner-column .boxcar-title h2 br {
+  .news-letter-section .form-column .inner-column .DriverHUB-title h2 br {
     display: none;
   }
 
@@ -31408,7 +31409,7 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-title h2 {
+  .DriverHUB-title h2 {
     font-size: 32px;
   }
 
@@ -31631,13 +31632,13 @@ Chat Widget
     margin-right: 0;
   }
 
-  /* .inventory-section .boxcar-title-three .spectes-list li {
+  /* .inventory-section .DriverHUB-title-three .spectes-list li {
     display: block;
     margin-right: 0;
     margin-bottom: 10px;
   } */
 
-  .inventory-section .boxcar-title-three .spectes-list li span {
+  .inventory-section .DriverHUB-title-three .spectes-list li span {
     width: 100%;
   }
 
@@ -31736,11 +31737,11 @@ Chat Widget
     padding-top: 50px;
   }
 
-  .boxcar-pricing-section-seven {
+  .DriverHUB-pricing-section-seven {
     padding-top: 70px;
   }
 
-  .boxcar-pricing-section-two .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section-two .content-column .inner-column .DriverHUB-title h2 {
     line-height: 40px;
   }
 
@@ -31766,7 +31767,7 @@ Chat Widget
     display: block;
   }
 
-  .boxcar-banner-section-two
+  .DriverHUB-banner-section-two
     .banner-slider
     .banner-slide
     .right-box
@@ -31782,7 +31783,7 @@ Chat Widget
     padding-right: 15px;
   }
 
-  .boxcar-brand-section {
+  .DriverHUB-brand-section {
     padding: 60px 0;
   }
 
@@ -31798,41 +31799,41 @@ Chat Widget
     padding: 70px 0 64px;
   }
 
-  .boxcar-customers-section {
+  .DriverHUB-customers-section {
     padding: 60px 0;
   }
 
-  .boxcar-customers-section .boxcar-title {
+  .DriverHUB-customers-section .DriverHUB-title {
     margin-bottom: 15px;
   }
 
-  .boxcar-team-section {
+  .DriverHUB-team-section {
     padding: 60px 0;
   }
 
-  .boxcar-inspiration-section {
+  .DriverHUB-inspiration-section {
     padding-bottom: 60px;
   }
 
-  .boxcar-service-section .content-column .inner-column .title {
+  .DriverHUB-service-section .content-column .inner-column .title {
     font-size: 32px;
     line-height: 42px;
   }
 
-  .boxcar-service-section {
+  .DriverHUB-service-section {
     padding-bottom: 60px;
   }
 
-  .brand-boxcar-banner-section .content-column .inner-column .title {
+  .brand-DriverHUB-banner-section .content-column .inner-column .title {
     font-size: 40px;
     line-height: 50px;
   }
 
-  .brand-boxcar-banner-section {
+  .brand-DriverHUB-banner-section {
     padding: 60px 0;
   }
 
-  .boxcar-banner-section-v1 {
+  .DriverHUB-banner-section-v1 {
     background-position: top;
   }
 }
@@ -31849,7 +31850,7 @@ Chat Widget
     margin-right: 0;
   }
 
-  .boxcar-pricing-section .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section .content-column .inner-column .DriverHUB-title h2 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 15px;
@@ -31871,27 +31872,27 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-service-section .content-column .inner-column .title {
+  .DriverHUB-service-section .content-column .inner-column .title {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .boxcar-service-section .content-column .inner-column .store span {
+  .DriverHUB-service-section .content-column .inner-column .store span {
     font-size: 11px;
   }
 
-  .brand-boxcar-banner-section .content-column .inner-column .title {
+  .brand-DriverHUB-banner-section .content-column .inner-column .title {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .brand-boxcar-banner-section .content-column .inner-column .btn {
+  .brand-DriverHUB-banner-section .content-column .inner-column .btn {
     padding: 0 30px;
     height: 50px;
     line-height: 50px;
   }
 
-  .boxcar-title h2 {
+  .DriverHUB-title h2 {
     font-size: 32px;
   }
 
@@ -31899,7 +31900,7 @@ Chat Widget
     line-height: 36px;
   }
 
-  .boxcar-banner-section-four
+  .DriverHUB-banner-section-four
     .banner-slider-v4
     .banner-slide
     .right-box
@@ -31926,35 +31927,35 @@ Chat Widget
     padding: 70px 30px 70px;
   }
 
-  .boxcar-brand-section-three .right-box {
+  .DriverHUB-brand-section-three .right-box {
     padding: 70px 30px;
   }
 
-  .boxcar-banner-section-six .content-column .inner-column .btn-box {
+  .DriverHUB-banner-section-six .content-column .inner-column .btn-box {
     display: block;
   }
 
-  .boxcar-banner-section-six .content-column .inner-column .btn-box .read-more {
+  .DriverHUB-banner-section-six .content-column .inner-column .btn-box .read-more {
     margin-right: 0;
     display: block;
     margin-bottom: 15px;
     text-align: center;
   }
 
-  .boxcar-pricing-section-four .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section-four .content-column .inner-column .DriverHUB-title h2 {
     line-height: 42px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box .content-box {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box .content-box {
     padding-left: 0;
     margin-bottom: 10px;
   }
 
-  .boxcar-inspiration-section-two .right-box-two .uper-box .content-box .icon {
+  .DriverHUB-inspiration-section-two .right-box-two .uper-box .content-box .icon {
     position: static;
   }
 
-  .boxcar-banner-section-seven
+  .DriverHUB-banner-section-seven
     .banner-slider-v7
     .banner-slide
     .right-box
@@ -31964,7 +31965,7 @@ Chat Widget
     line-height: 40px;
   }
 
-  .boxcar-service-section {
+  .DriverHUB-service-section {
     padding: 90px 0;
   }
 
@@ -31993,15 +31994,15 @@ Chat Widget
     margin-top: 20px;
   }
 
-  .boxcar-banner-section-nine .banner-content .content-box h2 {
+  .DriverHUB-banner-section-nine .banner-content .content-box h2 {
     font-size: 40px;
   }
 
-  .boxcar-banner-section-nine .banner-content .content-box .btn-box {
+  .DriverHUB-banner-section-nine .banner-content .content-box .btn-box {
     display: block;
   }
 
-  .boxcar-banner-section-nine .banner-content .content-box .btn-box .read-more {
+  .DriverHUB-banner-section-nine .banner-content .content-box .btn-box .read-more {
     margin-right: 0;
     width: 100%;
     margin-bottom: 15px;
@@ -32015,7 +32016,7 @@ Chat Widget
     padding-right: 0;
   }
 
-  .boxcar-pricing-section-five .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section-five .content-column .inner-column .DriverHUB-title h2 {
     line-height: 40px;
   }
 
@@ -32023,22 +32024,22 @@ Chat Widget
     width: 100%;
   }
 
-  .boxcar-pricing-section-six .content-column .inner-column .boxcar-title h2 {
+  .DriverHUB-pricing-section-six .content-column .inner-column .DriverHUB-title h2 {
     font-size: 28px;
     line-height: 40px;
   }
 
-  .boxcar-service-section-two .content-column .inner-column .title {
+  .DriverHUB-service-section-two .content-column .inner-column .title {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .boxcar-service-section-two .content-column .inner-column .store span {
+  .DriverHUB-service-section-two .content-column .inner-column .store span {
     line-height: 16px;
     margin-bottom: 10px;
   }
 
-  .boxcar-team-section-two {
+  .DriverHUB-team-section-two {
     padding-bottom: 80px;
   }
 
@@ -32275,6 +32276,7 @@ Chat Widget
 }
 
 .layout-search .search-box input {
+  border: 1px solid lightgrey;
   background: transparent;
   width: 400px;
   height: 47px;
@@ -32283,13 +32285,13 @@ Chat Widget
   font-weight: 500;
   color: var(--theme-color-light);
   padding: 0px 20px 0px 46px;
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 14px;
   /* -webkit-transition: all 300ms ease;
   transition: all 300ms ease; */
 }
 
 @media (max-width: 1600px) {
-  .boxcar-header.five .right-box .phone,
+  .DriverHUB-header.five .right-box .phone,
   .hheader-style-v4.style-1 .right-box .phone {
     display: none;
   }
@@ -32403,17 +32405,17 @@ Chat Widget
   padding: 12px 0px;
 }
 
-.boxcar-header.v10 .layout-search .search-box input,
+.DriverHUB-header.v10 .layout-search .search-box input,
 .header-style-v9 .layout-search .search-box input,
-.boxcar-header.v6 .layout-search .search-box input,
+.DriverHUB-header.v6 .layout-search .search-box input,
 .header-style-v3 .layout-search .search-box input,
 .header-style-v7 .layout-search .search-box input {
   width: auto;
 }
 
-.boxcar-header.v10 .layout-search.active .search-box input,
+.DriverHUB-header.v10 .layout-search.active .search-box input,
 .header-style-v9 .layout-search.active .search-box input,
-.boxcar-header.v6 .layout-search.active .search-box input,
+.DriverHUB-header.v6 .layout-search.active .search-box input,
 .header-style-v3 .layout-search.active .search-box input,
 .header-style-v7 .layout-search.active .search-box input {
   width: 380px;
@@ -32423,18 +32425,18 @@ Chat Widget
   margin-right: 0px;
 }
 
-.boxcar-header.v10 .layout-search,
+.DriverHUB-header.v10 .layout-search,
 .header-style-v9 .layout-search,
 .header-style-v3 .layout-search,
-.boxcar-header.v6 .layout-search,
+.DriverHUB-header.v6 .layout-search,
 .header-style-v7 .layout-search {
   margin-top: 0;
   margin-right: 10px;
 }
 
-.boxcar-header.v10 .layout-search .search-box input,
+.DriverHUB-header.v10 .layout-search .search-box input,
 .header-style-v7 .layout-search .search-box input,
-.boxcar-header.v6 .layout-search .search-box input,
+.DriverHUB-header.v6 .layout-search .search-box input,
 .header-style-v3 .layout-search .search-box input {
   padding-right: 10px;
 }
@@ -32443,15 +32445,15 @@ Chat Widget
   left: 0px !important;
 }
 
-.boxcar-header.v10 .layout-search .search-box svg path,
+.DriverHUB-header.v10 .layout-search .search-box svg path,
 .header-style-v7 .layout-search .search-box svg path,
-.boxcar-header.five .layout-search .search-box svg path {
+.DriverHUB-header.five .layout-search .search-box svg path {
   fill: var(--theme-color-dark);
 }
 
-.boxcar-header.v10 .layout-search .search-box input::placeholder,
+.DriverHUB-header.v10 .layout-search .search-box input::placeholder,
 .header-style-v7 .layout-search .search-box input::placeholder,
-.boxcar-header.five .layout-search .search-box input::placeholder {
+.DriverHUB-header.five .layout-search .search-box input::placeholder {
   color: var(--theme-color-dark);
 }
 
@@ -33608,7 +33610,7 @@ Chat Widget
   transform: translateY(-50%);
 }
 
-.boxcar-banner-section-nine .form_boxes.line-r:before {
+.DriverHUB-banner-section-nine .form_boxes.line-r:before {
   opacity: 0.2;
 }
 
@@ -33628,7 +33630,7 @@ Chat Widget
   }
 }
 
-.boxcar-title.style-1 {
+.DriverHUB-title.style-1 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -33636,11 +33638,11 @@ Chat Widget
   gap: 20px;
 }
 
-.boxcar-title.style-1 h2 {
+.DriverHUB-title.style-1 h2 {
   margin-bottom: 0;
 }
 
-.boxcar-title.style-1 .text {
+.DriverHUB-title.style-1 .text {
   margin-top: 0;
 }
 
@@ -33698,11 +33700,11 @@ Chat Widget
   border: 0;
 }
 
-.boxcar-header.v6 .mobile-navigation a {
+.DriverHUB-header.v6 .mobile-navigation a {
   color: var(--theme-color-dark);
 }
 
-.boxcar-header.v10 .header-inner .right-box .box-account {
+.DriverHUB-header.v10 .header-inner .right-box .box-account {
   color: var(--theme-color-dark);
 }
 
@@ -33943,7 +33945,7 @@ li.nav-sub.mm-listitem .mm-listitem__btn {
   margin-bottom: 10px;
 }
 
-.boxcar-header.cus-style-1 {
+.DriverHUB-header.cus-style-1 {
   position: unset !important;
   padding-bottom: 80px;
 }
@@ -33960,7 +33962,7 @@ li.nav-sub.mm-listitem .mm-listitem__btn {
 }
 
 @media (max-width: 1199px) {
-  .boxcar-header.cus-style-1 {
+  .DriverHUB-header.cus-style-1 {
     padding: 20px 0px 100px !important;
   }
 
@@ -34347,7 +34349,7 @@ li.nav-sub.mm-listitem .mm-listitem__btn {
   border-radius: 12px;
 }
 
-.box-loan-calc .boxcar-title p {
+.box-loan-calc .DriverHUB-title p {
   font-size: 15px;
   line-height: 26px;
 }

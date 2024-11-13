@@ -5,15 +5,15 @@ import LoanCalculator from "@/components/otherPages/LoanCalculator";
 import React from "react";
 
 export const metadata = {
-  title: "Loan Calculator || Boxcar - React Nextjs Car Template",
-  description: "Boxcar - React Nextjs Car Template",
+	title: "Loan Calculator || DriverHUB - React Nextjs Car Template",
+	description: "DriverHUB - React Nextjs Car Template",
 };
 export default function LoanCalculatorPage() {
-  return (
-    <>
-      <Header1 headerClass="boxcar-header header-style-v1 style-two inner-header cus-style-1" />
-      <LoanCalculator />
-      <Footer1 parentClass="boxcar-footer footer-style-one v1 cus-st-1" />
-    </>
-  );
+	return (
+		<>
+			<Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" />
+			<LoanCalculator />
+			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />
+		</>
+	);
 }
