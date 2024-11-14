@@ -75,7 +75,7 @@ export default function Cars2() {
 					className="row car-slider-three"
 				> */}
 				<div
-					className="d-flex flex-wrap gap-4 align-items-center justify-content-center"
+					className="d-flex flex-wrap gap-4 align-items-center justify-content-center w-100"
 					// style={{ gap: "10px" }}
 				>
 					{carData
@@ -83,7 +83,7 @@ export default function Cars2() {
 						.map((car, index) => (
 							<div
 								key={index}
-								className="box-car car-block-five col-lg-3 col-md-6 col-sm-12"
+								className="box-car car-block-five"
 							>
 								<div className="inner-box">
 									<div

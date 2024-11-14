@@ -10,6 +10,19 @@ import Context from "@/context/Context";
 import BackToTop from "@/components/common/BackToTop";
 
 export default function RootLayout({ children }) {
+	const [queryClient] = React.useState(
+		() =>
+			new QueryClient({
+				defaultOptions: {
+					queries: {
+						// With SSR, we usually want to set some default staleTime
+						// above 0 to avoid refetching immediately on the client
+						staleTime: 60 * 1000,
+					},
+				},
+			})
+	);
+
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			// Import the script only on the client side
@@ -28,12 +41,14 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body>
-				<Context>
-					<MobileMenu />
-					<div className="DriverHUB-wrapper">{children}</div>
-					<FilterSidebar />
-				</Context>
-				<BackToTop />
+				<QueryClientProvider client={queryClient}>
+					<Context>
+						<MobileMenu />
+						<div className="DriverHUB-wrapper">{children}</div>
+						<FilterSidebar />
+					</Context>
+					<BackToTop />
+				</QueryClientProvider>
 			</body>
 		</html>
 	);

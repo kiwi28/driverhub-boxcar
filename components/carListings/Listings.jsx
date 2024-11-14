@@ -5,7 +5,8 @@ import SelectComponent from "../common/SelectComponent";
 import { cars } from "@/data/cars";
 import Link from "next/link";
 import Pagination from "../common/Pagination";
-export default function Listings2() {
+import { Button } from "react-bootstrap";
+export default function Listings() {
 	return (
 		<section className="cars-section-four v1 layout-radius">
 			<div className="DriverHUB-container">

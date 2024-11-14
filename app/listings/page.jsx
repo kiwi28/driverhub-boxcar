@@ -1,4 +1,4 @@
-import Listings2 from "@/components/carListings/Listings2";
+import Listings from "@/components/carListings/Listings";
 
 import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
@@ -13,7 +13,7 @@ export default function InventoryListPage2() {
 		<>
 			<Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" />
 
-			<Listings2 />
+			<Listings />
 			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />
 		</>
 	);
