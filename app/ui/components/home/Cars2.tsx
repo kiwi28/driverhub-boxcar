@@ -34,6 +34,7 @@ export default async function Cars2() {
 							<div
 								key={index}
 								className="box-car car-block-five"
+								style={{ maxWidth: "20rem" }}
 							>
 								<div className="inner-box">
 									<div
@@ -41,19 +42,17 @@ export default async function Cars2() {
 											car.badge == "Great Price" ? "two" : ""
 										}`}
 									>
-										<div className="slider-thumb">
-											<div className="image">
-												<Link href={`/listings/${car.id}`}>
-													<Image
-														alt=""
-														src={pb.files.getUrl(car, car.images[1])}
-														width={329}
-														height={220}
-													/>
-												</Link>
-											</div>
+										<div className="image">
+											<Link href={`/listings/${car.id}`}>
+												<Image
+													alt=""
+													src={pb.files.getUrl(car, car.images[1])}
+													width={329}
+													height={220}
+												/>
+											</Link>
 										</div>
-										{car.badge && <span>{car.badge}</span>}
+										{/* {car.badge && <span>{car.badge}</span>} */}
 										<Link
 											href={`/listings/${car.id}`}
 											title=""
@@ -90,7 +89,13 @@ export default async function Cars2() {
 												{car.brand + " " + car.model_w_engine}
 											</Link>
 										</h6>
-										<div className="text">{car.description}</div>
+										{/* <div
+											className="text"
+											// style={{ color: "white !important" }}
+											// dangerouslySetInnerHTML={{ __html: car.description }}
+										>
+											{car.description}
+										</div> */}
 										<ul>
 											{car.traits.map((spec, i) => (
 												<li key={i}>{spec}</li>
