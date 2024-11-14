@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import LoanCalculator from "@/components/otherPages/LoanCalculator";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import LoanCalculator from "@/app/ui/components/otherPages/LoanCalculator";
 
 import React from "react";
 

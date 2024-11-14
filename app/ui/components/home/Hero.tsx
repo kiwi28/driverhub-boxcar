@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import SelectComponent from "@/components/common/SelectComponent";
+import SelectComponent from "@/app/ui/components/common/SelectComponent";
 import Link from "next/link";
 export default function Hero() {
 	return (

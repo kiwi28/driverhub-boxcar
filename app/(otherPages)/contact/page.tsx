@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import Contact from "@/components/otherPages/Contact";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import Contact from "@/app/ui/components/otherPages/Contact";
 
 import React from "react";
 

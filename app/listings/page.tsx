@@ -1,7 +1,7 @@
-import Listings from "@/components/carListings/Listings";
+import Listings from "@/app/ui/components/carListings/Listings";
 
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
 import React from "react";
 
 export const metadata = {

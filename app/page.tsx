@@ -1,12 +1,4 @@
-// import Home1 from "./(homes)/home-1/page";
-// import Home2 from "./(homes)/home-2/page";
-// import Home3 from "./(homes)/home-3/page";
-// import Home4 from "./(homes)/home-4/page";
-import Home5 from "./(homes)/home-5/page";
-// import Home6 from "./(homes)/home-6/page";
-// import Home7 from "./(homes)/home-7/page";
-// import Home8 from "./(homes)/home-8/page";
-// import Home9 from "./(homes)/home-9/page";
+import Home from "./(home)/page";
 
 export const metadata = {
 	title: "DriverHUB || Inchirieri auto Uber & Bolt",
@@ -16,9 +8,7 @@ export const metadata = {
 export default function HomePage1() {
 	return (
 		<>
-			<Home5 />
-			{/* <Home9 /> */}
-			{/* <Home7 /> */}
+			<Home />
 		</>
 	);
 }

@@ -1,7 +1,7 @@
-import AddListings from "@/components/dashboard/AddListings";
-import Footer1 from "@/components/home/Footer1";
+import AddListings from "@/app/ui/components/dashboard/AddListings";
+import Footer1 from "@/app/ui/components/home/Footer1";
 
-import HeaderDashboard from "@/components/headers/HeaderDashboard";
+import HeaderDashboard from "@/app/ui/components/headers/HeaderDashboard";
 
 export const metadata = {
 	title: "Add Listings || DriverHUB - React Nextjs Car Template",

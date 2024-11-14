@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import Terms from "@/components/otherPages/Terms";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import Terms from "@/app/ui/components/otherPages/Terms";
 
 import React from "react";
 

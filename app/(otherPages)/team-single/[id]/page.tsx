@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import TeamSingle from "@/components/otherPages/TeamSingle";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import TeamSingle from "@/app/ui/components/otherPages/TeamSingle";
 import { allTeammember } from "@/data/team";
 
 import React from "react";

@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import ShopSingle from "@/components/shop/ShopSingle";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import ShopSingle from "@/app/ui/components/shop/ShopSingle";
 import { products } from "@/data/products";
 
 import React from "react";

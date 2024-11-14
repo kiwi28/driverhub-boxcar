@@ -1,6 +1,6 @@
-import MyListings from "@/components/dashboard/MyListings";
-import Footer1 from "@/components/home/Footer1";
-import HeaderDashboard from "@/components/headers/HeaderDashboard";
+import MyListings from "@/app/ui/components/dashboard/MyListings";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import HeaderDashboard from "@/app/ui/components/headers/HeaderDashboard";
 import React from "react";
 
 export const metadata = {

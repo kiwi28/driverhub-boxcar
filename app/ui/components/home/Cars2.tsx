@@ -1,85 +1,35 @@
-"use client";
+// "use client";
+import { pb } from "@/app/lib/pb";
 import Image from "next/image";
-import { carData } from "@/data/cars";
-import Slider from "react-slick";
+// import { listings } from "@/data/cars";
 import Link from "next/link";
-export default function Cars2() {
+export default async function Cars2() {
+	const { items: listings } = await pb.collection("listings").getList(1, 4, {
+		sort: "-created",
+	});
+
+	console.log(
+		"listings--------------------------------------------------------------\n",
+		listings
+	);
+
+	if (!listings?.length) {
+		return <span>NO listingss</span>;
+	}
+
 	return (
 		<section className="cars-section-seven pt-0">
-			<div
-				className="DriverHUB-container d-flex-col gap-4 align-items-center justify-content-center"
-				// style={{
-				// 	display: "flex",
-				// 	flexDirection: "column",
-				// 	alignItems: "center",
-				// }}
-			>
+			<div className="DriverHUB-container d-flex-col gap-4 align-items-center justify-content-center">
 				<div className="DriverHUB-title text-center wow fadeInUp">
 					<h2>Ultimele mașini </h2>
 				</div>
-				{/* <Slider
-					slidesToScroll={1}
-					slidesToShow={4}
-					responsive={[
-						{
-							breakpoint: 1600,
-							settings: {
-								slidesToShow: 4,
-								slidesToScroll: 1,
-								arrows: true,
-								infinite: true,
-							},
-						},
-						{
-							breakpoint: 1300,
-							settings: {
-								slidesToShow: 3,
-								slidesToScroll: 1,
-								infinite: true,
-							},
-						},
-						{
-							breakpoint: 991,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 1,
-								infinite: true,
-							},
-						},
-						{
-							breakpoint: 767,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-							},
-						},
-						{
-							breakpoint: 576,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-							},
-						},
-						{
-							breakpoint: 480,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-							},
-						},
-						// You can unslick at a given breakpoint now by adding:
-						// settings: "unslick"
-						// instead of a settings object
-					]}
-					arrows
-					className="row car-slider-three"
-				> */}
+
 				<div
 					className="d-flex flex-wrap gap-4 align-items-center justify-content-center w-100"
 					// style={{ gap: "10px" }}
 				>
-					{carData
-						.slice(0, carData.length > 4 ? 4 : carData.length)
+					{listings
+						.slice(0, listings.length > 4 ? 4 : listings.length)
 						.map((car, index) => (
 							<div
 								key={index}
@@ -96,7 +46,7 @@ export default function Cars2() {
 												<Link href={`/listings/${car.id}`}>
 													<Image
 														alt=""
-														src={car.images[1]}
+														src={pb.files.getUrl(car, car.images[1])}
 														width={329}
 														height={220}
 													/>
@@ -136,19 +86,19 @@ export default function Cars2() {
 									</div>
 									<div className="content-box">
 										<h6 className="title">
-											<Link href={`/listings/${car.id}`}>{car.title}</Link>
+											<Link href={`/listings/${car.id}`}>
+												{car.brand + " " + car.model_w_engine}
+											</Link>
 										</h6>
 										<div className="text">{car.description}</div>
 										<ul>
-											{car.specs.map((spec, i) => (
-												<li key={i}>
-													<i className={spec.icon} /> {spec.text}
-												</li>
+											{car.traits.map((spec, i) => (
+												<li key={i}>{spec}</li>
 											))}
 										</ul>
 										<div className="btn-box">
 											<span>{car.price}</span>
-											<small>{car.oldPrice}</small>
+											{/* <small>{car.oldPrice}</small> */}
 											<Link
 												href={`/listings/${car.id}`}
 												className="details"
@@ -184,7 +134,6 @@ export default function Cars2() {
 							</div>
 						))}
 				</div>
-				{/* </Slider> */}
 			</div>
 		</section>
 	);

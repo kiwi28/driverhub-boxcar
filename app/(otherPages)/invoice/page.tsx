@@ -1,4 +1,4 @@
-import Invoice from "@/components/otherPages/Invoice";
+import Invoice from "@/app/ui/components/otherPages/Invoice";
 import React from "react";
 
 export const metadata = {

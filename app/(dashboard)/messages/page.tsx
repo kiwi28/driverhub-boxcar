@@ -1,7 +1,7 @@
-import Messages from "@/components/dashboard/Messages";
-import Footer1 from "@/components/home/Footer1";
+import Messages from "@/app/ui/components/dashboard/Messages";
+import Footer1 from "@/app/ui/components/home/Footer1";
 
-import HeaderDashboard from "@/components/headers/HeaderDashboard";
+import HeaderDashboard from "@/app/ui/components/headers/HeaderDashboard";
 import React from "react";
 
 export const metadata = {

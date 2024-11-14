@@ -1,6 +1,6 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-import NotFound from "@/components/otherPages/NotFound";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+import NotFound from "@/app/ui/components/otherPages/NotFound";
 
 import React from "react";
 

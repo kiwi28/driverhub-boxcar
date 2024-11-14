@@ -1,13 +1,13 @@
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
-// import Features from "@/components/homes/home-1/Features";
-// import Features2 from "@/components/homes/home-1/Features2";
-import Team from "@/components/home/Team";
-// import Testimonials from "@/components/homes/home-6/Testimonials";
-import About from "@/components/otherPages/About";
-import Brands from "@/components/otherPages/Brands";
-import Facts from "@/components/otherPages/Facts";
-import Faqs from "@/components/otherPages/Faqs";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
+// import Features from "@/app/ui/components/homes/home-1/Features";
+// import Features2 from "@/app/ui/components/homes/home-1/Features2";
+import Team from "@/app/ui/components/home/Team";
+// import Testimonials from "@/app/ui/components/homes/home-6/Testimonials";
+import About from "@/app/ui/components/otherPages/About";
+import Brands from "@/app/ui/components/otherPages/Brands";
+import Facts from "@/app/ui/components/otherPages/Facts";
+import Faqs from "@/app/ui/components/otherPages/Faqs";
 import React from "react";
 
 export const metadata = {

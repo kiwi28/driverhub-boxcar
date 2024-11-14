@@ -1,6 +1,6 @@
-import Single2 from "@/components/carSingles/Single2";
-import Footer1 from "@/components/home/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Single2 from "@/app/ui/components/carSingles/Single2";
+import Footer1 from "@/app/ui/components/home/Footer1";
+import Header1 from "@/app/ui/components/headers/Header1";
 import React from "react";
 
 export const metadata = {
