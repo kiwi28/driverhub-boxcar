@@ -1,10 +1,12 @@
 // "use client";
+import { fetchListingsPage } from "@/app/lib/api";
 import { pb } from "@/app/lib/pb";
 import Image from "next/image";
 // import { listings } from "@/data/cars";
 import Link from "next/link";
+
 export default async function Cars2() {
-	const { items: listings } = await pb.collection("listings").getList(1, 4, {
+	const { items: listings } = await fetchListingsPage(1, 4, {
 		sort: "-created",
 	});
 

@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 import Image from "next/image";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import RelatedCars from "./RelatedCars";
 
 import Overview from "./sections/Overview";
@@ -13,10 +13,12 @@ import Review from "./sections/Review";
 import Ratings from "./sections/Ratings";
 import Replay from "./sections/Replay";
 import CommentForm from "./sections/CommentForm";
-import { Gallery, Item } from "react-photoswipe-gallery";
-import ModalVideo from "react-modal-video";
-import { useState } from "react";
+// import { Gallery, Item } from "react-photoswipe-gallery";
+// import ModalVideo from "react-modal-video";
+// import { useState } from "react";
 import Link from "next/link";
+// import { useParams } from "next/navigation";
+import { fetchListing } from "@/app/lib/api";
 const images = [
 	{
 		src: "/images/resource/inventory1-6.png",
@@ -31,41 +33,45 @@ const images = [
 		height: 550,
 	},
 ];
-export default function Single2() {
-	const slickOptions = {
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: false,
-		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-				},
+const slickOptions = {
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: false,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
 			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
 			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
 			},
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		],
-	};
-	const [isOpen, setOpen] = useState(false);
+		},
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	],
+};
+
+export default async function Single({ listingId }: { listingId: string }) {
+	const listing = await fetchListing(listingId);
+	console.log("one listing ========================================", listing);
+
+	// const [isOpen, setOpen] = useState(false);
 	return (
 		<>
 			<section className="inventory-section pb-0 layout-radius">
@@ -79,10 +85,10 @@ export default function Single2() {
 								<Link href={`/listings`}>Listă anunțuri</Link>
 							</li>
 							<li>
-								<span>Volvo XC90</span>
+								<span>{listing.brand + " " + listing?.model_w_engine}</span>
 							</li>
 						</ul>
-						<h2>Volvo XC90</h2>
+						<h2>{listing.brand + " " + listing?.model_w_engine}</h2>
 						<div className="text">
 							2.0 D5 PowerPulse Momentum 5dr AWD Geartronic Estate
 						</div>
@@ -170,7 +176,7 @@ export default function Single2() {
 							<div className="inner-column">
 								<div className="gallery-sec">
 									<div className="image-column wrap-gallery-box">
-										<Gallery>
+										{/* <Gallery>
 											<Slider
 												{...slickOptions}
 												className="inner-column inventry-slider-two inner-slide"
@@ -253,8 +259,8 @@ export default function Single2() {
 														</Item>
 													</li>
 												</ul>
-											</div>{" "}
-										</Gallery>
+											</div>
+										</Gallery> */}
 									</div>
 								</div>
 								{/* overview-sec */}
@@ -465,14 +471,14 @@ export default function Single2() {
 				{/* cars-section-three */}
 				<RelatedCars />
 				{/* End shop section two */}
-			</section>{" "}
-			<ModalVideo
+			</section>
+			{/* <ModalVideo
 				channel="youtube"
 				youtube={{ mute: 0, autoplay: 0 }}
 				isOpen={isOpen}
 				videoId="7e90gBu4pas"
 				onClose={() => setOpen(false)}
-			/>{" "}
+			/> */}
 		</>
 	);
 }
