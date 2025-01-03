@@ -113,7 +113,10 @@ export default function RelatedCars() {
 											<Link href={`/listings/${car.id}`}>
 												<Image
 													alt=""
-													src={car.images[1]}
+													src={
+														car.images[1] ||
+														"/images/custom/car-placeholder.webp"
+													}
 													width={329}
 													height={220}
 												/>

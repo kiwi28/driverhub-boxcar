@@ -1,6 +1,5 @@
 // "use client";
 import Image from "next/image";
-// import Slider from "react-slick";
 import RelatedCars from "./RelatedCars";
 
 import Overview from "./sections/Overview";
@@ -13,12 +12,13 @@ import Review from "./sections/Review";
 import Ratings from "./sections/Ratings";
 import Replay from "./sections/Replay";
 import CommentForm from "./sections/CommentForm";
-// import { Gallery, Item } from "react-photoswipe-gallery";
 // import ModalVideo from "react-modal-video";
 // import { useState } from "react";
 import Link from "next/link";
 // import { useParams } from "next/navigation";
 import { fetchListing } from "@/app/lib/api";
+import ListingSliderGallery from "./sections/ListingSliderGallery";
+
 const images = [
 	{
 		src: "/images/resource/inventory1-6.png",
@@ -33,39 +33,6 @@ const images = [
 		height: 550,
 	},
 ];
-const slickOptions = {
-	infinite: true,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	dots: false,
-	responsive: [
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				infinite: true,
-			},
-		},
-		{
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			},
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			},
-		},
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
-	],
-};
 
 export default async function Single({ listingId }: { listingId: string }) {
 	const listing = await fetchListing(listingId);
@@ -90,7 +57,7 @@ export default async function Single({ listingId }: { listingId: string }) {
 						</ul>
 						<h2>{listing.brand + " " + listing?.model_w_engine}</h2>
 						<div className="text">
-							2.0 D5 PowerPulse Momentum 5dr AWD Geartronic Estate
+							2.0 D5 PowerPulse Momentum 5dr AWD Geartronic Estate{listing.id}
 						</div>
 						<ul className="spectes-list">
 							<li>
@@ -176,91 +143,7 @@ export default async function Single({ listingId }: { listingId: string }) {
 							<div className="inner-column">
 								<div className="gallery-sec">
 									<div className="image-column wrap-gallery-box">
-										{/* <Gallery>
-											<Slider
-												{...slickOptions}
-												className="inner-column inventry-slider-two inner-slide"
-											>
-												{images.map(({ src, alt, width, height }, index) => (
-													<div
-														key={index}
-														className="image-box d-block"
-													>
-														<figure className="image">
-															<Item
-																original={src}
-																thumbnail={src}
-																width={width}
-																height={height}
-															>
-																{({ ref, open }) => (
-																	<a onClick={open}>
-																		<Image
-																			ref={ref}
-																			alt={alt}
-																			src={src}
-																			style={{
-																				height: "100%",
-																				objectFit: "cover",
-																			}}
-																			width={width}
-																			height={height}
-																		/>
-																	</a>
-																)}
-															</Item>
-														</figure>
-													</div>
-												))}
-											</Slider>
-											<div className="content-box">
-												<ul className="video-list">
-													<li>
-														<a onClick={() => setOpen(true)}>
-															<Image
-																src="/images/resource/video1-1.svg"
-																width={18}
-																height={18}
-																alt=""
-															/>
-															Video
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															<Image
-																src="/images/resource/video1-2.svg"
-																width={18}
-																height={18}
-																alt=""
-															/>
-															360 View
-														</a>
-													</li>
-													<li>
-														<Item
-															original="/images/resource/inventory1-6.png"
-															thumbnail="/images/resource/inventory1-6.png"
-															width={924}
-															height={550}
-														>
-															{({ ref, open }) => (
-																<a onClick={open}>
-																	<Image
-																		ref={ref}
-																		src="/images/resource/video1-4.svg"
-																		width={18}
-																		height={18}
-																		alt=""
-																	/>
-																	All Photos
-																</a>
-															)}
-														</Item>
-													</li>
-												</ul>
-											</div>
-										</Gallery> */}
+										<ListingSliderGallery images={images} />
 									</div>
 								</div>
 								{/* overview-sec */}
@@ -275,11 +158,9 @@ export default async function Single({ listingId }: { listingId: string }) {
 								<div className="features-sec">
 									<Features />
 								</div>
-								{/* faq-section */}
-								<div className="faqs-section pt-0">
+								{/* <div className="faqs-section pt-0">
 									<Faqs />
 								</div>
-								{/* End faqs-section */}
 								<div className="location-box">
 									<Location />
 								</div>
@@ -295,7 +176,7 @@ export default async function Single({ listingId }: { listingId: string }) {
 								<div className="Reply-sec">
 									<Replay />
 								</div>
-								<CommentForm />
+								<CommentForm /> */}
 							</div>
 						</div>
 						<div className="side-bar-column v2 col-xl-4 col-lg-12 col-md-12 col-sm-12">

@@ -1,7 +1,11 @@
-@import "css/bootstrap.min.css";
-@import "css/slick-theme.css";
-@import "css/slick.css";
-@import "css/mmenu.css";
-@import "css/style.css";
+@use "./custom.scss";
+
+// @import url("slick-carousel/slick/slick.css");
+// @import url("slick-carousel/slick/slick-theme.css");
+
+@import url("css/bootstrap.min.css");
+@import url("css/slick-theme.css");
+@import url("css/slick.css");
+@import url("css/mmenu.css");
+@import url("css/style.css");
 // @import "node_modules/react-modal-video/scss/modal-video.scss";
-@import "./custom.scss";

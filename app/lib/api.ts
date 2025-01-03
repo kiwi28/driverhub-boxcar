@@ -1,5 +1,5 @@
 import { pb } from "@/app/lib/pb";
-import { ListingRecord, ListResponse } from "./types/listings";
+import { ListingRecord, ListResponse } from "./types/listingTypes";
 import { RecordListOptions, RecordOptions } from "pocketbase";
 
 export const fetchListingsPage = async (

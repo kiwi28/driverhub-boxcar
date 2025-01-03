@@ -1,18 +1,16 @@
 import { RecordModel } from "pocketbase";
 
-export interface Listing {
-	id: string;
-	created: string;
-	updated: string;
-	collectionId: string;
-	brand: CarBrandsEnum;
-	model_w_engine: string;
+export type Listing = {
+	slug: string;
+	title: string;
 	description?: string;
+	brand: CarBrandsEnum;
+	modelWEngine: string;
 	images: string[];
 	year: string;
 	fuel: string;
 	price: string;
-	engine_cmc?: number;
+	engineCmc?: number;
 	phone: string;
 	seats: number;
 	chasis: string;
@@ -20,25 +18,25 @@ export interface Listing {
 	deposit?: boolean;
 	transmission: string;
 	traits?: string[];
-	pickup_address: string;
+	pickupAddress: string;
 	user: string;
-	admin_approval: string;
+	adminApproval: string;
 	isActive: boolean;
 	isDeleted: boolean;
 	isPromoted: boolean;
-}
+};
 
 // This type combines your Listing with PocketBase's Record type
 export type ListingRecord = RecordModel & Listing;
 
 // Type for the list response
-export interface ListResponse<T> {
+export type ListResponse<T> = {
 	page: number;
 	perPage: number;
 	totalItems: number;
 	totalPages: number;
 	items: T[];
-}
+};
 
 export enum CarBrandsEnum {
 	Abarth = "Abarth",

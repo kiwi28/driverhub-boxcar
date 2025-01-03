@@ -5,7 +5,7 @@ import Features from "@/app/ui/components/home/Features";
 // import Cars from "@/app/ui/components/home/Cars";
 import Hero from "@/app/ui/components/home/Hero";
 import React, { Suspense } from "react";
-import Cars2 from "@/app/ui/components/home/Cars2";
+import CarsList from "@/app/ui/components/home/CarsList";
 // import Inspiration from "@/app/ui/components/homes/home-2/Inspiration";
 // import Testimonials from "@/app/ui/components/home/Testimonials";
 // import Team from "@/app/ui/components/home/Team";
@@ -37,8 +37,8 @@ export default async function Home() {
 			<Hero />
 			{/* <div style={{ paddingBottom: "6rem" }} /> */}
 			{/* <Cta /> */}
-			<Suspense fallback={<h1>Loading Cars2 top recent</h1>}>
-				<Cars2 />
+			<Suspense fallback={<h1>Loading CarsList top recent</h1>}>
+				<CarsList />
 			</Suspense>
 			{/* <Cars /> */}
 			<Features />

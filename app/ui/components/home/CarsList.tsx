@@ -1,11 +1,12 @@
 // "use client";
 import { fetchListingsPage } from "@/app/lib/api";
+import { CAR_PLACEHOLDER } from "@/app/lib/constants";
 import { pb } from "@/app/lib/pb";
 import Image from "next/image";
 // import { listings } from "@/data/cars";
 import Link from "next/link";
 
-export default async function Cars2() {
+export default async function CarsList() {
 	const { items: listings } = await fetchListingsPage(1, 4, {
 		sort: "-created",
 	});
@@ -47,8 +48,11 @@ export default async function Cars2() {
 										<div className="image">
 											<Link href={`/listings/${car.id}`}>
 												<Image
-													alt=""
-													src={pb.files.getUrl(car, car.images[1])}
+													alt="car_image"
+													src={
+														pb.files.getUrl(car, car.images[1]) ||
+														CAR_PLACEHOLDER
+													}
 													width={329}
 													height={220}
 												/>
