@@ -1,9 +1,44 @@
-// "use client";
-import React from "react";
+"use client";
+import React, { useCallback, useEffect } from "react";
 import Image from "next/image";
-import { signIn } from "@/app/auth";
+import { useForm } from "react-hook-form";
+import { loginSchema } from "@/app/lib/yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { pb } from "@/app/lib/pb";
+import { useRouter } from "next/navigation";
 export default function Login() {
-	console.log("before use server");
+	console.log("authStore", pb.authStore);
+	const router = useRouter();
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm({ resolver: yupResolver(loginSchema) });
+
+	const onformSubmit = useCallback(
+		async (data: { email: string; password: string }) => {
+			try {
+				const authData = await pb
+					.collection("users")
+					.authWithPassword(data.email, data.password);
+
+				// if (authData.token) {
+				// 	router.push("/dashboard");
+				// }
+				console.log(authData);
+			} catch (err) {
+				console.log("login err", err);
+			}
+		},
+		[]
+	);
+
+	// useEffect(() => {
+	// 	if (pb.authStore.isValid) {
+	// 		router.push("/dashboard");
+	// 	}
+	// }, [router]);
+
 	return (
 		<section className="login-section layout-radius">
 			<div className="inner-container">
@@ -52,28 +87,17 @@ export default function Login() {
 								aria-labelledby="nav-home-tab"
 							>
 								<div className="form-box">
-									<form
-										// onSubmit={(e) => e.preventDefault()}
-										action={async (formData) => {
-											"use server";
-											console.log("after use server");
-											console.log("formData", formData);
-											try {
-												await signIn("credentials", formData);
-											} catch (err) {
-												console.log("signin error", err);
-											}
-										}}
-									>
+									<form onSubmit={handleSubmit(onformSubmit)}>
 										<div className="form_boxes">
 											<label>Email</label>
 											<input
-												autoComplete="current-email"
+												autoComplete="email"
 												required
 												type="email"
-												name="email"
 												placeholder="ion.popescu@exemplu.com"
+												{...register("email")}
 											/>
+											{errors.email && <div>{errors.email.message}</div>}
 										</div>
 										<div className="form_boxes">
 											<label>Password</label>
@@ -81,9 +105,10 @@ export default function Login() {
 												autoComplete="current-password"
 												required
 												type="password"
-												name="password"
 												placeholder="********"
+												{...register("password")}
 											/>
+											{errors.password && <div>{errors.password.message}</div>}
 										</div>
 										<div className="btn-box">
 											<label className="contain">

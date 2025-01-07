@@ -13,6 +13,7 @@ import CarsList from "@/app/ui/components/home/CarsList";
 // import Brands2 from "@/app/ui/components/home/Brands2";
 // import Footer3 from "@/app/ui/components/footers/Footer3";
 import Footer1 from "@/app/ui/components/home/Footer1";
+import { pb } from "../lib/pb";
 
 export const metadata = {
 	title: "DriverHUB || Inchirieri auto Uber & Bolt",
@@ -27,6 +28,7 @@ export default async function Home() {
 	// 			sort: "-created",
 	// 		}),
 	// });
+	console.log("authStore page home", pb.authStore);
 
 	return (
 		<>

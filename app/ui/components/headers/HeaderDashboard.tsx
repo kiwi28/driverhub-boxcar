@@ -1,11 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Nav from "./Nav";
 import Link from "next/link";
 import Image from "next/image";
 import { carItemsSearch } from "@/data/cars";
+import { pb } from "@/app/lib/pb";
+import { PB_URL } from "@/app/lib/constants";
 export default function HeaderDashboard() {
 	const [searchQuery, setSearchQuery] = useState("");
+	console.log("pb.authStore din headerdashboard client", pb.authStore);
 
 	const handleFocus = () => {
 		document.getElementById("box-content-search").classList.add("active");
@@ -22,6 +25,16 @@ export default function HeaderDashboard() {
 			.closest(".layout-search")
 			.classList.remove("active");
 	};
+
+	const userAvatarImg = useMemo(() => {
+		let imgURL = "/images/resource/header-img.png";
+		if (pb.authStore?.model?.avatar) {
+			imgURL = `${PB_URL}/api/files/users/${pb.authStore.model?.avatar}`;
+		}
+
+		return imgURL;
+	}, []);
+
 	return (
 		<header className="DriverHUB-header header-style-ten">
 			<div className="header-inner">
@@ -156,7 +169,7 @@ export default function HeaderDashboard() {
 								<Image
 									width={50}
 									height={50}
-									src="/images/resource/header-img.png"
+									src={userAvatarImg}
 									alt=""
 								/>
 							</a>
