@@ -7,13 +7,9 @@ export const fetchListingsPage = async (
 	limit: number,
 	options?: RecordListOptions
 ): Promise<ListResponse<ListingRecord>> => {
-	const resp = (await pb
+	const resp = await pb
 		.collection("listings")
-		.getList<ListingRecord>(
-			page,
-			limit,
-			options
-		)) as ListResponse<ListingRecord>;
+		.getList<ListingRecord>(page, limit, options);
 
 	return resp;
 };

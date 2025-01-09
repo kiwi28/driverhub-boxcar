@@ -1,4 +1,3 @@
-// "use client";
 import { fetchListingsPage } from "@/app/lib/api";
 import { CAR_PLACEHOLDER } from "@/app/lib/constants";
 import { pb } from "@/app/lib/pb";
@@ -10,11 +9,20 @@ export default async function CarsList() {
 	const { items: listings } = await fetchListingsPage(1, 4, {
 		sort: "-created",
 	});
+	// const { items: listings } = await pb
+	// 	.collection("listings")
+	// 	.getList<ListingRecord>(1, 4, {
+	// 		sort: "-created",
+	// 	});
+
+	// const rawResponse = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+	// const resp = await rawResponse.json();
 
 	console.log(
 		"listings--------------------------------------------------------------\n",
 		listings
 	);
+	// const listings = [];
 
 	if (!listings?.length) {
 		return <span>NO listingss</span>;
@@ -102,8 +110,8 @@ export default async function CarsList() {
 										>
 											{car.description}
 										</div> */}
-										<ul>
-											{car.traits.map((spec, i) => (
+										<ul style={{ height: "30px" }}>
+											{car.traits?.map((spec, i) => (
 												<li key={i}>{spec}</li>
 											))}
 										</ul>

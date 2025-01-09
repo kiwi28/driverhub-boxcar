@@ -37,18 +37,12 @@ export default async function Home() {
 				white
 			/>
 			<Hero />
-			{/* <div style={{ paddingBottom: "6rem" }} /> */}
-			{/* <Cta /> */}
-			<Suspense fallback={<h1>Loading CarsList top recent</h1>}>
+
+			{/* <Suspense fallback={<h1>Loading CarsList top recent</h1>}>
 				<CarsList />
-			</Suspense>
-			{/* <Cars /> */}
+			</Suspense> */}
 			<Features />
-			{/* <Inspiration />
-			<Testimonials />
-			<Team /> */}
-			{/* <Blogs /> */}
-			{/* <Brands2 /> */}
+
 			<Footer1 />
 		</>
 	);

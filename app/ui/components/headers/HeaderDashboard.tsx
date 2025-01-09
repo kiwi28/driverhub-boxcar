@@ -78,8 +78,8 @@ export default function HeaderDashboard() {
 											defaultValue=""
 											aria-required="true"
 											required
-											onFocus={handleFocus}
-											onBlur={handleBlur}
+											// onFocus={handleFocus}
+											// onBlur={handleBlur}
 											onChange={(e) => setSearchQuery(e.target.value)}
 										/>
 									</div>

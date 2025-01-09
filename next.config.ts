@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+	// webSocketDebuggerUrl: false, // Add this line
 	images: {
 		remotePatterns: [
 			{
