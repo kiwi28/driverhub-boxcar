@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import Nav from "./Nav";
+import Nav from "./_Nav";
 import Link from "next/link";
 import Image from "next/image";
 import { carItemsSearch } from "@/data/cars";

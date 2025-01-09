@@ -1,7 +1,7 @@
 import Dashboard from "@/app/ui/components/dashboard/Dashboard";
 import Footer1 from "@/app/ui/components/home/Footer1";
-import Header1 from "@/app/ui/components/headers/Header1";
-import HeaderDashboard from "@/app/ui/components/headers/HeaderDashboard";
+import Header1 from "@/app/ui/headers.old/_Header1";
+import HeaderDashboard from "@/app/ui/headers.old/_HeaderDashboard";
 import React from "react";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default function DashboardPage() {
 	return (
 		<>
 			<div style={{ background: "var(--theme-color-dark)" }}>
-				<HeaderDashboard />
+				Header1 />
 
 				<Dashboard />
 				<Footer1 parentClass="DriverHUB-footer footer-style-one v2" />

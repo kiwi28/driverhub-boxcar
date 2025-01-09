@@ -1,5 +1,5 @@
 // import Cta from "@/app/ui/components/common/Cta";
-import Header1 from "@/app/ui/components/headers/Header1";
+import Header1 from "@/app/ui/headers.old/_Header1";
 import Features from "@/app/ui/components/home/Features";
 // import Brands from "@/app/ui/components/home/Brands";
 // import Cars from "@/app/ui/components/home/Cars";
@@ -32,10 +32,10 @@ export default async function Home() {
 
 	return (
 		<>
-			<Header1
+			{/* <Header1
 				headerClass="DriverHUB-header hheader-style-v4 five"
 				white
-			/>
+			/> */}
 			<Hero />
 
 			{/* <Suspense fallback={<h1>Loading CarsList top recent</h1>}>

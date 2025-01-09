@@ -1,5 +1,5 @@
 import Footer1 from "@/app/ui/components/home/Footer1";
-import Header1 from "@/app/ui/components/headers/Header1";
+import Header1 from "@/app/ui/headers.old/_Header1";
 import ShopSingle from "@/app/ui/components/shop/ShopSingle";
 import { products } from "@/data/products";
 
@@ -14,7 +14,7 @@ export default function ShopSinglePage({ params }) {
 		products.filter((elm) => elm.id == params.id)[0] || products[0];
 	return (
 		<>
-			<Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" />
+			{/* <Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" /> */}
 			<ShopSingle product={product} />
 
 			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />

@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import Nav from "./Nav";
+import Nav from "./_Nav";
 import Link from "next/link";
 import Image from "next/image";
 import { carItemsSearch } from "@/data/cars";
@@ -9,6 +9,13 @@ import { PB_URL } from "@/app/lib/constants";
 export default function HeaderDashboard() {
 	const [searchQuery, setSearchQuery] = useState("");
 	console.log("pb.authStore din headerdashboard client", pb.authStore);
+
+	// UNUSED
+	// UNUSED
+	// UNUSED
+	// UNUSED
+	// UNUSED
+	// UNUSED
 
 	const handleFocus = () => {
 		document.getElementById("box-content-search").classList.add("active");
