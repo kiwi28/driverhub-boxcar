@@ -1,7 +1,8 @@
 // "use client";
 import React from "react";
 import Image from "next/image";
-import { signIn } from "@/app/auth";
+// import { signIn } from "@/auth";
+
 export default function Login() {
 	console.log("before use server");
 	return (
@@ -58,11 +59,8 @@ export default function Login() {
 											"use server";
 											console.log("after use server");
 											console.log("formData", formData);
-											try {
-												await signIn("credentials", formData);
-											} catch (err) {
-												console.log("signin error", err);
-											}
+											// await signIn();
+											// await signIn("credentials", formData);
 										}}
 									>
 										<div className="form_boxes">

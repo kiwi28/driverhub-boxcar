@@ -7,21 +7,21 @@ import { carItemsSearch } from "@/data/cars";
 export default function HeaderDashboard() {
 	const [searchQuery, setSearchQuery] = useState("");
 
-	const handleFocus = () => {
-		document.getElementById("box-content-search").classList.add("active");
-		document
-			.getElementById("box-content-search")
-			.closest(".layout-search")
-			.classList.add("active");
-	};
+	// const handleFocus = () => {
+	// 	document.getElementById("box-content-search").classList.add("active");
+	// 	document
+	// 		.getElementById("box-content-search")
+	// 		.closest(".layout-search")
+	// 		.classList.add("active");
+	// };
 
-	const handleBlur = () => {
-		document.getElementById("box-content-search").classList.remove("active");
-		document
-			.getElementById("box-content-search")
-			.closest(".layout-search")
-			.classList.remove("active");
-	};
+	// const handleBlur = () => {
+	// 	document.getElementById("box-content-search").classList.remove("active");
+	// 	document
+	// 		.getElementById("box-content-search")
+	// 		.closest(".layout-search")
+	// 		.classList.remove("active");
+	// };
 	return (
 		<header className="DriverHUB-header header-style-ten">
 			<div className="header-inner">
@@ -65,8 +65,8 @@ export default function HeaderDashboard() {
 											defaultValue=""
 											aria-required="true"
 											required
-											onFocus={handleFocus}
-											onBlur={handleBlur}
+											// onFocus={handleFocus}
+											// onBlur={handleBlur}
 											onChange={(e) => setSearchQuery(e.target.value)}
 										/>
 									</div>

@@ -20,13 +20,13 @@ export default function AboutPage() {
 			<Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" />
 			<section className="about-inner-one layout-radius">
 				<About />
-				<Features2 />
-				<Features />
+				{/* <Features2 /> */}
+				{/* <Features /> */}
 				<Facts />
 
 				<Brands />
 				<Team />
-				<Testimonials />
+				{/* <Testimonials /> */}
 				<Faqs />
 			</section>
 			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />

@@ -1,5 +1,5 @@
 import React from "react";
-import Cars from "../home/home-6/Cars";
+// import Cars from "../home/home-6/Cars";
 import Image from "next/image";
 import Location from "./sections/Location";
 import Review from "./sections/Review";
@@ -281,7 +281,7 @@ export default function DealerSingle({ dealerItem }) {
 					</div>
 				</div>
 				{/* cars-section-three */}
-				<Cars />
+				{/* <Cars /> */}
 				{/* End shop section two */}
 			</div>
 		</section>
