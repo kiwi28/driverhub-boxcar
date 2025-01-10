@@ -5,7 +5,7 @@ import Context from "@/context/Context";
 import BackToTop from "@/app/ui/components/common/BackToTop";
 // import Providers from "./providers";
 import FilterSidebar from "@/app/ui/components/common/FilterSidebar";
-import Providers from "@/app/providers";
+// import Providers from "@/app/providers";
 
 export default function ClientLayout({ children }: React.PropsWithChildren) {
 	useEffect(() => {
@@ -15,13 +15,13 @@ export default function ClientLayout({ children }: React.PropsWithChildren) {
 	}, []);
 
 	return (
-		<Providers>
+		<>
 			<Context>
 				<MobileMenu />
 				<div className="DriverHUB-wrapper">{children}</div>
 				<FilterSidebar />
 			</Context>
 			<BackToTop />
-		</Providers>
+		</>
 	);
 }

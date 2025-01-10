@@ -5,15 +5,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { carItemsSearch } from "@/data/cars";
 import { pb } from "@/app/lib/pb";
+import { handleSignIn, handleSignOut } from "@/app/actions";
+import { useSession } from "next-auth/react";
+import { Session } from "next-auth";
+
+type HeaderProps = {
+	headerClass?: string;
+	white?: boolean;
+	session: Session | null;
+};
+
+// import { signIn } from "@/auth";
 export default function Header1({
 	headerClass = "header-style-v1 header-default",
 	white = false,
-}) {
+	session,
+}: HeaderProps) {
 	const [searchQuery, setSearchQuery] = useState("");
-	const isUser = useMemo(() => {
-		console.log("authstore din header", pb.authStore.isValid);
-		return pb.authStore.isValid;
-	}, []);
 
 	const handleFocus = () => {
 		document.getElementById("box-content-search").classList.add("active");
@@ -168,13 +176,33 @@ export default function Header1({
 							{/* Main Menu End*/}
 						</div>
 						<div className="right-box">
-							{isUser ? (
-								<Link href={`/dashboard`}>dashboard</Link>
+							{session?.user ? (
+								<>
+									<Link href={`/dashboard`}>dashboard</Link>
+									<button
+										onClick={async () => {
+											try {
+												await handleSignOut();
+											} catch (err) {
+												console.log("sign out error:", err);
+											}
+										}}
+									>
+										Log Out
+									</button>
+								</>
 							) : (
-								<Link
-									href={`/login`}
-									title=""
+								<div
+									// href={`/login`}
+									// title=""
 									className="box-account"
+									onClick={async () => {
+										try {
+											await handleSignIn();
+										} catch (err) {
+											console.log("login error:", err);
+										}
+									}}
 								>
 									<span className="icon">
 										<svg
@@ -205,8 +233,8 @@ export default function Header1({
 											</defs>
 										</svg>
 									</span>
-									Sign in
-								</Link>
+									Login
+								</div>
 							)}
 							<div className="btn">
 								<Link

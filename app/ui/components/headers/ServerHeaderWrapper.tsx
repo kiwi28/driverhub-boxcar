@@ -9,6 +9,7 @@ export default async function ServerHeaderWrapper() {
 		<div>
 			<div>{session ? session.user?.name : "mu3"}</div>
 			<Header1
+				session={session}
 				headerClass="DriverHUB-header hheader-style-v4 five"
 				white
 			/>

@@ -29,6 +29,10 @@ export const {
 	signOut,
 } = NextAuth(config);
 
+// export async function handleSingIn() {
+// 	return await signIn();
+// }
+
 // import NextAuth from "next-auth";
 // import CredentialsProvider from "next-auth/providers/credentials";
 // import { pb } from "@/app/lib/pb";
