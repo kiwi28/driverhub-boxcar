@@ -1,7 +1,7 @@
 import NextAuth, { NextAuthConfig } from "next-auth";
-// import type { NextAuthConfig } from "next-auth";
-// import NextAuthConfig from "next-auth"
 import Credentials from "next-auth/providers/credentials";
+import { pb } from "@/app/lib/pb";
+import { loginSchema } from "@/app/lib/yup";
 
 const credentialsConfig = Credentials({
 	name: "Credentials",
@@ -10,16 +10,51 @@ const credentialsConfig = Credentials({
 		password: { label: "Password", type: "password" },
 	},
 	async authorize(credentials) {
-		if (!credentials?.email || !credentials.password) {
+		try {
+			// First validate the credentials
+			const { email, password } = loginSchema.validateSync(credentials);
+
+			if (!email || !password) {
+				return null;
+			}
+
+			// Attempt authentication with PocketBase
+			const authData = await pb
+				.collection("users")
+				.authWithPassword(email, password);
+
+			// Return a properly formatted user object
+			return {
+				id: authData.record.id,
+				email: authData.record.email,
+				name: authData.record.name || email, // fallback to email if name doesn't exist
+				// Add any other user properties you want to access in your application
+			};
+		} catch (error) {
+			console.error("Authentication error:", error);
 			return null;
-		} else {
-			return { name: "alahu Akbar" };
 		}
 	},
 });
 
 const config = {
 	providers: [credentialsConfig],
+	// You might want to add these configurations
+	pages: {
+		signIn: "/login", // custom login page path if you have one
+	},
+	callbacks: {
+		authorized({ request: { nextUrl }, auth }) {
+			const isLoggedIn = !!auth?.user;
+			const isDashboard = nextUrl.pathname.startsWith("/dashboard");
+
+			if (isDashboard && !isLoggedIn) {
+				return false; // This will redirect to login
+			}
+
+			return true;
+		},
+	},
 } satisfies NextAuthConfig;
 
 export const {

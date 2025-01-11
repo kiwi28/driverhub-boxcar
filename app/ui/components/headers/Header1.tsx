@@ -5,23 +5,26 @@ import Link from "next/link";
 import Image from "next/image";
 import { carItemsSearch } from "@/data/cars";
 import { pb } from "@/app/lib/pb";
-import { handleSignIn, handleSignOut } from "@/app/actions";
-import { useSession } from "next-auth/react";
-import { Session } from "next-auth";
+// import { handleSignIn, handleSignOut } from "@/app/actions";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 type HeaderProps = {
 	headerClass?: string;
 	white?: boolean;
-	session: Session | null;
+	// session: Session | null;
 };
 
 // import { signIn } from "@/auth";
 export default function Header1({
 	headerClass = "header-style-v1 header-default",
 	white = false,
-	session,
-}: HeaderProps) {
+}: // session,
+HeaderProps) {
 	const [searchQuery, setSearchQuery] = useState("");
+	const { data: session, status } = useSession();
+	const router = useRouter();
+	console.log("session react din header", session);
 
 	const handleFocus = () => {
 		document.getElementById("box-content-search").classList.add("active");
@@ -37,6 +40,23 @@ export default function Header1({
 			.getElementById("box-content-search")
 			.closest(".layout-search")
 			.classList.remove("active");
+	};
+
+	const handleLogin = async () => {
+		try {
+			await signIn();
+		} catch (err) {
+			console.log("login error:", err);
+		}
+	};
+
+	const handleLogout = async () => {
+		try {
+			await signOut({ redirect: false });
+			router.refresh(); // Force a router refresh after logout
+		} catch (err) {
+			console.log("sign out error:", err);
+		}
 	};
 
 	return (
@@ -176,10 +196,11 @@ export default function Header1({
 							{/* Main Menu End*/}
 						</div>
 						<div className="right-box">
-							{session?.user ? (
+							{status === "authenticated" && session?.user ? (
 								<>
 									<Link href={`/dashboard`}>dashboard</Link>
-									<button
+									<div style={{ margin: "0 10px" }}>{session.user.name}</div>
+									{/* <button
 										onClick={async () => {
 											try {
 												await handleSignOut();
@@ -189,20 +210,22 @@ export default function Header1({
 										}}
 									>
 										Log Out
-									</button>
+									</button> */}
+									<button onClick={handleLogout}>Log Out</button>
 								</>
 							) : (
 								<div
 									// href={`/login`}
 									// title=""
 									className="box-account"
-									onClick={async () => {
-										try {
-											await handleSignIn();
-										} catch (err) {
-											console.log("login error:", err);
-										}
-									}}
+									// onClick={async () => {
+									// 	try {
+									// 		await handleSignIn();
+									// 	} catch (err) {
+									// 		console.log("login error:", err);
+									// 	}
+									// }}
+									onClick={handleLogin}
 								>
 									<span className="icon">
 										<svg

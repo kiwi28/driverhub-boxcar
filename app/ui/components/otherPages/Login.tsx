@@ -1,14 +1,12 @@
 "use client";
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback } from "react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import { loginSchema } from "@/app/lib/yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { pb } from "@/app/lib/pb";
-import { useRouter } from "next/navigation";
-export default function Login() {
-	console.log("authStore", pb.authStore);
-	const router = useRouter();
+import { loginSchema } from "@/app/lib/yup";
+import { signIn } from "next-auth/react";
+export default function Login({ callbackUrl }: { callbackUrl: string }) {
+	// console.log("pb authStore token: ", pb.authStore.token);
 	const {
 		register,
 		handleSubmit,
@@ -18,26 +16,35 @@ export default function Login() {
 	const onformSubmit = useCallback(
 		async (data: { email: string; password: string }) => {
 			try {
-				const authData = await pb
-					.collection("users")
-					.authWithPassword(data.email, data.password);
+				// const authData = await pb
+				// 	.collection("users")
+				// 	.authWithPassword(data.email, data.password);
 
-				// if (authData.token) {
-				// 	router.push("/dashboard");
-				// }
-				console.log(authData);
+				// // if (authData.token) {
+				// // 	router.push("/dashboard");
+				// // }
+				// console.log(authData);
+
+				// ----------------
+				const result = await signIn("credentials", {
+					email: data.email,
+					password: data.password,
+					redirect: true,
+					redirectTo: callbackUrl,
+				});
+
+				if (result?.error) {
+					console.log("Sign in error:", result.error);
+					// Handle error - show error message to user
+				} else {
+					// router.push("/dashboard"); // Redirect on success
+				}
 			} catch (err) {
 				console.log("login err", err);
 			}
 		},
-		[]
+		[callbackUrl]
 	);
-
-	// useEffect(() => {
-	// 	if (pb.authStore.isValid) {
-	// 		router.push("/dashboard");
-	// 	}
-	// }, [router]);
 
 	return (
 		<section className="login-section layout-radius">

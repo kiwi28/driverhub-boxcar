@@ -12,7 +12,7 @@ export default function SavedPage() {
 	return (
 		<>
 			<div style={{ background: "var(--theme-color-dark)" }}>
-				Header1 />
+				{/* <Header1 /> */}
 
 				<Saved />
 				<Footer1 parentClass="DriverHUB-footer footer-style-one v2" />

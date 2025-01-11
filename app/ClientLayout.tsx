@@ -5,6 +5,7 @@ import Context from "@/context/Context";
 import BackToTop from "@/app/ui/components/common/BackToTop";
 // import Providers from "./providers";
 import FilterSidebar from "@/app/ui/components/common/FilterSidebar";
+import Header1 from "./ui/components/headers/Header1";
 // import Providers from "@/app/providers";
 
 export default function ClientLayout({ children }: React.PropsWithChildren) {
@@ -17,6 +18,10 @@ export default function ClientLayout({ children }: React.PropsWithChildren) {
 	return (
 		<>
 			<Context>
+				<Header1
+					headerClass="DriverHUB-header hheader-style-v4 five"
+					white
+				/>
 				<MobileMenu />
 				<div className="DriverHUB-wrapper">{children}</div>
 				<FilterSidebar />
