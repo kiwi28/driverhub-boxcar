@@ -28,7 +28,7 @@ const credentialsConfig = Credentials({
 				id: authData.record.id,
 				email: authData.record.email,
 				name: authData.record.name || email, // fallback to email if name doesn't exist
-				// Add any other user properties you want to access in your application
+				pbToken: authData.token,
 			};
 		} catch (error) {
 			console.error("Authentication error:", error);
@@ -44,6 +44,22 @@ const config = {
 		signIn: "/login", // custom login page path if you have one
 	},
 	callbacks: {
+		// TODO: fix this ts error
+		async session({ session, token }) {
+			return {
+				...session,
+				user: {
+					...session.user,
+					pbToken: token.pbToken, // Pass the token to the session
+				},
+			};
+		},
+		async jwt({ token, user }) {
+			if (user) {
+				token.pbToken = user.pbToken;
+			}
+			return token;
+		},
 		authorized({ request: { nextUrl }, auth }) {
 			const isLoggedIn = !!auth?.user;
 			const isDashboard = nextUrl.pathname.startsWith("/dashboard");

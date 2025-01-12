@@ -1,6 +1,5 @@
 import Footer1 from "@/app/ui/components/home/Footer1";
-import Header1 from "@/app/ui/headers.old/_Header1";
-import Login from "@/app/ui/components/otherPages/Login";
+import AuthWrapper from "@/app/ui/components/otherPages/auth/AuthWrapper";
 
 import React from "react";
 import { auth } from "@/auth";
@@ -23,7 +22,7 @@ export default async function LoginPage({
 
 	return (
 		<>
-			<Login callbackUrl={callbackUrl ?? "/"} />
+			<AuthWrapper callbackUrl={callbackUrl ?? "/"} />
 
 			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />
 		</>

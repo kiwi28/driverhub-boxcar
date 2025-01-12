@@ -25,6 +25,7 @@ HeaderProps) {
 	const { data: session, status } = useSession();
 	const router = useRouter();
 	console.log("session react din header", session);
+	console.log("pb authStore react din header:", pb.authStore);
 
 	const handleFocus = () => {
 		document.getElementById("box-content-search").classList.add("active");

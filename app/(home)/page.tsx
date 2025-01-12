@@ -34,7 +34,8 @@ export default async function Home() {
 	// const session = useSession();
 	const session = await auth();
 
-	console.log("home session", session);
+	console.log("home session serer:", session);
+	console.log("home pb authStore serer:", pb.authStore);
 
 	return (
 		<>
