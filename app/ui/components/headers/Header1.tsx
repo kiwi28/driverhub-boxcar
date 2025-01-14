@@ -212,13 +212,20 @@ HeaderProps) {
 									>
 										Log Out
 									</button> */}
-									<button onClick={handleLogout}>Log Out</button>
+									<div
+										style={{ cursor: "pointer" }}
+										className="box-account"
+										onClick={handleLogout}
+									>
+										Log Out
+									</div>
 								</>
 							) : (
 								<div
 									// href={`/login`}
 									// title=""
 									className="box-account"
+									style={{ cursor: "pointer" }}
 									// onClick={async () => {
 									// 	try {
 									// 		await handleSignIn();

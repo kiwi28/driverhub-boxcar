@@ -44,7 +44,7 @@ const config = {
 		signIn: "/login", // custom login page path if you have one
 	},
 	callbacks: {
-		// TODO: fix this ts error
+		// TODO: fix this ts error before uncommenting
 		async session({ session, token }) {
 			return {
 				...session,
