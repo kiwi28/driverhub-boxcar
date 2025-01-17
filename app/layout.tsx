@@ -2,6 +2,8 @@ import "../public/main.scss";
 import "photoswipe/dist/photoswipe.css";
 import { dm_sans } from "./ui/fonts";
 import ClientLayoutWrapper from "./ClientLayoutWrapper";
+import Providers from "./providers";
+import { Toaster } from "react-hot-toast";
 // import ServerHeaderWrapper from "./ui/components/headers/ServerHeaderWrapper";
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
@@ -9,7 +11,10 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
 		<html lang="en">
 			<body className={`${dm_sans.className} antialiased`}>
 				{/* <ServerHeaderWrapper /> */}
-				<ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+				<Toaster position="bottom-right" />
+				<Providers>
+					<ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+				</Providers>
 			</body>
 		</html>
 	);

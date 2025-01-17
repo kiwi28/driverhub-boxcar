@@ -138,3 +138,5 @@ export enum CarBrandsEnum {
 	XEV = "XEV",
 	Altele = "Altele",
 }
+
+export type BrandCount = Record<string, number>;

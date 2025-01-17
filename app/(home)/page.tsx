@@ -1,28 +1,33 @@
-// import Cta from "@/app/ui/components/common/Cta";
-import Header1 from "@/app/ui/headers.old/_Header1";
 import Features from "@/app/ui/components/home/Features";
-// import Brands from "@/app/ui/components/home/Brands";
-// import Cars from "@/app/ui/components/home/Cars";
 import Hero from "@/app/ui/components/home/Hero";
 import React, { Suspense } from "react";
 import CarsList from "@/app/ui/components/home/CarsList";
-// import Inspiration from "@/app/ui/components/homes/home-2/Inspiration";
-// import Testimonials from "@/app/ui/components/home/Testimonials";
-// import Team from "@/app/ui/components/home/Team";
-// import Blogs from "@/app/ui/components/homes/home-4/Blogs";
-// import Brands2 from "@/app/ui/components/home/Brands2";
-// import Footer3 from "@/app/ui/components/footers/Footer3";
 import Footer1 from "@/app/ui/components/home/Footer1";
 import { pb } from "@/app/lib/pb";
 import { auth } from "@/auth";
-// import { useSession } from "next-auth/react";
+// import {
+// 	dehydrate,
+// 	HydrationBoundary,
+// 	QueryClient,
+// } from "@tanstack/react-query";
+import { countActiveListingsByBrand, getLatestListingHero } from "../lib/api";
 
 export const metadata = {
 	title: "DriverHUB || Inchirieri auto Uber & Bolt",
 	description:
 		"DriverHUB - Platforma noastră de închirieri auto oferă o soluție inovatoare, concepută pentru a conecta investitorii care doresc să genereze venituri prin închirierea mașinilor proprii cu șoferii Uber și Bolt care caută vehicule autorizate pentru activitatea de ride-sharing. Facilităm accesul la autoturisme de înaltă calitate și oferim suport complet pentru o experiență sigură și profitabilă, atât pentru șoferi, cât și pentru proprietarii de autovehicule. Alătură-te rețelei noastre și descoperă un parteneriat avantajos, adaptat pieței dinamice de mobilitate urbană!",
 };
+
 export default async function Home() {
+	// const queryClient = new QueryClient();
+
+	// await queryClient.prefetchQuery({
+	// 	queryKey: ["recentListings"],
+	// 	queryFn: () => getLatestListingHero(),
+	// });
+
+	// const dehydratedState = dehydrate(queryClient);
+
 	// const query = useQuery({
 	// 	queryKey: ["recentListings"],
 	// 	queryFn: async () =>
@@ -30,27 +35,26 @@ export default async function Home() {
 	// 			sort: "-created",
 	// 		}),
 	// });
-	// console.log("authStore page home", pb.authStore);
-	// const session = useSession();
-	const session = await auth();
 
-	console.log("home session serer:", session);
-	console.log("home pb authStore serer:", pb.authStore);
+	const { items: recentListings } = await getLatestListingHero();
+	const brandsCount = await countActiveListingsByBrand();
+	// const session = await auth();
+
+	// console.log("home session serer:", session);
+	// console.log("home pb authStore serer:", pb.authStore);
 
 	return (
+		// <HydrationBoundary state={dehydratedState}>
 		<>
-			{/* <Header1
-				headerClass="DriverHUB-header hheader-style-v4 five"
-				white
-			/> */}
-			<Hero />
+			<Hero brandsCount={brandsCount} />
 
-			{/* <Suspense fallback={<h1>Loading CarsList top recent</h1>}>
-				<CarsList />
-			</Suspense> */}
+			<Suspense fallback={<h1>Loading CarsList top recent</h1>}>
+				<CarsList listings={recentListings} />
+			</Suspense>
 			<Features />
 
 			<Footer1 />
 		</>
+		// </HydrationBoundary>
 	);
 }

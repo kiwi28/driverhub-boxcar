@@ -1,28 +1,18 @@
-import { fetchListingsPage } from "@/app/lib/api";
 import { CAR_PLACEHOLDER } from "@/app/lib/constants";
 import { pb } from "@/app/lib/pb";
+import { ListingRecord } from "@/app/lib/types/listingTypes";
 import Image from "next/image";
-// import { listings } from "@/data/cars";
 import Link from "next/link";
 
-export default async function CarsList() {
-	const { items: listings } = await fetchListingsPage(1, 4, {
-		sort: "-created",
-	});
-	// const { items: listings } = await pb
-	// 	.collection("listings")
-	// 	.getList<ListingRecord>(1, 4, {
-	// 		sort: "-created",
-	// 	});
+type CarsListProps = {
+	listings: ListingRecord[];
+};
 
-	// const rawResponse = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
-	// const resp = await rawResponse.json();
-
-	console.log(
-		"listings--------------------------------------------------------------\n",
-		listings
-	);
-	// const listings = [];
+export default function CarsList({ listings }: CarsListProps) {
+	// const { data: listings } = useQuery({
+	// 	queryKey: ["recentListings"],
+	// 	queryFn: () => getLatestListingHero(),
+	// });
 
 	if (!listings?.length) {
 		return <span>NO listingss</span>;
@@ -32,7 +22,7 @@ export default async function CarsList() {
 		<section className="cars-section-seven pt-0">
 			<div className="DriverHUB-container d-flex-col gap-4 align-items-center justify-content-center">
 				<div className="DriverHUB-title text-center wow fadeInUp">
-					<h2>Ultimele mașini </h2>
+					<h2>Ultimele mașini adăugate</h2>
 				</div>
 
 				<div
@@ -122,7 +112,7 @@ export default async function CarsList() {
 												href={`/listings/${car.id}`}
 												className="details"
 											>
-												View Details
+												Vezi detalii
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
 													width={14}
