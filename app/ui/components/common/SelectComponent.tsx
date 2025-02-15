@@ -5,13 +5,15 @@ import { useEffect, useRef, useState } from "react";
 
 export default function SelectComponent({
 	options = [{ "": "" }],
+	selectedOption,
+	setSelectedOption,
 }: {
+	selectedOption: any;
+	setSelectedOption: any;
 	options: ISelectOptions;
 }) {
 	const [isDromdownOpen, setIsDromdownOpen] = useState(false);
-	const [selectedOption, setSelectedOption] = useState(
-		Object.values(options[0])[0]
-	);
+
 	const ref = useRef(null);
 	const handleClickOutside = (event) => {
 		// Check if the click was outside the referenced element

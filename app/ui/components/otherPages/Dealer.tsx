@@ -3,6 +3,7 @@ import Image from "next/image";
 import { dealers } from "@/data/dealers";
 import Link from "next/link";
 import Pagination from "../common/Pagination";
+
 export default function Dealer() {
 	return (
 		<section className="dealer-ship-section layout-radius">

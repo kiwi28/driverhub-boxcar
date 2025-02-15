@@ -1,9 +1,8 @@
-import { pb } from "@/app/lib/pb";
 import { BrandCount, ListingRecord, ListResponse } from "./types/listingTypes";
 import { RecordListOptions, RecordOptions } from "pocketbase";
 import { pbFetch } from "./utils";
 
-// export const fetchListingsPage = async (
+// export const fetchListings = async (
 // 	page: number,
 // 	limit: number,
 // 	options?: RecordListOptions
@@ -14,19 +13,48 @@ import { pbFetch } from "./utils";
 
 // 	return resp;
 // };
-export const fetchListingsPage = async (
+export const fetchListings = async (
 	page: number,
 	limit: number,
 	options?: RecordListOptions
 ): Promise<ListResponse<ListingRecord>> => {
-	return pbFetch<ListResponse<ListingRecord>>("collections/listings/records", {
-		page,
-		limit,
-		filter: options?.filter,
-		sort: options?.sort,
-		expand: options?.expand,
+	const searchParams = new URLSearchParams({
+		page: page.toString(),
+		perPage: limit.toString(),
+		sort: options?.sort || "-created",
+		...(options?.filter && { filter: options.filter }),
+		...(options?.expand && { expand: options.expand }),
 	});
+
+	const response = await fetch(
+		`${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`,
+		{
+			method: "GET",
+			headers: {
+				"Content-Type": "application/json",
+			},
+		}
+	);
+
+	if (!response.ok) {
+		throw new Error("Failed to fetch listings");
+	}
+
+	return response.json();
 };
+// export const fetchListings = async (
+// 	page: number,
+// 	limit: number,
+// 	options?: RecordListOptions
+// ): Promise<ListResponse<ListingRecord>> => {
+// 	return pbFetch<ListResponse<ListingRecord>>("collections/listings/records", {
+// 		page,
+// 		limit,
+// 		filter: options?.filter,
+// 		sort: options?.sort || "-created",
+// 		expand: options?.expand,
+// 	});
+// };
 
 export const fetchListing = async (
 	id: string,
@@ -62,6 +90,7 @@ export const countActiveListingsByBrand = async (): Promise<BrandCount> => {
 	);
 
 	const brandCounts: BrandCount = {};
+
 	resp.items.forEach((listing) => {
 		if (brandCounts[listing.brand]) {
 			brandCounts[listing.brand]++;

@@ -1,5 +1,5 @@
 "use client";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import SelectComponent from "@/app/ui/components/common/SelectComponent";
 import Link from "next/link";
@@ -8,6 +8,8 @@ import Link from "next/link";
 import { BrandCount } from "@/app/lib/types/listingTypes";
 
 export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
+	const [selectedBrand, setSelectedbrand] = useState("Toate");
+
 	console.log("brandsCount", brandsCount);
 	const brandOptions = useMemo(() => {
 		if (!brandsCount || !Object.keys(brandsCount).length) return [];
@@ -20,6 +22,14 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 
 		return brandsList;
 	}, [brandsCount]);
+
+	const listingsUrl = useMemo(() => {
+		const url = new URL("/listings", window.location.href);
+		if (selectedBrand) {
+			url.searchParams.append("brand", selectedBrand);
+		}
+		return url.href;
+	}, [selectedBrand]);
 
 	// const brandOptions = useMemo(() => {
 	// 	const brandsList = CAR_BRANDS.map((brand) => ({ [brand]: brand }));
@@ -75,6 +85,8 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 								<div className="form_boxes">
 									<SelectComponent
 										options={[{ Toate: "Marcă - Toate" }, ...brandOptions]}
+										selectedOption={selectedBrand}
+										setSelectedOption={setSelectedbrand}
 									/>
 								</div>
 								{/* <div className="form_boxes">
@@ -87,7 +99,7 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 									<SelectComponent options={[{ "": "Any Price" }]} />
 								</div>
 								<Link
-									href={`/listings`}
+									href={listingsUrl}
 									className="form-submit"
 									style={{ marginRight: "15px" }}
 								>

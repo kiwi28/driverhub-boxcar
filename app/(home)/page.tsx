@@ -3,8 +3,8 @@ import Hero from "@/app/ui/components/home/Hero";
 import React, { Suspense } from "react";
 import CarsList from "@/app/ui/components/home/CarsList";
 import Footer1 from "@/app/ui/components/home/Footer1";
-import { pb } from "@/app/lib/pb";
-import { auth } from "@/auth";
+// import { pb } from "@/app/lib/pb";
+// import { auth } from "@/auth";
 // import {
 // 	dehydrate,
 // 	HydrationBoundary,

@@ -36,7 +36,8 @@ type PBQueryOptions = {
 
 export async function pbFetch<T>(
 	endpoint: string,
-	options: PBQueryOptions = {}
+	options: PBQueryOptions = {},
+	token?: string
 ): Promise<T> {
 	const session = await auth();
 
@@ -75,16 +76,16 @@ export async function pbFetch<T>(
 		},
 	};
 
-	if (session?.user?.pbToken) {
+	if (token) {
 		reqBody.headers = {
 			...reqBody.headers,
 			// @ts-expect-error
-			Authorization: `Bearer ${session?.user?.pbToken}`,
+			Authorization: `Bearer ${token}`,
 		};
 	}
 
 	const response = await fetch(url, reqBody);
-	console.log("token", session?.user?.pbToken);
+	console.log("token", token);
 	console.log("response", response);
 
 	if (!response.ok) {
