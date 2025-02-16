@@ -1,20 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export default function Pagination({
 	activePage,
-	setActivePage,
 	totalPages,
 }: {
 	activePage: number;
-	setActivePage: React.Dispatch<React.SetStateAction<number>>;
 	totalPages: number;
 }) {
 	// const totalPages = 20; // Adjust as needed
+	const router = useRouter();
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
+
+	const updateQueryParams = (key: string, value: string) => {
+		const params = new URLSearchParams(searchParams.toString());
+		params.set(key, value);
+
+		router.push(`${pathname}?${params.toString()}`);
+	};
 
 	const handlePageClick = (page: number) => {
 		if (page != 0 && page <= totalPages) {
-			setActivePage(page);
+			updateQueryParams("page", page.toString());
 		}
 		// Add navigation logic here, e.g., using a router or window.location
 	};
@@ -61,17 +69,19 @@ export default function Pagination({
 					</li>
 				);
 			})}
-			{activePage == 6 && (
-				<li className={`page-item ${activePage === 6 ? "active" : ""}`}>
+			{activePage == totalPages && (
+				<li
+					className={`page-item ${activePage === totalPages ? "active" : ""}`}
+				>
 					<a
 						className="page-link"
-						onClick={() => handlePageClick(6)}
+						onClick={() => handlePageClick(1)}
 					>
-						{6}
+						{totalPages}
 					</a>
 				</li>
 			)}
-			{activePage >= 7 && activePage <= 18 && (
+			{/* {activePage >= 3 && activePage <= totalPages && (
 				<li className="page-item">
 					<a
 						className="page-link"
@@ -81,11 +91,11 @@ export default function Pagination({
 					</a>
 				</li>
 			)}
-			{activePage >= 7 && activePage <= 18 && (
+			{activePage >= 3 && activePage <= totalPages && (
 				<li className={`page-item active`}>
 					<a className="page-link">{activePage}</a>
 				</li>
-			)}
+			)} */}
 			<li className="page-item">
 				<a
 					className="page-link"
@@ -94,7 +104,7 @@ export default function Pagination({
 					...
 				</a>
 			</li>
-			{activePage == 19 && (
+			{/* {activePage == 19 && (
 				<li className={`page-item ${activePage === 19 ? "active" : ""}`}>
 					<a
 						className="page-link"
@@ -103,7 +113,7 @@ export default function Pagination({
 						{19}
 					</a>
 				</li>
-			)}
+			)} */}
 			<li className={`page-item ${activePage === totalPages ? "active" : ""}`}>
 				<a
 					className="page-link"

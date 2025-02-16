@@ -26,20 +26,25 @@ export const fetchListings = async (
 		...(options?.expand && { expand: options.expand }),
 	});
 
-	const response = await fetch(
-		`${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`,
-		{
-			method: "GET",
-			headers: {
-				"Content-Type": "application/json",
-			},
-		}
-	);
+	const url = `${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`;
+
+	console.log("url", url);
+
+	const response = await fetch(url, {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
 
 	if (!response.ok) {
-		throw new Error("Failed to fetch listings");
+		throw new Error(
+			"Failed to fetch listings\n" +
+				response.status +
+				"\n" +
+				response.statusText
+		);
 	}
-
 	return response.json();
 };
 // export const fetchListings = async (
