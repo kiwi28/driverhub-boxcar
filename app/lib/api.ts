@@ -28,8 +28,6 @@ export const fetchListings = async (
 
 	const url = `${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`;
 
-	console.log("url", url);
-
 	const response = await fetch(url, {
 		method: "GET",
 		headers: {

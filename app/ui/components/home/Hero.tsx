@@ -7,6 +7,9 @@ import Link from "next/link";
 // import { countActiveListingsByBrand } from "@/app/lib/api";
 import { BrandCount } from "@/app/lib/types/listingTypes";
 
+const listingsBaseURl = new URL("/listings", window.location.href);
+listingsBaseURl.searchParams.append("page", "0");
+
 export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 	const [selectedBrand, setSelectedbrand] = useState("Toate");
 
@@ -24,11 +27,10 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 	}, [brandsCount]);
 
 	const listingsUrl = useMemo(() => {
-		const url = new URL("/listings", window.location.href);
 		if (selectedBrand) {
-			url.searchParams.append("brand", selectedBrand);
+			listingsBaseURl.searchParams.append("brand", selectedBrand);
 		}
-		return url.href;
+		return listingsBaseURl.href;
 	}, [selectedBrand]);
 
 	// const brandOptions = useMemo(() => {
@@ -119,7 +121,7 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 						>
 							<div className="image-box">
 								<figure className="image">
-									<Link href={`/listings`}>
+									<Link href={listingsUrl}>
 										<Image
 											alt=""
 											src="/images/banner/banner5-1.webp"

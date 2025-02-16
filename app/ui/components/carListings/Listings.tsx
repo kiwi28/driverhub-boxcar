@@ -17,7 +17,7 @@ import { fetchListings } from "@/app/lib/api";
 // // listings: ListingRecord[];
 // }
 
-const LISTINGS_PAGE_SIZE = 12;
+const LISTINGS_PAGE_SIZE = 2;
 
 type ListingsProps = {
 	currentPage: number;
@@ -29,7 +29,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 	const [isLoading, setIsLoading] = useState(false);
 	const [listingsListRecord, setListingsListRecord] =
 		useState<null | ListResponse<ListingRecord>>(null);
-	console.log("currentPage", currentPage);
+	// console.log("currentPage", currentPage);
 
 	const listings = useMemo(
 		() => listingsListRecord?.items || [],
@@ -50,7 +50,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 		setIsLoading(true);
 		const getListings = async () => {
 			const resp = await fetchListings(currentPage, LISTINGS_PAGE_SIZE);
-			console.log("listings pb ", resp);
+			// console.log("listings pb ", resp);
 			setListingsListRecord(resp);
 		};
 
@@ -152,7 +152,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 														alt={car.brand + "-image"}
 														src={
 															car.images[0]
-																? `${process.env.NEXT_PUBLIC_PB_URL}/api/files/listings/${car.id}/${car.images[0]}`
+																? `${process.env.NEXT_PUBLIC_PB_URL}/api/files/listings/${car.id}/${car.images[0]}?thumb=329x220`
 																: "/images/car-placeholder.png"
 														}
 														width={329}
@@ -246,7 +246,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 							<ul className="pagination">
 								<Pagination
 									activePage={listingsListRecord.page}
-									totalPages={listingsListRecord.totalPages}
+									totalPages={7 || listingsListRecord.totalPages}
 								/>
 							</ul>
 							<div className="text">{currentPaginationFooterText}</div>

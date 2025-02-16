@@ -1,5 +1,6 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 
 export default function Pagination({
 	activePage,
@@ -8,28 +9,32 @@ export default function Pagination({
 	activePage: number;
 	totalPages: number;
 }) {
-	// const totalPages = 20; // Adjust as needed
 	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
 
-	const updateQueryParams = (key: string, value: string) => {
-		const params = new URLSearchParams(searchParams.toString());
-		params.set(key, value);
+	const updateQueryParams = useCallback(
+		(key: string, value: string) => {
+			const params = new URLSearchParams(searchParams.toString());
+			params.set(key, value);
 
-		router.push(`${pathname}?${params.toString()}`);
-	};
+			router.push(`${pathname}?${params.toString()}`);
+		},
+		[pathname, router, searchParams]
+	);
 
 	const handlePageClick = (page: number) => {
-		if (page != 0 && page <= totalPages) {
+		if (page >= 1 && page <= totalPages) {
 			updateQueryParams("page", page.toString());
 		}
-		// Add navigation logic here, e.g., using a router or window.location
 	};
 
 	return (
 		<ul className="pagination">
-			<li className="page-item">
+			<li
+				className="page-item"
+				style={{ display: activePage !== 1 ? undefined : "none" }}
+			>
 				<a
 					className="page-link"
 					onClick={() => handlePageClick(activePage - 1)}
@@ -69,19 +74,17 @@ export default function Pagination({
 					</li>
 				);
 			})}
-			{activePage == totalPages && (
-				<li
-					className={`page-item ${activePage === totalPages ? "active" : ""}`}
-				>
+			{activePage == 6 && (
+				<li className={`page-item ${activePage === 6 ? "active" : ""}`}>
 					<a
 						className="page-link"
 						onClick={() => handlePageClick(1)}
 					>
-						{totalPages}
+						{6}
 					</a>
 				</li>
 			)}
-			{/* {activePage >= 3 && activePage <= totalPages && (
+			{activePage >= 7 && activePage <= totalPages - 2 && (
 				<li className="page-item">
 					<a
 						className="page-link"
@@ -91,39 +94,52 @@ export default function Pagination({
 					</a>
 				</li>
 			)}
-			{activePage >= 3 && activePage <= totalPages && (
+			{activePage >= 7 && activePage <= totalPages - 2 && (
 				<li className={`page-item active`}>
 					<a className="page-link">{activePage}</a>
 				</li>
-			)} */}
-			<li className="page-item">
-				<a
-					className="page-link"
-					href="#"
+			)}
+			{totalPages >= 7 && (
+				<li className="page-item">
+					<a
+						className="page-link"
+						href="#"
+					>
+						...
+					</a>
+				</li>
+			)}
+			{activePage == totalPages - 1 && activePage > 6 && (
+				<li
+					className={`page-item ${
+						activePage === totalPages - 1 ? "active" : ""
+					}`}
 				>
-					...
-				</a>
-			</li>
-			{/* {activePage == 19 && (
-				<li className={`page-item ${activePage === 19 ? "active" : ""}`}>
 					<a
 						className="page-link"
 						onClick={() => handlePageClick(19)}
 					>
-						{19}
+						{totalPages - 1}
 					</a>
 				</li>
-			)} */}
-			<li className={`page-item ${activePage === totalPages ? "active" : ""}`}>
-				<a
-					className="page-link"
-					onClick={() => handlePageClick(totalPages)}
+			)}
+			{totalPages >= 7 && (
+				<li
+					className={`page-item ${activePage === totalPages ? "active" : ""}`}
 				>
-					{totalPages}
-				</a>
-			</li>
+					<a
+						className="page-link"
+						onClick={() => handlePageClick(totalPages)}
+					>
+						{totalPages}
+					</a>
+				</li>
+			)}
 
-			<li className="page-item">
+			<li
+				className="page-item"
+				style={{ display: activePage === totalPages ? "none" : undefined }}
+			>
 				<a
 					className="page-link"
 					onClick={() => handlePageClick(activePage + 1)}
