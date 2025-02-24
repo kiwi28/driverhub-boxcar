@@ -1,12 +1,17 @@
 "use client";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import SelectComponent from "../common/SelectComponent";
 // import { cars } from "@/data/cars";
 import Link from "next/link";
 import Pagination from "../common/Pagination";
-import { ListingRecord, ListResponse } from "@/app/lib/types/listingTypes";
+import {
+	BrandCount,
+	ListingRecord,
+	ListResponse,
+} from "@/app/lib/types/listingTypes";
 import { fetchListings } from "@/app/lib/api";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 // page,
 // setPage,
@@ -17,19 +22,59 @@ import { fetchListings } from "@/app/lib/api";
 // // listings: ListingRecord[];
 // }
 
-const LISTINGS_PAGE_SIZE = 2;
+const LISTINGS_PAGE_SIZE = 12;
 
 type ListingsProps = {
 	currentPage: number;
-	filters: string;
-	// filters: { [key: string]: string | string[] | undefined };
+	brand: string;
+	brandsCount: BrandCount;
+	// brand: { [key: string]: string | string[] | undefined };
 };
 
-export default function Listings({ currentPage, filters }: ListingsProps) {
+export default function Listings({
+	currentPage,
+	brand,
+	brandsCount,
+}: ListingsProps) {
 	const [isLoading, setIsLoading] = useState(false);
 	const [listingsListRecord, setListingsListRecord] =
 		useState<null | ListResponse<ListingRecord>>(null);
-	// console.log("currentPage", currentPage);
+
+	const searchParams = useSearchParams();
+	const router = useRouter();
+	const pathname = usePathname();
+
+	// console.log("brandsCount", brandsCount);
+	const brandOptions = useMemo(() => {
+		if (!brandsCount || !Object.keys(brandsCount).length) return [];
+
+		const brandsList = Object.entries(brandsCount).map(
+			([countedBrand, value]) => {
+				return { [countedBrand]: `${countedBrand} (${value})` };
+			}
+		);
+
+		return brandsList;
+	}, [brandsCount]);
+	console.log(brandOptions);
+
+	const selectedBrand = useMemo(() => {
+		const brandParam = searchParams.get("brand");
+
+		// console.log("brandParam", brand || brandParam);
+		return brand || brandParam || "";
+	}, [searchParams, brand]);
+
+	const handleSetBrand = useCallback(
+		(brand: string) => {
+			const params = new URLSearchParams(searchParams.toString());
+
+			params.set("brand", brand); // Update or add the param
+
+			router.push(`${pathname}?${params.toString()}`);
+		},
+		[router, searchParams, pathname]
+	);
 
 	const listings = useMemo(
 		() => listingsListRecord?.items || [],
@@ -49,7 +94,9 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 	useEffect(() => {
 		setIsLoading(true);
 		const getListings = async () => {
-			const resp = await fetchListings(currentPage, LISTINGS_PAGE_SIZE);
+			const resp = await fetchListings(currentPage, LISTINGS_PAGE_SIZE, {
+				filter: `(brand=${selectedBrand})`,
+			});
 			// console.log("listings pb ", resp);
 			setListingsListRecord(resp);
 		};
@@ -59,7 +106,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 			.finally(() => {
 				setIsLoading(false);
 			});
-	}, [currentPage]);
+	}, [currentPage, selectedBrand]);
 
 	if (isLoading) {
 		<h1>Loading .....</h1>;
@@ -88,12 +135,18 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 							className="form-box inventory"
 						>
 							<div className="form_boxes">
-								<SelectComponent options={["New Used", "used", "new"]} />
+								Brand
+								<SelectComponent
+									options={[{ Toate: "Marcă - Toate" }, ...brandOptions]}
+									selectedOption={selectedBrand}
+									setSelectedOption={handleSetBrand}
+								/>
 							</div>
 							<div className="form_boxes">
+								Oras
 								<SelectComponent options={["Type", "Tufan", "Tufan"]} />
 							</div>
-							<div className="form_boxes">
+							{/* <div className="form_boxes">
 								<SelectComponent options={["Make", "Tofan", "Tofan"]} />
 							</div>
 							<div className="form_boxes">
@@ -107,8 +160,8 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 							</div>
 							<div className="form_boxes">
 								<SelectComponent options={["Price", "2010", "2012"]} />
-							</div>
-							<div className="form_boxes">
+							</div> */}
+							{/* <div className="form_boxes">
 								<a
 									href="#"
 									title=""
@@ -122,7 +175,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 									/>
 									More Filters
 								</a>
-							</div>
+							</div> */}
 						</form>
 						<div className="text-box v1">
 							<div className="text">{currentPaginationFooterText}</div>
@@ -188,7 +241,13 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 											</a> */}
 										</div>
 										<div className="content-box">
-											<h6 className="title">
+											<h6
+												className="title"
+												style={{
+													height: "50px",
+													display: "flex",
+												}}
+											>
 												<Link href={`/listings/${car.id}`}>{car.title}</Link>
 											</h6>
 											<div className="text">{car.description}</div>
@@ -246,7 +305,7 @@ export default function Listings({ currentPage, filters }: ListingsProps) {
 							<ul className="pagination">
 								<Pagination
 									activePage={listingsListRecord.page}
-									totalPages={7 || listingsListRecord.totalPages}
+									totalPages={listingsListRecord.totalPages}
 								/>
 							</ul>
 							<div className="text">{currentPaginationFooterText}</div>

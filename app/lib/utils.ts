@@ -85,8 +85,8 @@ export async function pbFetch<T>(
 	}
 
 	const response = await fetch(url, reqBody);
-	console.log("token", token);
-	console.log("response", response);
+	// console.log("token", token);
+	// console.log("response", response);
 
 	if (!response.ok) {
 		throw new Error("PocketBase request failed:" + response.statusText);

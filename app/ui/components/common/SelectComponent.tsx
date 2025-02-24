@@ -40,6 +40,7 @@ export default function SelectComponent({
 			<div
 				className="select"
 				onClick={() => setIsDromdownOpen((pre) => !pre)}
+				style={{ minWidth: "200px" }}
 			>
 				<span>{selectedOption}</span>
 				<i className="fa fa-angle-down" />

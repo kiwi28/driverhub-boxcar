@@ -58,22 +58,24 @@ export default function Pagination({
 				</a>
 			</li>
 
-			{[...Array(totalPages)].slice(0, 5).map((_, index) => {
-				const page = index + 1;
-				return (
-					<li
-						className={`page-item ${activePage === page ? "active" : ""}`}
-						key={page}
-					>
-						<a
-							className="page-link"
-							onClick={() => handlePageClick(page)}
+			{[...Array(totalPages)]
+				.slice(0, 5 > totalPages ? 5 : totalPages)
+				.map((_, index) => {
+					const page = index + 1;
+					return (
+						<li
+							className={`page-item ${activePage === page ? "active" : ""}`}
+							key={page}
 						>
-							{page}
-						</a>
-					</li>
-				);
-			})}
+							<a
+								className="page-link"
+								onClick={() => handlePageClick(page)}
+							>
+								{page}
+							</a>
+						</li>
+					);
+				})}
 			{activePage == 6 && (
 				<li className={`page-item ${activePage === 6 ? "active" : ""}`}>
 					<a

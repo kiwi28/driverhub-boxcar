@@ -13,7 +13,6 @@ listingsBaseURl.searchParams.append("page", "0");
 export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 	const [selectedBrand, setSelectedbrand] = useState("Toate");
 
-	console.log("brandsCount", brandsCount);
 	const brandOptions = useMemo(() => {
 		if (!brandsCount || !Object.keys(brandsCount).length) return [];
 
@@ -28,7 +27,12 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 
 	const listingsUrl = useMemo(() => {
 		if (selectedBrand) {
-			listingsBaseURl.searchParams.append("brand", selectedBrand);
+			const brandExistingParam = listingsBaseURl.searchParams.get("brand");
+			if (!brandExistingParam) {
+				listingsBaseURl.searchParams.append("brand", selectedBrand);
+			} else {
+				listingsBaseURl.searchParams.set("brand", selectedBrand);
+			}
 		}
 		return listingsBaseURl.href;
 	}, [selectedBrand]);
@@ -52,6 +56,7 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 
 	// 	return brandsList;
 	// }, [brandsCount]);
+	console.log("selectedbrandHero", selectedBrand);
 
 	return (
 		<section className="DriverHUB-banner-section-five">

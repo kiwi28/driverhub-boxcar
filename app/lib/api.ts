@@ -26,7 +26,10 @@ export const fetchListings = async (
 		...(options?.expand && { expand: options.expand }),
 	});
 
+	console.log("filter", options?.filter);
+
 	const url = `${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`;
+	console.log(url);
 
 	const response = await fetch(url, {
 		method: "GET",
@@ -101,8 +104,6 @@ export const countActiveListingsByBrand = async (): Promise<BrandCount> => {
 			brandCounts[listing.brand] = 1;
 		}
 	});
-
-	console.log("brandCounts", brandCounts);
 
 	return brandCounts;
 };
