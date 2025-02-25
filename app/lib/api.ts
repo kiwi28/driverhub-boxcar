@@ -22,13 +22,17 @@ export const fetchListings = async (
 		page: page.toString(),
 		perPage: limit.toString(),
 		sort: options?.sort || "-created",
-		...(options?.filter && { filter: options.filter }),
+		// filter: options?.filter,
+		// ...(options?.filter && { filter: options.filter }),
 		...(options?.expand && { expand: options.expand }),
 	});
 
 	console.log("filter", options?.filter);
 
-	const url = `${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`;
+	let url = `${process.env.NEXT_PUBLIC_PB_URL}/api/collections/listings/records?${searchParams}`;
+	if (options?.filter) {
+		url = `${url}&filter=${options.filter}`;
+	}
 	console.log(url);
 
 	const response = await fetch(url, {

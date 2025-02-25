@@ -6,12 +6,17 @@ import Link from "next/link";
 // import { useQuery } from "@tanstack/react-query";
 // import { countActiveListingsByBrand } from "@/app/lib/api";
 import { BrandCount } from "@/app/lib/types/listingTypes";
+import { pb } from "@/app/lib/pb";
+import { usePocketBase } from "@/app/providers/auth-provider";
+import { QUERY_ALL } from "@/app/lib/constants";
 
 const listingsBaseURl = new URL("/listings", window.location.href);
 listingsBaseURl.searchParams.append("page", "0");
 
 export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
-	const [selectedBrand, setSelectedbrand] = useState("Toate");
+	const [selectedBrand, setSelectedbrand] = useState(QUERY_ALL);
+	const pb = usePocketBase();
+	console.log("pb.authStore din hero", pb.authStore);
 
 	const brandOptions = useMemo(() => {
 		if (!brandsCount || !Object.keys(brandsCount).length) return [];
@@ -91,7 +96,10 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 								{/* <form onSubmit={(e) => e.preventDefault()}> */}
 								<div className="form_boxes">
 									<SelectComponent
-										options={[{ Toate: "Marcă - Toate" }, ...brandOptions]}
+										options={[
+											{ [QUERY_ALL]: "Marcă - Toate" },
+											...brandOptions,
+										]}
 										selectedOption={selectedBrand}
 										setSelectedOption={setSelectedbrand}
 									/>

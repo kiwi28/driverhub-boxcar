@@ -1,24 +1,42 @@
-import { countActiveListingsByBrand } from "@/app/lib/api";
+import { countActiveListingsByBrand, fetchListings } from "@/app/lib/api";
+import { LISTINGS_PAGE_SIZE, QUERY_ALL } from "@/app/lib/constants";
+import PocketBase from "pocketbase";
+
 import Listings from "@/app/ui/components/carListings/Listings";
 
 import Footer1 from "@/app/ui/components/home/Footer1";
+import { auth } from "@/auth";
+import { ListingRecord } from "@/app/lib/types/listingTypes";
 
 export default async function InventoryListPage({
 	searchParams,
 }: {
 	searchParams: { [key: string]: string | string[] | undefined };
 }) {
+	const session = await auth();
+	const pb = new PocketBase(process.env.NEXT_PUBLIC_PB_URL);
+	pb.authStore.save(session?.user?.pbToken, session?.user);
+
 	const { page, brand } = await searchParams;
 	const brandsCount = await countActiveListingsByBrand();
 
-	// console.log("page", page);
+	const currentPage = parseInt(page as string) || 0;
+
+	let filter = "";
+	if (brand && brand != QUERY_ALL) {
+		filter = pb.filter("brand = {:brand}", { brand });
+	}
+
+	console.log("page + brand + filter", page, brand, filter);
+	const listings = await pb
+		.collection("listings")
+		.getList<ListingRecord>(currentPage, LISTINGS_PAGE_SIZE, { filter });
 
 	return (
 		<>
 			{/* <Header1 headerClass="DriverHUB-header header-style-v1 style-two inner-header cus-style-1" /> */}
 			<Listings
-				currentPage={parseInt(page as string) || 0}
-				brand={brand as string}
+				listings={listings}
 				brandsCount={brandsCount}
 			/>
 			<Footer1 parentClass="DriverHUB-footer footer-style-one v1 cus-st-1" />

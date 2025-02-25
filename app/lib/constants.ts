@@ -2,6 +2,9 @@
 // export const PB_URL = "https://potatoes-trip.pockethost.io";
 export const CAR_PLACEHOLDER = "/images/custom/car-placeholder.webp";
 
+export const LISTINGS_PAGE_SIZE = 12;
+export const QUERY_ALL = "Toate";
+
 export const CAR_BRANDS = [
 	"Abarth",
 	"Acura",

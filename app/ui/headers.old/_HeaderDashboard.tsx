@@ -8,7 +8,6 @@ import { pb } from "@/app/lib/pb";
 import { PB_URL } from "@/app/lib/constants";
 export default function HeaderDashboard() {
 	const [searchQuery, setSearchQuery] = useState("");
-	console.log("pb.authStore din headerdashboard client", pb.authStore);
 
 	// UNUSED
 	// UNUSED

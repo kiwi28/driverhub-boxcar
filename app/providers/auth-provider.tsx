@@ -27,8 +27,9 @@ function PocketBaseProvider({ children }: PropsWithChildren) {
 	const { data: session } = useSession();
 
 	useEffect(() => {
-		if (session?.pbToken) {
-			pb.authStore.save(session.pbToken);
+		console.log("session din provider effect", session);
+		if (session?.user?.pbToken) {
+			pb.authStore.save(session.user.pbToken);
 		} else {
 			pb.authStore.clear();
 		}

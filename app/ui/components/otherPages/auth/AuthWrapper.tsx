@@ -4,8 +4,6 @@ import React from "react";
 import { LoginForm } from "./LoginForm";
 import { RegisterForm } from "./RegisterForm";
 export default function AuthWrapper({ callbackUrl }: { callbackUrl: string }) {
-	// console.log("pb authStore token: ", pb.authStore.token);
-
 	return (
 		<section className="login-section layout-radius">
 			<div className="inner-container">

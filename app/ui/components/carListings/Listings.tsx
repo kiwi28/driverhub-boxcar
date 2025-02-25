@@ -12,6 +12,7 @@ import {
 } from "@/app/lib/types/listingTypes";
 import { fetchListings } from "@/app/lib/api";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { QUERY_ALL } from "@/app/lib/constants";
 
 // page,
 // setPage,
@@ -22,27 +23,29 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation";
 // // listings: ListingRecord[];
 // }
 
-const LISTINGS_PAGE_SIZE = 12;
-
 type ListingsProps = {
-	currentPage: number;
-	brand: string;
+	// currentPage: number;
+	// brand: string;
 	brandsCount: BrandCount;
+	listings: ListResponse<ListingRecord>;
 	// brand: { [key: string]: string | string[] | undefined };
 };
 
 export default function Listings({
-	currentPage,
-	brand,
+	// currentPage,
+	// brand,
 	brandsCount,
+	listings,
 }: ListingsProps) {
-	const [isLoading, setIsLoading] = useState(false);
-	const [listingsListRecord, setListingsListRecord] =
-		useState<null | ListResponse<ListingRecord>>(null);
+	// const [isLoading, setIsLoading] = useState(false);
+	// const [listingsListRecord, setListingsListRecord] =
+	// 	useState<null | ListResponse<ListingRecord>>(null);
 
 	const searchParams = useSearchParams();
 	const router = useRouter();
 	const pathname = usePathname();
+
+	console.log("listings din Listings.tsx", listings);
 
 	// console.log("brandsCount", brandsCount);
 	const brandOptions = useMemo(() => {
@@ -56,14 +59,14 @@ export default function Listings({
 
 		return brandsList;
 	}, [brandsCount]);
-	console.log(brandOptions);
+	console.log({ brandOptions });
 
 	const selectedBrand = useMemo(() => {
 		const brandParam = searchParams.get("brand");
 
 		// console.log("brandParam", brand || brandParam);
-		return brand || brandParam || "";
-	}, [searchParams, brand]);
+		return brandParam || "";
+	}, [searchParams]);
 
 	const handleSetBrand = useCallback(
 		(brand: string) => {
@@ -76,43 +79,43 @@ export default function Listings({
 		[router, searchParams, pathname]
 	);
 
-	const listings = useMemo(
-		() => listingsListRecord?.items || [],
-		[listingsListRecord]
-	);
+	// const listings = useMemo(
+	// 	() => listingsListRecord?.items || [],
+	// 	[listingsListRecord]
+	// );
 
 	const currentPaginationFooterText = useMemo(() => {
-		if (!listingsListRecord) return "";
+		if (!listings) return "";
 
-		const { page, perPage, totalItems } = listingsListRecord;
+		const { page, perPage, totalItems } = listings;
 
 		return `Showing results ${(page - 1) * perPage} - ${
 			perPage * page
 		} of ${totalItems}`;
-	}, [listingsListRecord]);
+	}, [listings]);
 
-	useEffect(() => {
-		setIsLoading(true);
-		const getListings = async () => {
-			const resp = await fetchListings(currentPage, LISTINGS_PAGE_SIZE, {
-				filter: `(brand=${selectedBrand})`,
-			});
-			// console.log("listings pb ", resp);
-			setListingsListRecord(resp);
-		};
+	// useEffect(() => {
+	// 	setIsLoading(true);
+	// 	const getListings = async () => {
+	// 		const resp = await fetchListings(currentPage, LISTINGS_PAGE_SIZE, {
+	// 			filter: `(brand=${selectedBrand})`,
+	// 		});
+	// 		// console.log("listings pb ", resp);
+	// 		setListingsListRecord(resp);
+	// 	};
 
-		getListings()
-			.catch((err) => console.error("error getting listings:", err))
-			.finally(() => {
-				setIsLoading(false);
-			});
-	}, [currentPage, selectedBrand]);
+	// 	getListings()
+	// 		.catch((err) => console.error("error getting listings:", err))
+	// 		.finally(() => {
+	// 			setIsLoading(false);
+	// 		});
+	// }, [currentPage, selectedBrand]);
 
-	if (isLoading) {
-		<h1>Loading .....</h1>;
-	}
+	// if (isLoading) {
+	// 	<h1>Loading .....</h1>;
+	// }
 
-	if (!listingsListRecord) {
+	if (!listings.items.length) {
 		return <h2> No listings to show!</h2>;
 	}
 
@@ -137,7 +140,7 @@ export default function Listings({
 							<div className="form_boxes">
 								Brand
 								<SelectComponent
-									options={[{ Toate: "Marcă - Toate" }, ...brandOptions]}
+									options={[{ [QUERY_ALL]: "Marcă - Toate" }, ...brandOptions]}
 									selectedOption={selectedBrand}
 									setSelectedOption={handleSetBrand}
 								/>
@@ -189,7 +192,7 @@ export default function Listings({
 						</div>
 					</div>
 					<div className="row wow fadeInUp">
-						{listings.map((car) => {
+						{listings.items.map((car) => {
 							// console.log("car img", car.images[0] || "test");
 							return (
 								<div
@@ -304,8 +307,8 @@ export default function Listings({
 						<nav aria-label="Page navigation example">
 							<ul className="pagination">
 								<Pagination
-									activePage={listingsListRecord.page}
-									totalPages={listingsListRecord.totalPages}
+									activePage={listings.page}
+									totalPages={listings.totalPages}
 								/>
 							</ul>
 							<div className="text">{currentPaginationFooterText}</div>
