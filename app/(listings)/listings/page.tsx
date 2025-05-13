@@ -6,7 +6,8 @@ import Listings from "@/app/ui/components/carListings/Listings";
 
 import Footer1 from "@/app/ui/components/home/Footer1";
 import { auth } from "@/auth";
-import { ListingRecord } from "@/app/lib/types/listingTypes";
+import { BrandCount, ListingRecord } from "@/app/lib/types/listingTypes";
+import { prefetchQuery } from "@/app/lib/tenstack-query";
 
 export default async function InventoryListPage({
 	searchParams,
@@ -18,11 +19,18 @@ export default async function InventoryListPage({
 	pb.authStore.save(session?.user?.pbToken, session?.user);
 
 	const { page, brand } = await searchParams;
-	const brandsCount = await countActiveListingsByBrand();
+	const brandsCount = await prefetchQuery<BrandCount>(
+		["brandCount"],
+		async () => {
+			const res = await countActiveListingsByBrand();
+			return res;
+		}
+	);
 
 	const currentPage = parseInt(page as string) || 0;
 
 	let filter = "";
+	// prevent "Toate" to get to the PB query
 	if (brand && brand != QUERY_ALL) {
 		filter = pb.filter("brand = {:brand}", { brand });
 	}

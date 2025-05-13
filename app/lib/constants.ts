@@ -4,6 +4,7 @@ export const CAR_PLACEHOLDER = "/images/custom/car-placeholder.webp";
 
 export const LISTINGS_PAGE_SIZE = 12;
 export const QUERY_ALL = "Toate";
+export const DEFAULT_CITY = "iasi";
 
 export const CAR_BRANDS = [
 	"Abarth",

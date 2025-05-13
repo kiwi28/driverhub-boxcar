@@ -5,16 +5,26 @@ import SelectComponent from "@/app/ui/components/common/SelectComponent";
 import Link from "next/link";
 // import { useQuery } from "@tanstack/react-query";
 // import { countActiveListingsByBrand } from "@/app/lib/api";
-import { BrandCount } from "@/app/lib/types/listingTypes";
-import { pb } from "@/app/lib/pb";
-import { usePocketBase } from "@/app/providers/auth-provider";
-import { QUERY_ALL } from "@/app/lib/constants";
+import {
+	BrandCount,
+	CityRecord,
+	ListResponse,
+} from "@/app/lib/types/listingTypes";
+import { usePocketBase } from "@/app/lib/providers";
+import { DEFAULT_CITY, QUERY_ALL } from "@/app/lib/constants";
 
 const listingsBaseURl = new URL("/listings", window.location.href);
 listingsBaseURl.searchParams.append("page", "0");
 
-export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
+interface HeroProps {
+	brandsCount: BrandCount;
+	cities: ListResponse<CityRecord>;
+}
+
+export default function Hero({ brandsCount, cities }: HeroProps) {
 	const [selectedBrand, setSelectedbrand] = useState(QUERY_ALL);
+	const [selectedCity, setSelectedCity] = useState(DEFAULT_CITY);
+
 	const pb = usePocketBase();
 	console.log("pb.authStore din hero", pb.authStore);
 
@@ -30,6 +40,10 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 		return brandsList;
 	}, [brandsCount]);
 
+	const cityOptions = useMemo(() => {
+		return cities.items.map((city) => ({ [city.name]: city.name }));
+	}, [cities]);
+
 	const listingsUrl = useMemo(() => {
 		if (selectedBrand) {
 			const brandExistingParam = listingsBaseURl.searchParams.get("brand");
@@ -39,8 +53,17 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 				listingsBaseURl.searchParams.set("brand", selectedBrand);
 			}
 		}
+
+		if (selectedCity) {
+			const existingCityParam = listingsBaseURl.searchParams.get("city");
+			if (!existingCityParam) {
+				listingsBaseURl.searchParams.append("city", selectedCity);
+			} else {
+				listingsBaseURl.searchParams.set("city", selectedCity);
+			}
+		}
 		return listingsBaseURl.href;
-	}, [selectedBrand]);
+	}, [selectedBrand, selectedCity]);
 
 	// const brandOptions = useMemo(() => {
 	// 	const brandsList = CAR_BRANDS.map((brand) => ({ [brand]: brand }));
@@ -108,10 +131,15 @@ export default function Hero({ brandsCount }: { brandsCount: BrandCount }) {
 										<SelectComponent options={["Any Makes", "A3", "Accord"]} />
 									</div>
 									<div className="form_boxes">
-										<SelectComponent options={["Any Models", "200$", "300$"]} />
+                  <SelectComponent options={["Any Models", "200$", "300$"]} />
 									</div> */}
 								<div className="form_boxes">
-									<SelectComponent options={[{ "": "Any Price" }]} />
+									<SelectComponent
+										options={cityOptions}
+										selectedOption={selectedCity}
+										setSelectedOption={setSelectedCity}
+									/>
+									{/* <SelectComponent options={[{ "": "Any Price" }]} /> */}
 								</div>
 								<Link
 									href={listingsUrl}

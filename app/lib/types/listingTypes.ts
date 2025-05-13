@@ -25,9 +25,14 @@ export type Listing = {
 	isDeleted: boolean;
 	isPromoted: boolean;
 };
+export type City = {
+	name: string;
+	enabled: boolean;
+};
 
 // This type combines your Listing with PocketBase's Record type
 export type ListingRecord = RecordModel & Listing;
+export type CityRecord = RecordModel & City;
 
 // Type for the list response
 export type ListResponse<T> = {

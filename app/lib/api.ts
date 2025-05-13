@@ -1,4 +1,9 @@
-import { BrandCount, ListingRecord, ListResponse } from "./types/listingTypes";
+import {
+	BrandCount,
+	CityRecord,
+	ListingRecord,
+	ListResponse,
+} from "./types/listingTypes";
 import { RecordListOptions, RecordOptions } from "pocketbase";
 import { pbFetch } from "./utils";
 
@@ -83,6 +88,14 @@ export const getLatestListingHero = async (): Promise<
 		page: 1,
 		limit: 4,
 		sort: "-created",
+	});
+};
+
+export const getCities = async (): Promise<ListResponse<CityRecord>> => {
+	return pbFetch<ListResponse<CityRecord>>("collections/cities/records", {
+		skipTotal: true,
+		limit: 500,
+		filter: "enabled=True",
 	});
 };
 

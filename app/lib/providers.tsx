@@ -1,6 +1,13 @@
 // providers/auth-provider.tsx
 "use client";
 
+import {
+	HydrationBoundary,
+	QueryClient,
+	QueryClientProvider,
+	DehydratedState,
+} from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { SessionProvider } from "next-auth/react";
 import {
 	createContext,
@@ -11,13 +18,18 @@ import {
 } from "react";
 import PocketBase from "pocketbase";
 import { useSession } from "next-auth/react";
+import { QueryErrorBoundary } from "../QueryErrorBaundary";
 
 const PocketBaseContext = createContext<PocketBase | null>(null);
 
-export function AuthProvider({ children }: PropsWithChildren) {
+export function Providers({ children }: PropsWithChildren) {
 	return (
 		<SessionProvider>
-			<PocketBaseProvider>{children}</PocketBaseProvider>
+			<PocketBaseProvider>
+				<QueryProvider>
+					<QueryErrorBoundary>{children}</QueryErrorBoundary>
+				</QueryProvider>
+			</PocketBaseProvider>
 		</SessionProvider>
 	);
 }
@@ -48,3 +60,29 @@ export const usePocketBase = () => {
 		throw new Error("usePocketBase must be used within PocketBaseProvider");
 	return pb;
 };
+
+function QueryProvider({
+	children,
+}: // dehydratedState,
+{
+	children: React.ReactNode;
+	// dehydratedState: DehydratedState;
+}) {
+	const [queryClient] = useState(
+		() =>
+			new QueryClient({
+				defaultOptions: {
+					queries: {
+						staleTime: 60 * 1000 * 5, // 5 minutes
+					},
+				},
+			})
+	);
+
+	return (
+		<QueryClientProvider client={queryClient}>
+			{/* <HydrationBoundary state={dehydratedState}>{children}</HydrationBoundary> */}
+			<ReactQueryDevtools initialIsOpen={false} />
+		</QueryClientProvider>
+	);
+}

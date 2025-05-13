@@ -10,7 +10,12 @@ import Footer1 from "@/app/ui/components/home/Footer1";
 // 	HydrationBoundary,
 // 	QueryClient,
 // } from "@tanstack/react-query";
-import { countActiveListingsByBrand, getLatestListingHero } from "../lib/api";
+import {
+	countActiveListingsByBrand,
+	getCities,
+	getLatestListingHero,
+} from "../lib/api";
+// import { prefetchQuery } from "../lib/tenstack-query";
 
 export const metadata = {
 	title: "DriverHUB || Inchirieri auto Uber & Bolt",
@@ -20,33 +25,24 @@ export const metadata = {
 
 export default async function Home() {
 	// const queryClient = new QueryClient();
-
-	// await queryClient.prefetchQuery({
-	// 	queryKey: ["recentListings"],
-	// 	queryFn: () => getLatestListingHero(),
-	// });
-
-	// const dehydratedState = dehydrate(queryClient);
-
-	// const query = useQuery({
-	// 	queryKey: ["recentListings"],
-	// 	queryFn: async () =>
-	// 		await pb.collection("listings").getList(1, 4, {
-	// 			sort: "-created",
-	// 		}),
-	// });
+	// const cities = await prefetchQuery(["users"], pb.collection("cities"));
 
 	const { items: recentListings } = await getLatestListingHero();
 	const brandsCount = await countActiveListingsByBrand();
+	const cities = await getCities();
 	// const session = await auth();
 
 	// console.log("home session serer:", session);
 	// console.log("home pb authStore serer:", pb.authStore);
+	console.log("cities", cities);
 
 	return (
 		// <HydrationBoundary state={dehydratedState}>
 		<>
-			<Hero brandsCount={brandsCount} />
+			<Hero
+				brandsCount={brandsCount}
+				cities={cities}
+			/>
 
 			<Suspense fallback={<h1>Loading CarsList top recent</h1>}>
 				<CarsList listings={recentListings} />
